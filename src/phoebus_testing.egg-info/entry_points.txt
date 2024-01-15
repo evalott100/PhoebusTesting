@@ -1,0 +1,2 @@
+[console_scripts]
+run-ioc = phoebus_testing.__main__:run_softioc

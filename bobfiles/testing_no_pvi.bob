@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-01-15 10:53:38 by twj43146-->
+<display version="2.0.0">
+  <name>Display</name>
+  <x>12</x>
+  <y>12</y>
+  <width>1000</width>
+  <height>800</height>
+  <grid_step_x>4</grid_step_x>
+  <grid_step_y>4</grid_step_y>
+  <widget type="label" version="2.0.0">
+    <name>Title</name>
+    <class>TITLE</class>
+    <text>Style Guide - Phoebus Example of Exisiting Style Guide</text>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>550</width>
+    <height>31</height>
+    <font use_class="true">
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <x>112</x>
+    <y>48</y>
+    <width>636</width>
+    <height>744</height>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:TEXT-UPDATE-1</pv_name>
+      <x>2</x>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:TEXT-UPDATE-2</pv_name>
+      <x>122</x>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:TEXT-UPDATE-3</pv_name>
+      <x>246</x>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:TEXT-UPDATE-4</pv_name>
+      <x>370</x>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TEXT-ENTRY</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:TEXT-UPDATE-9</pv_name>
+      <x>490</x>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:TEXT-ENTRY-1</pv_name>
+      <x>2</x>
+      <y>86</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_1</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:TEXT-ENTRY-2</pv_name>
+      <x>122</x>
+      <y>86</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_2</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:TEXT-ENTRY-3</pv_name>
+      <x>246</x>
+      <y>86</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_3</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:TEXT-ENTRY-4</pv_name>
+      <x>370</x>
+      <y>86</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_4</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:TEXT-ENTRY-9</pv_name>
+      <x>490</x>
+      <y>86</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_5</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:TEXT-ENTRY-5</pv_name>
+      <x>2</x>
+      <y>130</y>
+      <width>108</width>
+      <height>32</height>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_6</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:TEXT-ENTRY-6</pv_name>
+      <x>122</x>
+      <y>130</y>
+      <width>108</width>
+      <height>32</height>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_7</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:TEXT-ENTRY-7</pv_name>
+      <x>246</x>
+      <y>130</y>
+      <width>108</width>
+      <height>32</height>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_8</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:TEXT-ENTRY-8</pv_name>
+      <x>370</x>
+      <y>130</y>
+      <width>108</width>
+      <height>32</height>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_9</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:TEXT-ENTRY-10</pv_name>
+      <x>490</x>
+      <y>130</y>
+      <width>108</width>
+      <height>32</height>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_5</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:TEXT-UPDATE-5</pv_name>
+      <x>2</x>
+      <y>43</y>
+      <width>108</width>
+      <height>32</height>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:TEXT-UPDATE-6</pv_name>
+      <x>122</x>
+      <y>43</y>
+      <width>108</width>
+      <height>32</height>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_7</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:TEXT-UPDATE-7</pv_name>
+      <x>246</x>
+      <y>43</y>
+      <width>108</width>
+      <height>32</height>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_8</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:TEXT-UPDATE-8</pv_name>
+      <x>370</x>
+      <y>43</y>
+      <width>108</width>
+      <height>32</height>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_9</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:TEXT-UPDATE-10</pv_name>
+      <x>490</x>
+      <y>43</y>
+      <width>108</width>
+      <height>32</height>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:COMBO-BOX-1</pv_name>
+      <x>2</x>
+      <y>174</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_1</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:COMBO-BOX-2</pv_name>
+      <x>122</x>
+      <y>174</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_2</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:COMBO-BOX-3</pv_name>
+      <x>246</x>
+      <y>174</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_3</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:COMBO-BOX-4</pv_name>
+      <x>370</x>
+      <y>174</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_4</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:COMBO-BOX-9</pv_name>
+      <x>490</x>
+      <y>174</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_5</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:COMBO-BOX-5</pv_name>
+      <x>2</x>
+      <y>218</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_6</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:COMBO-BOX-6</pv_name>
+      <x>122</x>
+      <y>218</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_7</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:COMBO-BOX-7</pv_name>
+      <x>246</x>
+      <y>218</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_8</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:COMBO-BOX-8</pv_name>
+      <x>370</x>
+      <y>218</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_9</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:COMBO-BOX-10</pv_name>
+      <x>490</x>
+      <y>218</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>LED (Multi State)</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:LED-MULTI-1</pv_name>
+      <x>42</x>
+      <y>262</y>
+      <width>32</width>
+      <height>32</height>
+      <states>
+        <state>
+          <value>0</value>
+          <label>State 1</label>
+          <color>
+            <color name="Off" red="60" green="100" blue="60">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>1</value>
+          <label>State 2</label>
+          <color>
+            <color name="On" red="0" green="255" blue="0">
+            </color>
+          </color>
+        </state>
+      </states>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>LED (Multi State)_1</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:LED-MULTI-2</pv_name>
+      <x>154</x>
+      <y>262</y>
+      <width>32</width>
+      <height>32</height>
+      <states>
+        <state>
+          <value>0</value>
+          <label>State 1</label>
+          <color>
+            <color name="Off" red="60" green="100" blue="60">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>1</value>
+          <label>State 2</label>
+          <color>
+            <color name="On" red="0" green="255" blue="0">
+            </color>
+          </color>
+        </state>
+      </states>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>LED (Multi State)_2</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:LED-MULTI-3</pv_name>
+      <x>282</x>
+      <y>262</y>
+      <width>32</width>
+      <height>32</height>
+      <states>
+        <state>
+          <value>0</value>
+          <label>State 1</label>
+          <color>
+            <color name="Off" red="60" green="100" blue="60">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>1</value>
+          <label>State 2</label>
+          <color>
+            <color name="On" red="0" green="255" blue="0">
+            </color>
+          </color>
+        </state>
+      </states>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>LED (Multi State)_3</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:LED-MULTI-4</pv_name>
+      <x>406</x>
+      <y>262</y>
+      <width>32</width>
+      <height>32</height>
+      <states>
+        <state>
+          <value>0</value>
+          <label>State 1</label>
+          <color>
+            <color name="Off" red="60" green="100" blue="60">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>1</value>
+          <label>State 2</label>
+          <color>
+            <color name="On" red="0" green="255" blue="0">
+            </color>
+          </color>
+        </state>
+      </states>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>LED (Multi State)_4</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:LED-MULTI-5</pv_name>
+      <x>526</x>
+      <y>262</y>
+      <width>32</width>
+      <height>32</height>
+      <states>
+        <state>
+          <value>0</value>
+          <label>State 1</label>
+          <color>
+            <color name="Off" red="60" green="100" blue="60">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>1</value>
+          <label>State 2</label>
+          <color>
+            <color name="On" red="0" green="255" blue="0">
+            </color>
+          </color>
+        </state>
+      </states>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:BYTE-MONITOR-1</pv_name>
+      <x>2</x>
+      <y>306</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_1</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:BYTE-MONITOR-2</pv_name>
+      <x>122</x>
+      <y>306</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_2</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:BYTE-MONITOR-3</pv_name>
+      <x>246</x>
+      <y>306</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_3</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:BYTE-MONITOR-4</pv_name>
+      <x>370</x>
+      <y>306</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_4</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:BYTE-MONITOR-5</pv_name>
+      <x>490</x>
+      <y>306</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:CHOICE-BUTTON-1</pv_name>
+      <x>2</x>
+      <y>338</y>
+      <width>108</width>
+      <height>32</height>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button_1</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:CHOICE-BUTTON-2</pv_name>
+      <x>122</x>
+      <y>338</y>
+      <width>108</width>
+      <height>32</height>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button_2</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:CHOICE-BUTTON-3</pv_name>
+      <x>246</x>
+      <y>338</y>
+      <width>108</width>
+      <height>32</height>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button_3</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:CHOICE-BUTTON-4</pv_name>
+      <x>370</x>
+      <y>338</y>
+      <width>108</width>
+      <height>32</height>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button_4</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:CHOICE-BUTTON-9</pv_name>
+      <x>490</x>
+      <y>338</y>
+      <width>108</width>
+      <height>32</height>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button_5</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:CHOICE-BUTTON-6</pv_name>
+      <x>122</x>
+      <y>414</y>
+      <width>108</width>
+      <height>32</height>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button_6</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:CHOICE-BUTTON-5</pv_name>
+      <x>2</x>
+      <y>414</y>
+      <width>108</width>
+      <height>32</height>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button_7</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:CHOICE-BUTTON-7</pv_name>
+      <x>246</x>
+      <y>414</y>
+      <width>108</width>
+      <height>32</height>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button_8</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:CHOICE-BUTTON-8</pv_name>
+      <x>370</x>
+      <y>414</y>
+      <width>108</width>
+      <height>32</height>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button_9</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:CHOICE-BUTTON-10</pv_name>
+      <x>490</x>
+      <y>414</y>
+      <width>108</width>
+      <height>32</height>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <actions>
+        <action type="open_display">
+          <file>dls.bob</file>
+          <target>replace</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <x>2</x>
+      <y>490</y>
+      <width>108</width>
+      <height>32</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_1</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:BOOL-BUTTON-1</pv_name>
+      <x>2</x>
+      <y>534</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_2</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:BOOL-BUTTON-2</pv_name>
+      <x>122</x>
+      <y>534</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_3</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:BOOL-BUTTON-3</pv_name>
+      <x>246</x>
+      <y>534</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_4</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:BOOL-BUTTON-4</pv_name>
+      <x>370</x>
+      <y>534</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_5</name>
+      <pv_name>pva://PHOEBUS-TEST-PREFIX:BOOL-BUTTON-5</pv_name>
+      <x>490</x>
+      <y>534</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_5</name>
+      <actions>
+        <action type="open_display">
+          <file>dls.bob</file>
+          <target>replace</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <x>122</x>
+      <y>490</y>
+      <width>108</width>
+      <height>32</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_6</name>
+      <actions>
+        <action type="open_display">
+          <file>dls.bob</file>
+          <target>replace</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <x>246</x>
+      <y>490</y>
+      <width>108</width>
+      <height>32</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_7</name>
+      <actions>
+        <action type="open_display">
+          <file>dls.bob</file>
+          <target>replace</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <x>370</x>
+      <y>490</y>
+      <width>108</width>
+      <height>32</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_8</name>
+      <actions>
+        <action type="open_display">
+          <file>dls.bob</file>
+          <target>replace</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <x>490</x>
+      <y>490</y>
+      <width>108</width>
+      <height>32</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+  <widget type="arc" version="2.0.0">
+    <name>Arc</name>
+    <x>544</x>
+    <y>116</y>
+    <width>1</width>
+    <height>1</height>
+  </widget>
+  <widget type="array" version="2.0.0">
+    <name>Array</name>
+    <x>616</x>
+    <y>912</y>
+    <width>0</width>
+    <height>0</height>
+  </widget>
+  <widget type="progressbar" version="2.0.0">
+    <name>Progress Bar</name>
+    <x>12</x>
+    <y>284</y>
+    <width>76</width>
+    <height>52</height>
+  </widget>
+</display>

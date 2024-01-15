@@ -1,0 +1,12 @@
+softioc
+pvi
+
+[dev]
+black
+mypy
+flake8-isort
+Flake8-pyproject
+pipdeptree
+pre-commit
+pydata-sphinx-theme>=0.12
+types-mock
