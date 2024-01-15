@@ -4,7 +4,6 @@ from pathlib import Path
 from typing import Dict, List, Optional
 
 from epicsdbbuilder import RecordName
-from phoebus_testing.utils import EXAMPLE_IMAGE, EXAMPLE_WAVEFORM
 from pvi._format.dls import DLSFormatter
 from pvi.device import (
     LED,
@@ -27,51 +26,55 @@ from pvi.device import (
 )
 from softioc import builder
 
+# from phoebus_testing.utils import EXAMPLE_IMAGE, EXAMPLE_WAVEFORM
+
 
 class PviGroup(str, Enum):
-    _LED = "PVI-LED"
-    _ARRAY_TRACE = "PVI-ARRAY-TRACE"
-    _ARRAY_WRITE = "PVI-ARRAY-WRITE"
-    _BIT_FIELD = "PVI-BIT-FIELD"
-    _BUTTON_PANEL = "PVI-BUTTON-PANEL"
-    _CHECK_BOX = "PVI-CHECK-BOX"
-    _COMBO_BOX = "PVI-COMBO-BOX"
-    _DEVICE_REF = "PVI-DEVICE-REF"
-    _IMAGE_READ = "PVI-IMAGE-READ"
-    _PROGRESS_BAR = "PVI-PROGRESS-BAR"
-    _READ_WIDGET = "PVI-READ-WIDGET-EXAMPLE"
-    _TEXT_READ = "PVI-TEXT-READ"
-    _TEXT_WRITE = "PVI-TEXT-WRITE"
+    _LED = "LED"
+    # _ARRAY_TRACE = "ARRAY-TRACE"
+    # _ARRAY_WRITE = "ARRAY-WRITE"
+    # _BIT_FIELD = "BIT-FIELD"
+    # _BUTTON_PANEL = "BUTTON-PANEL"
+    _CHECK_BOX = "CHECK-BOX"
+    _COMBO_BOX = "COMBO-BOX"
+    _DEVICE_REF = "DEVICE-REF"
+    # _IMAGE_READ = "IMAGE-READ"
+    # _PROGRESS_BAR = "PROGRESS-BAR"
+    _TEXT_READ = "TEXT-READ"
+    _TEXT_WRITE = "TEXT-WRITE"
 
 
-Components = [
-    LED,
-    ArrayTrace,
-    ArrayWrite,
-    BitField,
-    ButtonPanel,
-    CheckBox,
-    ComboBox,
+Widgets = [
+    LED(),
+    # ArrayTrace(axis="x"),
+    # ArrayWrite(),
+    # BitField(["A", "B", "C", "D", "E", "F", "G", "H"]),
+    # ButtonPanel(),
+    CheckBox(),
+    ComboBox(choices=["CLOSED", "OPEN"]),
     DeviceRef,
-    ImageRead,
-    ProgressBar,
-    TextRead,
-    TextWrite,
+    # ImageRead(),
+    # ProgressBar(),
+    TextRead(),
+    TextWrite(),
 ]
 
-GroupToComponent = dict(zip(PviGroup, Components))
+GroupToWidget = dict(zip(PviGroup, Widgets))
+
 
 BuildFunctions = [
-    partial(builder.mbbIn, 0, 1, 2, 3, 4, initial_value=1),  # LED
-    partial(builder.WaveformIn, initial_value=EXAMPLE_IMAGE),  # ArrayTrace
-    partial(builder.WaveformIn, initial_value=EXAMPLE_WAVEFORM),  # ArrayWrite
-    partial(builder.longIn, initial_value=0b00110011),  # BitField
-    partial(builder.boolIn, initial_value=1, ONAM="ON", ZNAM="OFF"),  # ButtonPanel
+    lambda pv_name: builder.mbbIn(pv_name, 0, 1, 2, 3, initial_value=1),  # LED
+    # partial(builder.WaveformIn, initial_value=EXAMPLE_IMAGE),  # ArrayTrace
+    # partial(builder.WaveformIn, initial_value=EXAMPLE_WAVEFORM),  # ArrayWrite
+    # partial(builder.longIn, initial_value=0b00110011),  # BitField
+    # partial(builder.boolIn, initial_value=1, ONAM="ON", ZNAM="OFF"),  # ButtonPanel
     partial(builder.boolIn, initial_value=1),  # CheckBox
-    partial(builder.mbbIn, "CLOSED", "OPEN", value=0),  # ComboBox
+    lambda pv_name: builder.mbbIn(
+        pv_name, "CLOSED", "OPEN", initial_value=0
+    ),  # ComboBox
     None,  # DeviceRef
-    partial(builder.WaveformIn, initial_value=EXAMPLE_IMAGE),  # Image
-    partial(builder.aIn, initial_value=0.4),  # ProgressBar
+    # partial(builder.WaveformIn, initial_value=EXAMPLE_IMAGE),  # Image
+    # partial(builder.aIn, initial_value=0.4),  # ProgressBar
     partial(builder.aIn, initial_value=1234.567, EGU="mm"),  # TextRead
     partial(builder.aIn, initial_value=1234.567, EGU="mm"),  # TextWrite
 ]
@@ -114,9 +117,6 @@ class Pvi:
         for block_name, v in Pvi.pvi_info_dict.items():
             children: Tree = []
 
-            # Item in the NONE group should be rendered outside of any Group box
-            if PviGroup.NONE in v:
-                children.extend(v.pop(PviGroup.NONE))
             for group, components in v.items():
                 children.append(Group(group.name, Grid(), components))
 
@@ -153,5 +153,4 @@ class Pvi:
         if Pvi._screens_dir:
             for device in devices:
                 bobfile_path = Pvi._screens_dir / Path(f"{device.label}.bob")
-
                 formatter.format(device, record_prefix + ":", bobfile_path)

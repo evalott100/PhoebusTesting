@@ -1,13 +1,15 @@
+from typing import Any
+
 import numpy as np
 from softioc import alarm
 
 ALARM_SEVERITIES = list(range(4))
 
-EXAMPLE_IMAGE = np.reshape(np.arange(0, 737280, 1, np.uint8), (1024, 720))
+EXAMPLE_IMAGE = np.arange(0, 737280, 1, np.uint8)  # 1080 * 720 flattened
 EXAMPLE_WAVEFORM = np.sin(np.linspace(0, 2 * np.pi, 100))
 
 
-def cycle_severities(n, prefix=""):
+def cycle_severities(n: int, prefix: str = ""):
     """n widgets in a row"""
     gen = enumerate(
         int(n / 4) * ALARM_SEVERITIES + ALARM_SEVERITIES[0 : n % 4], start=1
@@ -19,5 +21,5 @@ def cycle_severities(n, prefix=""):
         yield f"{prefix}-{i}", severity
 
 
-def set_alarm(record, severity):
+def set_alarm(record: Any, severity: int):
     record.set_alarm(severity, alarm.UDF_ALARM, timestamp=None)

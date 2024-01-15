@@ -1,8 +1,0 @@
-pyproject.toml
-src/phoebus_testing/__main__.py
-src/phoebus_testing.egg-info/PKG-INFO
-src/phoebus_testing.egg-info/SOURCES.txt
-src/phoebus_testing.egg-info/dependency_links.txt
-src/phoebus_testing.egg-info/entry_points.txt
-src/phoebus_testing.egg-info/requires.txt
-src/phoebus_testing.egg-info/top_level.txt
