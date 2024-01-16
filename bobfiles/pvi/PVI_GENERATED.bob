@@ -3,7 +3,7 @@
   <x>0</x>
   <y>0</y>
   <width>426</width>
-  <height>710</height>
+  <height>896</height>
   <grid_step_x>4</grid_step_x>
   <grid_step_y>4</grid_step_y>
   <widget type="label" version="2.0.0">
@@ -30,11 +30,11 @@
     <x>5</x>
     <y>30</y>
     <width>416</width>
-    <height>131</height>
+    <height>156</height>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>Label</text>
+      <text>NORMAL</text>
       <x>0</x>
       <y>0</y>
       <width>250</width>
@@ -50,7 +50,7 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>Label</text>
+      <text>MINOR</text>
       <x>0</x>
       <y>25</y>
       <width>250</width>
@@ -66,7 +66,7 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>Label</text>
+      <text>MAJOR</text>
       <x>0</x>
       <y>50</y>
       <width>250</width>
@@ -82,7 +82,7 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>Label</text>
+      <text>CRITICAL</text>
       <x>0</x>
       <y>75</y>
       <width>250</width>
@@ -96,109 +96,316 @@
       <width>20</width>
       <height>20</height>
     </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>DISCONNECTED</text>
+      <x>0</x>
+      <y>100</y>
+      <width>250</width>
+      <height>20</height>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:LED-5</pv_name>
+      <x>307</x>
+      <y>100</y>
+      <width>20</width>
+      <height>20</height>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name> CHECK_ BOX</name>
+    <name> BUTTON_ PANEL</name>
     <x>5</x>
-    <y>166</y>
-    <width>416</width>
-    <height>131</height>
+    <y>191</y>
+    <width>415</width>
+    <height>156</height>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>Label</text>
+      <text>NORMAL</text>
       <x>0</x>
       <y>0</y>
       <width>250</width>
       <height>20</height>
     </widget>
-    <widget type="choice" version="2.0.0">
-      <name>ChoiceButton</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:CHECK-BOX-1</pv_name>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV</name>
+      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-1</pv_name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>$(name)</description>
+        </action>
+      </actions>
+      <text>On</text>
       <x>255</x>
       <y>0</y>
-      <width>125</width>
+      <width>38</width>
       <height>20</height>
-      <items>
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-      </items>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV</name>
+      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-1</pv_name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>0</value>
+          <description>$(name)</description>
+        </action>
+      </actions>
+      <text>Off</text>
+      <x>298</x>
+      <y>0</y>
+      <width>38</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate</name>
+      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-1</pv_name>
+      <x>341</x>
+      <y>0</y>
+      <width>38</width>
+      <height>20</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>Label</text>
+      <text>MINOR</text>
       <x>0</x>
       <y>25</y>
       <width>250</width>
       <height>20</height>
     </widget>
-    <widget type="choice" version="2.0.0">
-      <name>ChoiceButton</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:CHECK-BOX-2</pv_name>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV</name>
+      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-2</pv_name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>$(name)</description>
+        </action>
+      </actions>
+      <text>On</text>
       <x>255</x>
       <y>25</y>
-      <width>125</width>
+      <width>38</width>
       <height>20</height>
-      <items>
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-      </items>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV</name>
+      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-2</pv_name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>0</value>
+          <description>$(name)</description>
+        </action>
+      </actions>
+      <text>Off</text>
+      <x>298</x>
+      <y>25</y>
+      <width>38</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate</name>
+      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-2</pv_name>
+      <x>341</x>
+      <y>25</y>
+      <width>38</width>
+      <height>20</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>Label</text>
+      <text>MAJOR</text>
       <x>0</x>
       <y>50</y>
       <width>250</width>
       <height>20</height>
     </widget>
-    <widget type="choice" version="2.0.0">
-      <name>ChoiceButton</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:CHECK-BOX-3</pv_name>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV</name>
+      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-3</pv_name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>$(name)</description>
+        </action>
+      </actions>
+      <text>On</text>
       <x>255</x>
       <y>50</y>
-      <width>125</width>
+      <width>38</width>
       <height>20</height>
-      <items>
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-      </items>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV</name>
+      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-3</pv_name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>0</value>
+          <description>$(name)</description>
+        </action>
+      </actions>
+      <text>Off</text>
+      <x>298</x>
+      <y>50</y>
+      <width>38</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate</name>
+      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-3</pv_name>
+      <x>341</x>
+      <y>50</y>
+      <width>38</width>
+      <height>20</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>Label</text>
+      <text>CRITICAL</text>
       <x>0</x>
       <y>75</y>
       <width>250</width>
       <height>20</height>
     </widget>
-    <widget type="choice" version="2.0.0">
-      <name>ChoiceButton</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:CHECK-BOX-4</pv_name>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV</name>
+      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-4</pv_name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>$(name)</description>
+        </action>
+      </actions>
+      <text>On</text>
       <x>255</x>
       <y>75</y>
-      <width>125</width>
+      <width>38</width>
       <height>20</height>
-      <items>
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-      </items>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV</name>
+      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-4</pv_name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>0</value>
+          <description>$(name)</description>
+        </action>
+      </actions>
+      <text>Off</text>
+      <x>298</x>
+      <y>75</y>
+      <width>38</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate</name>
+      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-4</pv_name>
+      <x>341</x>
+      <y>75</y>
+      <width>38</width>
+      <height>20</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>DISCONNECTED</text>
+      <x>0</x>
+      <y>100</y>
+      <width>250</width>
+      <height>20</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV</name>
+      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-5</pv_name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>$(name)</description>
+        </action>
+      </actions>
+      <text>On</text>
+      <x>255</x>
+      <y>100</y>
+      <width>38</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV</name>
+      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-5</pv_name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>0</value>
+          <description>$(name)</description>
+        </action>
+      </actions>
+      <text>Off</text>
+      <x>298</x>
+      <y>100</y>
+      <width>38</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate</name>
+      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-5</pv_name>
+      <x>341</x>
+      <y>100</y>
+      <width>38</width>
+      <height>20</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name> COMBO_ BOX</name>
     <x>5</x>
-    <y>302</y>
+    <y>352</y>
     <width>416</width>
-    <height>131</height>
+    <height>156</height>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>Label</text>
+      <text>NORMAL</text>
       <x>0</x>
       <y>0</y>
       <width>250</width>
@@ -219,7 +426,7 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>Label</text>
+      <text>MINOR</text>
       <x>0</x>
       <y>25</y>
       <width>250</width>
@@ -240,7 +447,7 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>Label</text>
+      <text>MAJOR</text>
       <x>0</x>
       <y>50</y>
       <width>250</width>
@@ -261,7 +468,7 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>Label</text>
+      <text>CRITICAL</text>
       <x>0</x>
       <y>75</y>
       <width>250</width>
@@ -280,17 +487,70 @@
       </items>
       <items_from_pv>false</items_from_pv>
     </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>DISCONNECTED</text>
+      <x>0</x>
+      <y>100</y>
+      <width>250</width>
+      <height>20</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>ComboBox</name>
+      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:COMBO-BOX-5</pv_name>
+      <x>255</x>
+      <y>100</y>
+      <width>125</width>
+      <height>20</height>
+      <items>
+        <item>CLOSED</item>
+        <item>OPEN</item>
+      </items>
+      <items_from_pv>false</items_from_pv>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name> DEVICE_ REF</name>
+    <x>5</x>
+    <y>513</y>
+    <width>416</width>
+    <height>56</height>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>larm unavailable</text>
+      <x>0</x>
+      <y>0</y>
+      <width>250</width>
+      <height>20</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>OpenDisplay</name>
+      <actions>
+        <action type="open_display">
+          <file>another_bobfile.bob</file>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <text>larm unavailable</text>
+      <x>255</x>
+      <y>0</y>
+      <width>125</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name> TEXT_ READ</name>
     <x>5</x>
-    <y>438</y>
+    <y>574</y>
     <width>416</width>
-    <height>131</height>
+    <height>156</height>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>Label</text>
+      <text>NORMAL</text>
       <x>0</x>
       <y>0</y>
       <width>250</width>
@@ -311,7 +571,7 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>Label</text>
+      <text>MINOR</text>
       <x>0</x>
       <y>25</y>
       <width>250</width>
@@ -332,7 +592,7 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>Label</text>
+      <text>MAJOR</text>
       <x>0</x>
       <y>50</y>
       <width>250</width>
@@ -353,7 +613,7 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>Label</text>
+      <text>CRITICAL</text>
       <x>0</x>
       <y>75</y>
       <width>250</width>
@@ -372,17 +632,38 @@
       </font>
       <horizontal_alignment>1</horizontal_alignment>
     </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>DISCONNECTED</text>
+      <x>0</x>
+      <y>100</y>
+      <width>250</width>
+      <height>20</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate</name>
+      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:TEXT-READ-5</pv_name>
+      <x>255</x>
+      <y>100</y>
+      <width>125</width>
+      <height>20</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name> TEXT_ WRITE</name>
     <x>5</x>
-    <y>574</y>
+    <y>735</y>
     <width>416</width>
-    <height>131</height>
+    <height>156</height>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>Label</text>
+      <text>NORMAL</text>
       <x>0</x>
       <y>0</y>
       <width>250</width>
@@ -399,7 +680,7 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>Label</text>
+      <text>MINOR</text>
       <x>0</x>
       <y>25</y>
       <width>250</width>
@@ -416,7 +697,7 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>Label</text>
+      <text>MAJOR</text>
       <x>0</x>
       <y>50</y>
       <width>250</width>
@@ -433,7 +714,7 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>Label</text>
+      <text>CRITICAL</text>
       <x>0</x>
       <y>75</y>
       <width>250</width>
@@ -444,6 +725,23 @@
       <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:TEXT-WRITE-4</pv_name>
       <x>255</x>
       <y>75</y>
+      <width>125</width>
+      <height>20</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>DISCONNECTED</text>
+      <x>0</x>
+      <y>100</y>
+      <width>250</width>
+      <height>20</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry</name>
+      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:TEXT-WRITE-5</pv_name>
+      <x>255</x>
+      <y>100</y>
       <width>125</width>
       <height>20</height>
       <horizontal_alignment>1</horizontal_alignment>

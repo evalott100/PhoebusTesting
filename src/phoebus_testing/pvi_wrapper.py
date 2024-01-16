@@ -7,19 +7,21 @@ from epicsdbbuilder import RecordName
 from pvi._format.dls import DLSFormatter
 from pvi.device import (
     LED,
-    ArrayTrace,
-    ArrayWrite,
-    BitField,
+    # ArrayTrace,
+    # ArrayWrite,
+    # BitField,
     ButtonPanel,
-    CheckBox,
+    # CheckBox,
     ComboBox,
     Component,
     Device,
     DeviceRef,
     Grid,
     Group,
-    ImageRead,
-    ProgressBar,
+    SignalR,
+    SignalRW,
+    # ImageRead,
+    # ProgressBar,
     TextRead,
     TextWrite,
     Tree,
@@ -34,8 +36,8 @@ class PviGroup(str, Enum):
     # _ARRAY_TRACE = "ARRAY-TRACE"
     # _ARRAY_WRITE = "ARRAY-WRITE"
     # _BIT_FIELD = "BIT-FIELD"
-    # _BUTTON_PANEL = "BUTTON-PANEL"
-    _CHECK_BOX = "CHECK-BOX"
+    _BUTTON_PANEL = "BUTTON-PANEL"
+    # _CHECK_BOX = "CHECK-BOX"
     _COMBO_BOX = "COMBO-BOX"
     _DEVICE_REF = "DEVICE-REF"
     # _IMAGE_READ = "IMAGE-READ"
@@ -44,22 +46,32 @@ class PviGroup(str, Enum):
     _TEXT_WRITE = "TEXT-WRITE"
 
 
-Widgets = [
-    LED(),
+Components = [
+    lambda alarm_sev, pv_name: SignalRW(name=alarm_sev, pv=pv_name, widget=LED()),
     # ArrayTrace(axis="x"),
     # ArrayWrite(),
     # BitField(["A", "B", "C", "D", "E", "F", "G", "H"]),
     # ButtonPanel(),
-    CheckBox(),
-    ComboBox(choices=["CLOSED", "OPEN"]),
-    DeviceRef,
+    lambda alarm_sev, pv_name: SignalRW(
+        name=alarm_sev,
+        pv=pv_name,
+        read_pv=pv_name,
+        widget=ButtonPanel(actions=dict(On=1, Off=0)),
+        read_widget=TextRead(),
+    ),
+    lambda alarm_sev, pv_name: SignalRW(
+        name=alarm_sev, pv=pv_name, widget=ComboBox(choices=["CLOSED", "OPEN"])
+    ),
+    lambda alarm_sev, pv_name: DeviceRef(
+        name="alarm unavailable", pv=pv_name, ui="another_bobfile"
+    ),
     # ImageRead(),
     # ProgressBar(),
-    TextRead(),
-    TextWrite(),
+    lambda alarm_sev, pv_name: SignalR(name=alarm_sev, pv=pv_name, widget=TextRead()),
+    lambda alarm_sev, pv_name: SignalRW(name=alarm_sev, pv=pv_name, widget=TextWrite()),
 ]
 
-GroupToWidget = dict(zip(PviGroup, Widgets))
+GroupToComponent = dict(zip(PviGroup, Components))
 
 
 BuildFunctions = [
@@ -68,7 +80,7 @@ BuildFunctions = [
     # partial(builder.WaveformIn, initial_value=EXAMPLE_WAVEFORM),  # ArrayWrite
     # partial(builder.longIn, initial_value=0b00110011),  # BitField
     # partial(builder.boolIn, initial_value=1, ONAM="ON", ZNAM="OFF"),  # ButtonPanel
-    partial(builder.boolIn, initial_value=1),  # CheckBox
+    partial(builder.boolIn, ONAM="ON", ZNAM="OFF", initial_value=0),  # CheckBox
     lambda pv_name: builder.mbbIn(
         pv_name, "CLOSED", "OPEN", initial_value=0
     ),  # ComboBox

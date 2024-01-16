@@ -7,16 +7,14 @@ we use In records for Write widgets bere.
 
 from typing import Callable, Dict
 
-from pvi.device import SignalRW
-
 from phoebus_testing import PREFIX
 from phoebus_testing.pvi_wrapper import (
     GroupToBuildFunction,
-    GroupToWidget,
+    GroupToComponent,
     Pvi,
     PviGroup,
 )
-from phoebus_testing.utils import cycle_severities, set_alarm
+from phoebus_testing.utils import ALARM_SEVERITIES_NAMES, cycle_severities, set_alarm
 
 Pvi.configure_pvi("bobfiles/pvi", True)
 
@@ -27,12 +25,11 @@ def create_record_and_pvi_widget(
     alarm_severity: int,
     pvi_group: PviGroup,
 ):
-    record = builder_method(pv_name)
-    set_alarm(record, alarm_severity)
-    component = SignalRW(
-        name=str(alarm_severity),
-        pv=pv_name,
-        widget=GroupToWidget[pvi_group],
+    if alarm_severity != 4 and builder_method:  # Not DISCONNECTED
+        record = builder_method(pv_name)
+        set_alarm(record, alarm_severity)
+    component = GroupToComponent[pvi_group](
+        ALARM_SEVERITIES_NAMES[alarm_severity], pv_name
     )
     Pvi.add_pvi_info(pv_name, pvi_group, component)
 
@@ -41,11 +38,17 @@ def generate_records_for_pvi_generated_screen() -> Dict:
     records = {}
 
     for pvi_group, builder_method in GroupToBuildFunction.items():
-        if pvi_group == PviGroup._DEVICE_REF:
+        if not builder_method:
+            create_record_and_pvi_widget(
+                "PVI_GENERATED:DEVICE-REF",
+                builder_method,
+                0,
+                pvi_group=PviGroup._DEVICE_REF,
+            )
             continue
 
         for pv_name, severity in cycle_severities(
-            4, prefix=f"PVI_GENERATED:{pvi_group.value}"
+            5, prefix=f"PVI_GENERATED:{pvi_group.value}"
         ):
             create_record_and_pvi_widget(
                 pv_name,

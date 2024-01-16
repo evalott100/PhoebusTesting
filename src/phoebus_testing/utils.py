@@ -3,7 +3,9 @@ from typing import Any
 import numpy as np
 from softioc import alarm
 
-ALARM_SEVERITIES = list(range(4))
+ALARM_SEVERITIES_NAMES = ["NORMAL", "MINOR", "MAJOR", "CRITICAL", "DISCONNECTED"]
+ALARM_SEVERITIES = list(range(len(ALARM_SEVERITIES_NAMES)))
+
 
 EXAMPLE_IMAGE = np.arange(0, 737280, 1, np.uint8)  # 1080 * 720 flattened
 EXAMPLE_WAVEFORM = np.sin(np.linspace(0, 2 * np.pi, 100))
@@ -12,7 +14,9 @@ EXAMPLE_WAVEFORM = np.sin(np.linspace(0, 2 * np.pi, 100))
 def cycle_severities(n: int, prefix: str = ""):
     """n widgets in a row"""
     gen = enumerate(
-        int(n / 4) * ALARM_SEVERITIES + ALARM_SEVERITIES[0 : n % 4], start=1
+        int(n / len(ALARM_SEVERITIES)) * ALARM_SEVERITIES
+        + ALARM_SEVERITIES[0 : n % len(ALARM_SEVERITIES)],
+        start=1,
     )
 
     if not prefix:
