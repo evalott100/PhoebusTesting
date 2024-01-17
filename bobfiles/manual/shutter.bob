@@ -1,10 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>Main</name>
-  <width>1010</width>
-  <height>570</height>
+  <width>1200</width>
+  <height>400</height>
   <grid_color>
     <color red="127" green="127" blue="127">
     </color>
   </grid_color>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_1</name>
+    <macros>
+      <M>1</M>
+    </macros>
+    <file>motor_sub.bob</file>
+    <x>20</x>
+    <width>380</width>
+    <height>110</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_2</name>
+    <macros>
+      <M>2</M>
+    </macros>
+    <file>motor_sub.bob</file>
+    <x>20</x>
+    <y>90</y>
+    <width>380</width>
+    <height>110</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_3</name>
+    <macros>
+      <M>3</M>
+    </macros>
+    <file>motor_sub.bob</file>
+    <x>20</x>
+    <y>180</y>
+    <width>380</width>
+    <height>110</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_4</name>
+    <macros>
+      <M>4</M>
+    </macros>
+    <file>motor_sub.bob</file>
+    <x>20</x>
+    <y>270</y>
+    <width>380</width>
+    <height>110</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_8</name>
+    <macros>
+      <M>5</M>
+    </macros>
+    <file>motor_sub.bob</file>
+    <x>400</x>
+    <width>380</width>
+    <height>110</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_7</name>
+    <macros>
+      <M>6</M>
+    </macros>
+    <file>motor_sub.bob</file>
+    <x>400</x>
+    <y>90</y>
+    <width>380</width>
+    <height>110</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_6</name>
+    <macros>
+      <M>7</M>
+    </macros>
+    <file>motor_sub.bob</file>
+    <x>400</x>
+    <y>180</y>
+    <width>380</width>
+    <height>110</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_5</name>
+    <macros>
+      <M>8</M>
+    </macros>
+    <file>motor_sub.bob</file>
+    <x>400</x>
+    <y>270</y>
+    <width>380</width>
+    <height>110</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
+    <macros>
+      <T>1</T>
+    </macros>
+    <file>temp_sub.bob</file>
+    <x>780</x>
+    <width>370</width>
+    <height>90</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_9</name>
+    <macros>
+      <T>2</T>
+    </macros>
+    <file>temp_sub.bob</file>
+    <x>780</x>
+    <y>90</y>
+    <width>370</width>
+    <height>90</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_10</name>
+    <macros>
+      <T>3</T>
+    </macros>
+    <file>temp_sub.bob</file>
+    <x>780</x>
+    <y>180</y>
+    <width>370</width>
+    <height>90</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_11</name>
+    <macros>
+      <T>4</T>
+    </macros>
+    <file>temp_sub.bob</file>
+    <x>780</x>
+    <y>270</y>
+    <width>370</width>
+    <height>90</height>
+  </widget>
 </display>

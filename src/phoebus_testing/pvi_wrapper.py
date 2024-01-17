@@ -1,104 +1,44 @@
 from enum import Enum
-from functools import partial
 from pathlib import Path
 from typing import Dict, List, Optional
 
 from epicsdbbuilder import RecordName
 from pvi._format.dls import DLSFormatter
 from pvi.device import (
-    LED,
-    # ArrayTrace,
-    # ArrayWrite,
-    # BitField,
-    ButtonPanel,
-    # CheckBox,
-    ComboBox,
     Component,
     Device,
-    DeviceRef,
     Grid,
     Group,
-    SignalR,
-    SignalRW,
-    # ImageRead,
-    # ProgressBar,
-    TextRead,
-    TextWrite,
     Tree,
 )
 from softioc import builder
 
-# from phoebus_testing.utils import EXAMPLE_IMAGE, EXAMPLE_WAVEFORM
 
-
-class PviGroup(str, Enum):
+# All the widgets we'll use
+class PviGroupBasic(Enum):
     _LED = "LED"
-    # _ARRAY_TRACE = "ARRAY-TRACE"
-    # _ARRAY_WRITE = "ARRAY-WRITE"
-    # _BIT_FIELD = "BIT-FIELD"
     _BUTTON_PANEL = "BUTTON-PANEL"
-    # _CHECK_BOX = "CHECK-BOX"
     _COMBO_BOX = "COMBO-BOX"
     _DEVICE_REF = "DEVICE-REF"
-    # _IMAGE_READ = "IMAGE-READ"
-    # _PROGRESS_BAR = "PROGRESS-BAR"
     _TEXT_READ = "TEXT-READ"
     _TEXT_WRITE = "TEXT-WRITE"
 
 
-Components = [
-    lambda alarm_sev, pv_name: SignalRW(name=alarm_sev, pv=pv_name, widget=LED()),
-    # ArrayTrace(axis="x"),
-    # ArrayWrite(),
-    # BitField(["A", "B", "C", "D", "E", "F", "G", "H"]),
-    # ButtonPanel(),
-    lambda alarm_sev, pv_name: SignalRW(
-        name=alarm_sev,
-        pv=pv_name,
-        read_pv=pv_name,
-        widget=ButtonPanel(actions=dict(On=1, Off=0)),
-        read_widget=TextRead(),
-    ),
-    lambda alarm_sev, pv_name: SignalRW(
-        name=alarm_sev, pv=pv_name, widget=ComboBox(choices=["CLOSED", "OPEN"])
-    ),
-    lambda alarm_sev, pv_name: DeviceRef(
-        name="alarm unavailable", pv=pv_name, ui="another_bobfile"
-    ),
-    # ImageRead(),
-    # ProgressBar(),
-    lambda alarm_sev, pv_name: SignalR(name=alarm_sev, pv=pv_name, widget=TextRead()),
-    lambda alarm_sev, pv_name: SignalRW(name=alarm_sev, pv=pv_name, widget=TextWrite()),
-]
-
-GroupToComponent = dict(zip(PviGroup, Components))
+# All the widgets we won't use
+class PviGroupNotImplemented(Enum):
+    _ARRAY_TRACE = "ARRAY-TRACE"
+    _ARRAY_WRITE = "ARRAY-WRITE"
+    _BIT_FIELD = "BIT-FIELD"
+    _CHECK_BOX = "CHECK-BOX"
+    _IMAGE_READ = "IMAGE-READ"
+    _PROGRESS_BAR = "PROGRESS-BAR"
 
 
-BuildFunctions = [
-    lambda pv_name: builder.mbbIn(pv_name, 0, 1, 2, 3, initial_value=1),  # LED
-    # partial(builder.WaveformIn, initial_value=EXAMPLE_IMAGE),  # ArrayTrace
-    # partial(builder.WaveformIn, initial_value=EXAMPLE_WAVEFORM),  # ArrayWrite
-    # partial(builder.longIn, initial_value=0b00110011),  # BitField
-    # partial(builder.boolIn, initial_value=1, ONAM="ON", ZNAM="OFF"),  # ButtonPanel
-    partial(builder.boolIn, ONAM="ON", ZNAM="OFF", initial_value=0),  # CheckBox
-    lambda pv_name: builder.mbbIn(
-        pv_name, "CLOSED", "OPEN", initial_value=0
-    ),  # ComboBox
-    None,  # DeviceRef
-    # partial(builder.WaveformIn, initial_value=EXAMPLE_IMAGE),  # Image
-    # partial(builder.aIn, initial_value=0.4),  # ProgressBar
-    partial(builder.aIn, initial_value=1234.567, EGU="mm"),  # TextRead
-    partial(builder.aIn, initial_value=1234.567, EGU="mm"),  # TextWrite
-]
-
-
-GroupToBuildFunction = dict(zip(PviGroup, BuildFunctions))
-
-
+# Adapted from pandablocks-ioc
 class Pvi:
     _screens_dir: Optional[Path] = None
     _clear_bobfiles: bool = False
-    pvi_info_dict: Dict[str, Dict[PviGroup, List[Component]]] = {}
+    pvi_info_dict: Dict[str, Dict[PviGroupBasic, List[Component]]] = {}
 
     @staticmethod
     def configure_pvi(screens_dir: Optional[str], clear_bobfiles: bool):
@@ -109,7 +49,7 @@ class Pvi:
         Pvi._clear_bobfiles = clear_bobfiles
 
     @staticmethod
-    def add_pvi_info(record_name: str, group: PviGroup, component: Component):
+    def add_pvi_info(record_name: str, group: PviGroupBasic, component: Component):
         record_base, _ = record_name.split(":", 1)
 
         if record_base in Pvi.pvi_info_dict:
@@ -135,7 +75,8 @@ class Pvi:
             device = Device(block_name, children=children)
             devices.append(device)
 
-            # Add PVI structure. Unfortunately we need something in the database
+            """
+            # Add -PVI structure. Unfortunately we need something in the database
             # that holds the PVI PV, and the QSRV records we have made so far aren't
             # in the database, so have to make an extra record here just to hold the
             # PVI PV name
@@ -159,6 +100,7 @@ class Pvi:
             )
 
             pvi_records.append(pvi_record_name)
+            """
 
         formatter = DLSFormatter(label_width=250)
 

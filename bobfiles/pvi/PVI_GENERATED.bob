@@ -9,7 +9,7 @@
   <widget type="label" version="2.0.0">
     <name>Title</name>
     <class>TITLE</class>
-    <text>PVI_GENERATED - PHOEBUS-TEST-PREFIX:</text>
+    <text>PVI_GENERATED - PREFIX:</text>
     <x use_class="true">0</x>
     <y use_class="true">0</y>
     <width>426</width>
@@ -42,7 +42,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:LED-1</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:LED-1</pv_name>
       <x>307</x>
       <y>0</y>
       <width>20</width>
@@ -58,7 +58,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:LED-2</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:LED-2</pv_name>
       <x>307</x>
       <y>25</y>
       <width>20</width>
@@ -74,7 +74,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:LED-3</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:LED-3</pv_name>
       <x>307</x>
       <y>50</y>
       <width>20</width>
@@ -90,7 +90,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:LED-4</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:LED-4</pv_name>
       <x>307</x>
       <y>75</y>
       <width>20</width>
@@ -106,7 +106,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:LED-5</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:LED-5</pv_name>
       <x>307</x>
       <y>100</y>
       <width>20</width>
@@ -130,7 +130,7 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-1</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-1</pv_name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -147,7 +147,7 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-1</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-1</pv_name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -164,7 +164,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TextUpdate</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-1</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-1</pv_name>
       <x>341</x>
       <y>0</y>
       <width>38</width>
@@ -185,7 +185,7 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-2</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-2</pv_name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -202,7 +202,7 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-2</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-2</pv_name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -219,7 +219,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TextUpdate</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-2</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-2</pv_name>
       <x>341</x>
       <y>25</y>
       <width>38</width>
@@ -240,7 +240,7 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-3</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-3</pv_name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -257,7 +257,7 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-3</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-3</pv_name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -274,7 +274,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TextUpdate</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-3</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-3</pv_name>
       <x>341</x>
       <y>50</y>
       <width>38</width>
@@ -295,7 +295,7 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-4</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-4</pv_name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -312,7 +312,7 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-4</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-4</pv_name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -329,7 +329,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TextUpdate</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-4</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-4</pv_name>
       <x>341</x>
       <y>75</y>
       <width>38</width>
@@ -350,7 +350,7 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-5</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-5</pv_name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -367,7 +367,7 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-5</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-5</pv_name>
       <actions>
         <action type="write_pv">
           <pv_name>$(pv_name)</pv_name>
@@ -384,7 +384,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TextUpdate</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:BUTTON-PANEL-5</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-5</pv_name>
       <x>341</x>
       <y>100</y>
       <width>38</width>
@@ -413,7 +413,7 @@
     </widget>
     <widget type="combo" version="2.0.0">
       <name>ComboBox</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:COMBO-BOX-1</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:COMBO-BOX-1</pv_name>
       <x>255</x>
       <y>0</y>
       <width>125</width>
@@ -434,7 +434,7 @@
     </widget>
     <widget type="combo" version="2.0.0">
       <name>ComboBox</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:COMBO-BOX-2</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:COMBO-BOX-2</pv_name>
       <x>255</x>
       <y>25</y>
       <width>125</width>
@@ -455,7 +455,7 @@
     </widget>
     <widget type="combo" version="2.0.0">
       <name>ComboBox</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:COMBO-BOX-3</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:COMBO-BOX-3</pv_name>
       <x>255</x>
       <y>50</y>
       <width>125</width>
@@ -476,7 +476,7 @@
     </widget>
     <widget type="combo" version="2.0.0">
       <name>ComboBox</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:COMBO-BOX-4</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:COMBO-BOX-4</pv_name>
       <x>255</x>
       <y>75</y>
       <width>125</width>
@@ -497,7 +497,7 @@
     </widget>
     <widget type="combo" version="2.0.0">
       <name>ComboBox</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:COMBO-BOX-5</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:COMBO-BOX-5</pv_name>
       <x>255</x>
       <y>100</y>
       <width>125</width>
@@ -518,7 +518,7 @@
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
       <name>Label</name>
-      <text>larm unavailable</text>
+      <text>No Alarms On Device Refs</text>
       <x>0</x>
       <y>0</y>
       <width>250</width>
@@ -533,7 +533,7 @@
           <description>Open Display</description>
         </action>
       </actions>
-      <text>larm unavailable</text>
+      <text>No Alarms On Device Refs</text>
       <x>255</x>
       <y>0</y>
       <width>125</width>
@@ -558,7 +558,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TextUpdate</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:TEXT-READ-1</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:TEXT-READ-1</pv_name>
       <x>255</x>
       <y>0</y>
       <width>125</width>
@@ -579,7 +579,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TextUpdate</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:TEXT-READ-2</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:TEXT-READ-2</pv_name>
       <x>255</x>
       <y>25</y>
       <width>125</width>
@@ -600,7 +600,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TextUpdate</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:TEXT-READ-3</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:TEXT-READ-3</pv_name>
       <x>255</x>
       <y>50</y>
       <width>125</width>
@@ -621,7 +621,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TextUpdate</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:TEXT-READ-4</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:TEXT-READ-4</pv_name>
       <x>255</x>
       <y>75</y>
       <width>125</width>
@@ -642,7 +642,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TextUpdate</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:TEXT-READ-5</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:TEXT-READ-5</pv_name>
       <x>255</x>
       <y>100</y>
       <width>125</width>
@@ -671,7 +671,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>TextEntry</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:TEXT-WRITE-1</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:TEXT-WRITE-1</pv_name>
       <x>255</x>
       <y>0</y>
       <width>125</width>
@@ -688,7 +688,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>TextEntry</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:TEXT-WRITE-2</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:TEXT-WRITE-2</pv_name>
       <x>255</x>
       <y>25</y>
       <width>125</width>
@@ -705,7 +705,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>TextEntry</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:TEXT-WRITE-3</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:TEXT-WRITE-3</pv_name>
       <x>255</x>
       <y>50</y>
       <width>125</width>
@@ -722,7 +722,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>TextEntry</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:TEXT-WRITE-4</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:TEXT-WRITE-4</pv_name>
       <x>255</x>
       <y>75</y>
       <width>125</width>
@@ -739,7 +739,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>TextEntry</name>
-      <pv_name>PHOEBUS-TEST-PREFIX:PVI_GENERATED:TEXT-WRITE-5</pv_name>
+      <pv_name>PREFIX:PVI_GENERATED:TEXT-WRITE-5</pv_name>
       <x>255</x>
       <y>100</y>
       <width>125</width>

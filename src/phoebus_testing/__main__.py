@@ -7,17 +7,21 @@ from phoebus_testing.generate_manual_records import (
 from phoebus_testing.generate_pvi_records import (
     generate_records_for_pvi_generated_screen,
 )
-
-builder.SetDeviceName(PREFIX)
+from phoebus_testing.generate_shutter_records import generate_shutter_screens
+from phoebus_testing.pvi_wrapper import Pvi
 
 
 def run_softioc():
+    Pvi.configure_pvi("bobfiles/pvi", True)
+    builder.SetDeviceName(PREFIX)
+    dispatcher = asyncio_dispatcher.AsyncioDispatcher()
     generate_records_for_pvi_generated_screen()
     generate_records_for_manually_created_screen()
-    dispatcher = asyncio_dispatcher.AsyncioDispatcher()
+    generate_shutter_screens()
+    Pvi.create_pvi_records(PREFIX)
+
     builder.LoadDatabase()
     softioc.iocInit(dispatcher)
-
     softioc.interactive_ioc()
 
 

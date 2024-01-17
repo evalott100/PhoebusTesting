@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Main</name>
+  <width>361</width>
+  <height>83</height>
+  <grid_color>
+    <color red="127" green="127" blue="127">
+    </color>
+  </grid_color>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
+    <width>361</width>
+    <height>83</height>
+    <group_name>$(DESC)</group_name>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>PREFIX:MOTOR_$(M):VAL</pv_name>
+    <x>120</x>
+    <y>10</y>
+    <width>190</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>PREFIX:MOTOR_$(M):RBV</pv_name>
+    <x>120</x>
+    <y>40</y>
+    <width>190</width>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>PREFIX:MOTOR_$(M):HIHI</pv_name>
+    <x>320</x>
+    <y>40</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_1</name>
+    <pv_name>PREFIX:MOTOR_$(M):LOLO</pv_name>
+    <x>90</x>
+    <y>40</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <pv_name>PREFIX:MOTOR_$(M):TWF</pv_name>
+    <text>+</text>
+    <x>320</x>
+    <y>10</y>
+    <width>20</width>
+    <height>20</height>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_1</name>
+    <pv_name>PREFIX:MOTOR_$(M):TWR</pv_name>
+    <text>-</text>
+    <x>90</x>
+    <y>10</y>
+    <width>20</width>
+    <height>20</height>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_2</name>
+    <pv_name>PREFIX:MOTOR_$(M):STOP</pv_name>
+    <text>◼</text>
+    <x>60</x>
+    <y>10</y>
+    <width>20</width>
+    <height>20</height>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_3</name>
+    <actions>
+      <action type="open_display">
+        <file>../pvi/MOTOR.bob</file>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <x>10</x>
+    <y>10</y>
+    <width>40</width>
+    <height>20</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>PREFIX:MOTOR_$(M):TWV</pv_name>
+    <x>10</x>
+    <y>40</y>
+    <width>70</width>
+  </widget>
+</display>
