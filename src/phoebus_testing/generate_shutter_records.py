@@ -3,9 +3,7 @@ The screen shutter.bob is manually created in phoebus. Motor control is generate
 """
 
 import re
-from dataclasses import dataclass
 from enum import Enum
-from typing import Callable, Dict, Tuple
 
 from pvi.device import (
     LED,
@@ -14,10 +12,10 @@ from pvi.device import (
     SignalRW,
     TextRead,
     TextWrite,
-    WidgetType,
 )
 from softioc import builder
 
+from phoebus_testing import WidgetRecord
 from phoebus_testing.pvi_wrapper import Pvi
 
 NUMBER_OF_MOTORS = 8
@@ -34,16 +32,6 @@ def generate_manual_motor_records():
         builder.longOut(f"MOTOR_{motor_number}:LOLO")
         builder.longOut(f"MOTOR_{motor_number}:HIHI")
         builder.longOut(f"MOTOR_{motor_number}:TWV")
-
-
-@dataclass
-class WidgetRecord:
-    name: str
-    widget: WidgetType
-    widget_kwargs: Dict
-    record_creation_function: Callable
-    record_creation_function_args: Tuple
-    record_creation_function_kwargs: Dict
 
 
 class MotorScreenGroup(Enum):

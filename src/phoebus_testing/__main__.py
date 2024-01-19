@@ -4,7 +4,7 @@ from phoebus_testing import PREFIX
 from phoebus_testing.generate_manual_records import (
     generate_records_for_manually_created_screen,
 )
-from phoebus_testing.generate_pvi_records import (
+from phoebus_testing.generate_pvi_example_records import (
     generate_records_for_pvi_generated_screen,
 )
 from phoebus_testing.generate_shutter_records import generate_shutter_screens

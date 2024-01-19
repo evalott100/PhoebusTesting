@@ -117,7 +117,7 @@
     <name> BUTTON_ PANEL</name>
     <x>5</x>
     <y>191</y>
-    <width>415</width>
+    <width>372</width>
     <height>156</height>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
@@ -162,19 +162,6 @@
       <height>20</height>
       <tooltip>$(actions)</tooltip>
     </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>TextUpdate</name>
-      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-1</pv_name>
-      <x>341</x>
-      <y>0</y>
-      <width>38</width>
-      <height>20</height>
-      <font>
-        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>MINOR</text>
@@ -216,19 +203,6 @@
       <width>38</width>
       <height>20</height>
       <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>TextUpdate</name>
-      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-2</pv_name>
-      <x>341</x>
-      <y>25</y>
-      <width>38</width>
-      <height>20</height>
-      <font>
-        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
@@ -272,19 +246,6 @@
       <height>20</height>
       <tooltip>$(actions)</tooltip>
     </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>TextUpdate</name>
-      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-3</pv_name>
-      <x>341</x>
-      <y>50</y>
-      <width>38</width>
-      <height>20</height>
-      <font>
-        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>CRITICAL</text>
@@ -327,19 +288,6 @@
       <height>20</height>
       <tooltip>$(actions)</tooltip>
     </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>TextUpdate</name>
-      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-4</pv_name>
-      <x>341</x>
-      <y>75</y>
-      <width>38</width>
-      <height>20</height>
-      <font>
-        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-    </widget>
     <widget type="label" version="2.0.0">
       <name>Label</name>
       <text>DISCONNECTED</text>
@@ -381,19 +329,6 @@
       <width>38</width>
       <height>20</height>
       <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>TextUpdate</name>
-      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-5</pv_name>
-      <x>341</x>
-      <y>100</y>
-      <width>38</width>
-      <height>20</height>
-      <font>
-        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
