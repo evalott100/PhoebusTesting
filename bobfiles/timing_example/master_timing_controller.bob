@@ -32,8 +32,21 @@
     <width>129</width>
     <height>513</height>
     <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_22</name>
+      <text>MB Enabled</text>
+      <x>3</x>
+      <y>82</y>
+      <width>88</width>
+      <height>21</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+    </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_9</name>
+      <pv_name>pva://PREFIX:MTG:STATUS:DESC</pv_name>
       <x>2</x>
       <y>8</y>
       <width>90</width>
@@ -53,6 +66,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_1</name>
+      <pv_name>pva://PREFIX:MTG:STATUS:BUSY</pv_name>
       <x>74</x>
       <y>38</y>
       <width>17</width>
@@ -60,6 +74,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_2</name>
+      <pv_name>pva://PREFIX:MTG:STATUS:LINAC-PRE</pv_name>
       <x>74</x>
       <y>104</y>
       <width>17</width>
@@ -67,6 +82,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_6</name>
+      <pv_name>pva://PREFIX:MTG:STATUS:MB-ENABLED</pv_name>
       <x>74</x>
       <y>82</y>
       <width>17</width>
@@ -74,6 +90,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_7</name>
+      <pv_name>pva://PREFIX:MTG:STATUS:TOP-UP</pv_name>
       <x>74</x>
       <y>127</y>
       <width>17</width>
@@ -81,6 +98,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_8</name>
+      <pv_name>pva://PREFIX:MTG:STATUS:SB-ENABLED</pv_name>
       <x>74</x>
       <y>60</y>
       <width>17</width>
@@ -92,18 +110,6 @@
       <x>3</x>
       <y>61</y>
       <width>71</width>
-      <height>21</height>
-      <font>
-        <font family="Liberation Sans" style="REGULAR" size="12.0">
-        </font>
-      </font>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_22</name>
-      <text>MB Enabled</text>
-      <x>3</x>
-      <y>82</y>
-      <width>88</width>
       <height>21</height>
       <font>
         <font family="Liberation Sans" style="REGULAR" size="12.0">
@@ -148,6 +154,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_9</name>
+      <pv_name>pva://PREFIX:MTG:STATUS:SOFT-SYNC</pv_name>
       <x>74</x>
       <y>165</y>
       <width>17</width>
@@ -167,6 +174,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_10</name>
+      <pv_name>pva://PREFIX:MTG:STATUS:TIMESTAMP</pv_name>
       <x>75</x>
       <y>189</y>
       <width>17</width>
@@ -186,7 +194,7 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_28</name>
-      <text>Full Aborted</text>
+      <text>Fill Aborted</text>
       <x>3</x>
       <y>235</y>
       <width>71</width>
@@ -198,6 +206,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_11</name>
+      <pv_name>pva://PREFIX:MTG:STATUS:COINCIDENCE</pv_name>
       <x>75</x>
       <y>210</y>
       <width>17</width>
@@ -205,6 +214,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_12</name>
+      <pv_name>pva://PREFIX:MTG:STATUS:FILL-ABORTED</pv_name>
       <x>74</x>
       <y>235</y>
       <width>17</width>
@@ -224,6 +234,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_14</name>
+      <pv_name>pva://PREFIX:MTG:STATUS:MACHINE-TIME</pv_name>
       <x>3</x>
       <y>280</y>
       <width>90</width>
@@ -253,6 +264,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_15</name>
+      <pv_name>pva://PREFIX:MTG:STATUS:GUN</pv_name>
       <x>44</x>
       <y>344</y>
       <width>50</width>
@@ -271,6 +283,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_16</name>
+      <pv_name>pva://PREFIX:MTG:STATUS:AC</pv_name>
       <x>44</x>
       <y>372</y>
       <width>50</width>
@@ -306,6 +319,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_17</name>
+      <pv_name>pva://PREFIX:MTG:STATUS:STORED-CURRENT</pv_name>
       <y>433</y>
       <width>90</width>
       <height>25</height>
@@ -320,6 +334,7 @@
     <transparent>true</transparent>
     <widget type="choice" version="2.0.0">
       <name>Choice Button_1</name>
+      <pv_name>pva://PREFIX:MTG:FILL-MODE:START</pv_name>
       <y>35</y>
       <width>170</width>
       <height>40</height>
@@ -330,6 +345,7 @@
     </widget>
     <widget type="combo" version="2.0.0">
       <name>Combo Box_7</name>
+      <pv_name>pva://PREFIX:MTG:FILL-MODE:MODE</pv_name>
       <x>50</x>
       <width>120</width>
     </widget>
@@ -342,6 +358,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Entry</name>
+      <pv_name>pva://PREFIX:MTG:FILL-MODE:TARGET-CURRENT</pv_name>
       <x>98</x>
       <y>80</y>
       <width>70</width>
@@ -349,6 +366,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Entry_1</name>
+      <pv_name>pva://PREFIX:MTG:FILL-MODE:DELAY-GAP</pv_name>
       <x>98</x>
       <y>110</y>
       <width>70</width>
@@ -356,6 +374,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Entry_2</name>
+      <pv_name>pva://PREFIX:MTG:FILL-MODE:REPEAT</pv_name>
       <x>98</x>
       <y>170</y>
       <width>70</width>
@@ -363,6 +382,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Entry_4</name>
+      <pv_name>pva://PREFIX:MTG:FILL-MODE:MB-WIDTH-ADJUST</pv_name>
       <x>98</x>
       <y>200</y>
       <width>70</width>
@@ -370,6 +390,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Entry_6</name>
+      <pv_name>pva://PREFIX:MTG:FILL-MODE:WIDTH-BKTS</pv_name>
       <x>98</x>
       <y>140</y>
       <width>70</width>
@@ -377,6 +398,7 @@
     </widget>
     <widget type="combo" version="2.0.0">
       <name>Combo Box_8</name>
+      <pv_name>pva://PREFIX:MTG:FILL-MODE:PHASE-SHIFT</pv_name>
       <x>90</x>
       <y>230</y>
       <width>78</width>
@@ -405,7 +427,6 @@
     <widget type="label" version="2.0.0">
       <name>Label_16</name>
       <text>Repeats (cycles)</text>
-      <x>-18</x>
       <y>175</y>
       <height>25</height>
       <font>
@@ -416,7 +437,6 @@
     <widget type="label" version="2.0.0">
       <name>Label_17</name>
       <text>Phase shift</text>
-      <x>-18</x>
       <y>235</y>
       <height>25</height>
       <font>
@@ -437,7 +457,6 @@
     <widget type="label" version="2.0.0">
       <name>Label_19</name>
       <text>Width/Bkts</text>
-      <x>-18</x>
       <y>145</y>
       <height>25</height>
       <font>
@@ -455,12 +474,14 @@
     <transparent>true</transparent>
     <widget type="led" version="2.0.0">
       <name>LED</name>
+      <pv_name>pva://PREFIX:MTG:AUTO-STOP-FILL:LATCH</pv_name>
       <y>5</y>
       <width>17</width>
       <height>17</height>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Action Button_3</name>
+      <pv_name>pva://PREFIX:MTG:AUTO-STOP-FILL:CLEAR</pv_name>
       <text>Clear Latch</text>
       <x>17</x>
       <y>2</y>
@@ -474,6 +495,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_11</name>
+      <pv_name>pva://PREFIX:MTG:AUTO-STOP-FILL:REASON</pv_name>
       <x>85</x>
       <y>2</y>
       <width>95</width>
@@ -489,6 +511,7 @@
     <transparent>true</transparent>
     <widget type="textentry" version="3.0.0">
       <name>Text Entry_3</name>
+      <pv_name>pva://PREFIX:MTG:SOCS-LIMIT:LIMIT</pv_name>
       <x>132</x>
       <y>2</y>
       <width>47</width>
@@ -496,6 +519,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_8</name>
+      <pv_name>pva://PREFIX:MTG:SOCS-LIMIT:SOCS</pv_name>
       <x>85</x>
       <y>2</y>
       <width>47</width>
@@ -503,12 +527,14 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_3</name>
+      <pv_name>pva://PREFIX:MTG:SOCS-LIMIT:LATCH</pv_name>
       <y>5</y>
       <width>17</width>
       <height>17</height>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Action Button_9</name>
+      <pv_name>pva://PREFIX:MTG:SOCS-LIMIT:CLEAR</pv_name>
       <text>Clear Latch</text>
       <x>17</x>
       <y>2</y>
@@ -530,12 +556,14 @@
     <transparent>true</transparent>
     <widget type="led" version="2.0.0">
       <name>LED_4</name>
+      <pv_name>pva://PREFIX:MTG:CHARGE-LIMIT:LATCH</pv_name>
       <y>5</y>
       <width>17</width>
       <height>17</height>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Action Button_10</name>
+      <pv_name>pva://PREFIX:MTG:CHARGE-LIMIT:CLEAR</pv_name>
       <text>Clear Latch</text>
       <x>17</x>
       <y>2</y>
@@ -549,6 +577,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_12</name>
+      <pv_name>pva://PREFIX:MTG:CHARGE-LIMIT:MAX-CHARGE</pv_name>
       <x>85</x>
       <y>2</y>
       <width>47</width>
@@ -556,6 +585,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Entry_5</name>
+      <pv_name>pva://PREFIX:MTG:CHARGE-LIMIT:LIMIT</pv_name>
       <x>132</x>
       <y>2</y>
       <width>47</width>
@@ -580,6 +610,7 @@
     </widget>
     <widget type="combo" version="2.0.0">
       <name>Combo Box_4</name>
+      <pv_name>pva://PREFIX:MTG:LB-DI-TRG</pv_name>
       <x>2</x>
       <y>30</y>
       <width>113</width>
@@ -587,6 +618,7 @@
     </widget>
     <widget type="combo" version="2.0.0">
       <name>Combo Box_5</name>
+      <pv_name>pva://PREFIX:MTG:BS-DI-TRG</pv_name>
       <x>2</x>
       <y>87</y>
       <width>113</width>
@@ -610,6 +642,7 @@
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button</name>
+      <pv_name>pva://PREFIX:MTG:SR-DI-TRG</pv_name>
       <x>2</x>
       <y>150</y>
       <width>113</width>
@@ -683,6 +716,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update</name>
+      <pv_name>pva://PREFIX:MTG:BR-PRE-INJ</pv_name>
       <x>2</x>
       <y>35</y>
       <width>113</width>
@@ -690,6 +724,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_1</name>
+      <pv_name>pva://PREFIX:MTG:BR-PRE-EXTR</pv_name>
       <x>2</x>
       <y>82</y>
       <width>113</width>
@@ -697,6 +732,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_2</name>
+      <pv_name>pva://PREFIX:MTG:SR-PRE-INJ</pv_name>
       <x>2</x>
       <y>128</y>
       <width>113</width>
@@ -704,6 +740,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_3</name>
+      <pv_name>pva://PREFIX:MTG:SR-INJ-SEPT</pv_name>
       <x>2</x>
       <y>173</y>
       <width>113</width>
@@ -719,6 +756,7 @@
     <transparent>true</transparent>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_3</name>
+      <pv_name>pva://PREFIX:MTG:CHARGE-LIMIT:ENABLE</pv_name>
       <y>13</y>
       <width>86</width>
       <height>20</height>
@@ -735,6 +773,7 @@
     <transparent>true</transparent>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_4</name>
+      <pv_name>pva://PREFIX:MTG:SOCS-LIMIT:ENABLE</pv_name>
       <y>15</y>
       <width>86</width>
       <height>20</height>
@@ -751,6 +790,7 @@
     <transparent>true</transparent>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_5</name>
+      <pv_name>pva://PREFIX:MTG:AUTO-STOP-FILL:ENABLE</pv_name>
       <y>12</y>
       <width>86</width>
       <height>20</height>
@@ -808,6 +848,7 @@
     </widget>
     <widget type="combo" version="2.0.0">
       <name>Combo Box</name>
+      <pv_name>pva://PREFIX:MTG:BR-PRE-INJ</pv_name>
       <x>2</x>
       <y>35</y>
       <width>113</width>
@@ -815,6 +856,7 @@
     </widget>
     <widget type="combo" version="2.0.0">
       <name>Combo Box_1</name>
+      <pv_name>pva://PREFIX:MTG:BR-PRE-EXTR</pv_name>
       <x>2</x>
       <y>82</y>
       <width>113</width>
@@ -822,6 +864,7 @@
     </widget>
     <widget type="combo" version="2.0.0">
       <name>Combo Box_2</name>
+      <pv_name>pva://PREFIX:MTG:SR-PRE-INJ</pv_name>
       <x>2</x>
       <y>128</y>
       <width>113</width>
@@ -829,6 +872,7 @@
     </widget>
     <widget type="combo" version="2.0.0">
       <name>Combo Box_3</name>
+      <pv_name>pva://PREFIX:MTG:SR-INJ-SEPT</pv_name>
       <x>2</x>
       <y>173</y>
       <width>113</width>
@@ -837,6 +881,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_10</name>
+    <pv_name>pva://PREFIX:MTG:MPS:TS</pv_name>
     <x>210</x>
     <y>337</y>
     <width>133</width>

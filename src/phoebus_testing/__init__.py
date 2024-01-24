@@ -46,7 +46,7 @@ class WidgetRecord:
 
 @dataclass
 class Record:
-    name: str
+    pv_name: str
     record_creation_function: Callable
     record_creation_function_args: Tuple
     record_creation_function_kwargs: Dict
