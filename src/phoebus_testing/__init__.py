@@ -1,3 +1,4 @@
+import re
 from dataclasses import dataclass
 from enum import Enum
 from typing import Any, Callable, Dict, Tuple
@@ -24,6 +25,11 @@ EXAMPLE_IMAGE = np.arange(0, 737280, 1, np.uint8)  # 1080 * 720 flattened
 EXAMPLE_WAVEFORM = np.sin(np.linspace(0, 2 * np.pi, 100))
 
 
+def name_to_pv(name: str):
+    words = re.findall(r"[A-Z]?[a-z]+|[A-Z]{2,}(?=[A-Z][a-z]|\d|\W|$)|\d+", name)
+    return "-".join(map(str.lower, words)).upper()
+
+
 @dataclass
 class WidgetRecord:
     """
@@ -36,6 +42,15 @@ class WidgetRecord:
     record_creation_function: Callable
     record_creation_function_args: Tuple
     record_creation_function_kwargs: Dict
+
+
+@dataclass
+class Record:
+    name: str
+    record_creation_function: Callable
+    record_creation_function_args: Tuple
+    record_creation_function_kwargs: Dict
+    severity: AlarmSeverities = AlarmSeverities.NORMAL
 
 
 def cycle_severities(n: int, prefix: str = ""):
