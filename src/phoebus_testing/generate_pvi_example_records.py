@@ -11,6 +11,7 @@ from pvi.device import (
     ButtonPanel,
     ComboBox,
     DeviceRef,
+    SignalR,
     SignalRW,
     TextRead,
     TextWrite,
@@ -20,6 +21,7 @@ from softioc import builder
 from phoebus_testing import (
     ROW_LENGTH,
     AlarmSeverities,
+    SignalRWidgets,
     WidgetRecord,
     cycle_severities,
     set_alarm,
@@ -29,21 +31,21 @@ from phoebus_testing.pvi_wrapper import Pvi
 
 # It would be nice to add these in the future
 class PviGroupNotImplemented(Enum):
-    _ARRAY_TRACE = "ARRAY-TRACE"
-    _ARRAY_WRITE = "ARRAY-WRITE"
-    _BIT_FIELD = "BIT-FIELD"
-    _CHECK_BOX = "CHECK-BOX"
-    _IMAGE_READ = "IMAGE-READ"
-    _PROGRESS_BAR = "PROGRESS-BAR"
+    ARRAY_TRACE = "ARRAY-TRACE"
+    ARRAY_WRITE = "ARRAY-WRITE"
+    BIT_FIELD = "BIT-FIELD"
+    CHECK_BOX = "CHECK-BOX"
+    IMAGE_READ = "IMAGE-READ"
+    PROGRESS_BAR = "PROGRESS-BAR"
 
 
 class PviGroup(Enum):
-    _LED = "LED"
-    _BUTTON_PANEL = "BUTTON-PANEL"
-    _COMBO_BOX = "COMBO-BOX"
-    _DEVICE_REF = "DEVICE-REF"
-    _TEXT_READ = "TEXT-READ"
-    _TEXT_WRITE = "TEXT-WRITE"
+    LED = "LED"
+    BUTTON_PANEL = "BUTTON-PANEL"
+    COMBO_BOX = "COMBO-BOX"
+    DEVICE_REF = "DEVICE-REF"
+    TEXT_READ = "TEXT-READ"
+    TEXT_WRITE = "TEXT-WRITE"
 
 
 PVI_WIDGET_RECORDS = [
@@ -58,7 +60,7 @@ PVI_WIDGET_RECORDS = [
     WidgetRecord(
         "ButtonPanel",
         widget=ButtonPanel,
-        widget_kwargs={"actions": dict(On=1, Off=0)},
+        widget_kwargs={"actions": dict(On="1", Off="0")},
         record_creation_function=builder.boolIn,
         record_creation_function_args=(),
         record_creation_function_kwargs={
@@ -129,5 +131,8 @@ def generate_records_for_pvi_generated_screen():
                 )
                 set_alarm(record, severity)
 
-            component = SignalRW(severity.name, pv_name, widget=widget)
+            if widget_record.widget in SignalRWidgets:
+                component = SignalR(name=severity.name, pv=pv_name, widget=widget)
+            else:
+                component = SignalRW(name=severity.name, pv=pv_name, widget=widget)
             Pvi.add_pvi_info(pv_name, pvi_group, component)

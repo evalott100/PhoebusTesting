@@ -8,13 +8,14 @@ from pvi.device import (
     LED,
     ButtonPanel,
     ComboBox,
+    SignalR,
     SignalRW,
     TextRead,
     TextWrite,
 )
 from softioc import builder
 
-from phoebus_testing import WidgetRecord, name_to_pv
+from phoebus_testing import SignalRWidgets, WidgetRecord, name_to_pv
 from phoebus_testing.pvi_wrapper import Pvi
 
 NUMBER_OF_MOTORS = 8
@@ -103,7 +104,7 @@ MOTOR_WIDGET_RECORDS = [
         ),
         WidgetRecord("UserOffset", TextWrite, {}, builder.aOut, (), {}),
         WidgetRecord(
-            "Set/Use",
+            "SetUse",
             ComboBox,
             {
                 "choices": ["Set", "Use"],
@@ -225,12 +226,19 @@ def generate_motor_settings_screen():
 
             generic_pv_name = f"MOTOR_$(M):{group.name}:{widget_name_in_pv_format}"
             pv_name_no_number = f"MOTOR:{group.name}:{widget_name_in_pv_format}"
-            component = SignalRW(
-                widget_record.name,
-                generic_pv_name,
-                widget=widget_record.widget(**widget_record.widget_kwargs),
-            )
-            Pvi.add_pvi_info(pv_name_no_number, group, component)
+            if widget_record.widget in SignalRWidgets:
+                component = SignalR(
+                    name=widget_record.name,
+                    pv=generic_pv_name,
+                    widget=widget_record.widget(**widget_record.widget_kwargs),
+                )
+            else:
+                component = SignalRW(
+                    name=widget_record.name,
+                    pv=generic_pv_name,
+                    widget=widget_record.widget(**widget_record.widget_kwargs),
+                )
+                Pvi.add_pvi_info(pv_name_no_number, group, component)
 
 
 def generate_manual_temperature_records():
@@ -291,11 +299,18 @@ def generate_temperature_settings_screen():
 
             generic_pv_name = f"TEMP_$(T):{group.name}:{widget_name_in_pv_format}"
             pv_name_no_number = f"TEMP:{group.name}:{widget_name_in_pv_format}"
-            component = SignalRW(
-                widget_record.name,
-                generic_pv_name,
-                widget=widget_record.widget(**widget_record.widget_kwargs),
-            )
+            if widget_record.widget in SignalRWidgets:
+                component = SignalR(
+                    name=widget_record.name,
+                    pv=generic_pv_name,
+                    widget=widget_record.widget(**widget_record.widget_kwargs),
+                )
+            else:
+                component = SignalRW(
+                    name=widget_record.name,
+                    pv=generic_pv_name,
+                    widget=widget_record.widget(**widget_record.widget_kwargs),
+                )
             Pvi.add_pvi_info(pv_name_no_number, group, component)
 
 

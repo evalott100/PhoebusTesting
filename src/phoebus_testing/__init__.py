@@ -4,10 +4,13 @@ from enum import Enum
 from typing import Any, Callable, Dict, Tuple
 
 import numpy as np
-from pvi.device import WidgetType
+from pvi.device import LED, TextRead, WidgetType
 from softioc import alarm
 
 PREFIX = "PREFIX"
+
+# Have to use a signalR for a TextRead
+SignalRWidgets = [TextRead, LED]
 
 
 # EPICS expects int for alarm severity (.SEVR)

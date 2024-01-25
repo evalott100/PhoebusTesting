@@ -46,9 +46,15 @@ class Pvi:
             children: Tree = []
 
             for group, components in v.items():
-                children.append(Group(group.name, Grid(), components))
+                children.append(
+                    Group(
+                        name="".join(x.capitalize() for x in group.name.split("_")),
+                        layout=Grid(labelled=False),
+                        children=components,
+                    )
+                )
 
-            device = Device(block_name, children=children)
+            device = Device(label=block_name, children=children)
             devices.append(device)
 
         formatter = DLSFormatter(label_width=250)
