@@ -1,7 +1,7 @@
 <display version="2.0.0">
   <name>Display</name>
   <x>0</x>
-  <y>0</y>
+  <y use_class="true">0</y>
   <width>1007</width>
   <height>832</height>
   <grid_step_x>4</grid_step_x>
@@ -34,14 +34,14 @@
     <transparent>true</transparent>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PREFIX:MOTOR_$(M):ELOSS:ELOSS-CLEAR</pv_name>
       <actions>
         <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>PREFIX:MOTOR_$(M):ELOSS:ELOSS-CLEAR</pv_name>
           <value>1</value>
           <description>$(name)</description>
         </action>
       </actions>
+      <pv_name>SignalX</pv_name>
       <text>Go</text>
       <x>0</x>
       <y>0</y>
@@ -103,14 +103,14 @@
     <transparent>true</transparent>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PREFIX:MOTOR_$(M):KILL:KILL</pv_name>
       <actions>
         <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>PREFIX:MOTOR_$(M):KILL:KILL</pv_name>
           <value>1</value>
           <description>$(name)</description>
         </action>
       </actions>
+      <pv_name>SignalX</pv_name>
       <text>Go</text>
       <x>0</x>
       <y>0</y>
@@ -128,14 +128,14 @@
     <transparent>true</transparent>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PREFIX:MOTOR_$(M):SYNC_VAL_RBV:SYNC-VAL-RBV</pv_name>
       <actions>
         <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>PREFIX:MOTOR_$(M):SYNC_VAL_RBV:SYNC-VAL-RBV</pv_name>
           <value>1</value>
           <description>$(name)</description>
         </action>
       </actions>
+      <pv_name>SignalX</pv_name>
       <text>Go</text>
       <x>0</x>
       <y>0</y>
@@ -153,14 +153,14 @@
     <transparent>true</transparent>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PREFIX:MOTOR_$(M):COMMANDS:HOME-FORWARD</pv_name>
       <actions>
         <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>PREFIX:MOTOR_$(M):COMMANDS:HOME-FORWARD</pv_name>
           <value>1</value>
           <description>$(name)</description>
         </action>
       </actions>
+      <pv_name>SignalX</pv_name>
       <text>Go</text>
       <x>0</x>
       <y>0</y>
@@ -170,14 +170,14 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PREFIX:MOTOR_$(M):COMMANDS:HOME-REVERSE</pv_name>
       <actions>
         <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>PREFIX:MOTOR_$(M):COMMANDS:HOME-REVERSE</pv_name>
           <value>1</value>
           <description>$(name)</description>
         </action>
       </actions>
+      <pv_name>SignalX</pv_name>
       <text>Go</text>
       <x>0</x>
       <y>25</y>
@@ -187,14 +187,14 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PREFIX:MOTOR_$(M):COMMANDS:JOG-FORWARD</pv_name>
       <actions>
         <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>PREFIX:MOTOR_$(M):COMMANDS:JOG-FORWARD</pv_name>
           <value>1</value>
           <description>$(name)</description>
         </action>
       </actions>
+      <pv_name>SignalX</pv_name>
       <text>Go</text>
       <x>0</x>
       <y>50</y>
@@ -204,14 +204,14 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PREFIX:MOTOR_$(M):COMMANDS:JOG-REVERSE</pv_name>
       <actions>
         <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>PREFIX:MOTOR_$(M):COMMANDS:JOG-REVERSE</pv_name>
           <value>1</value>
           <description>$(name)</description>
         </action>
       </actions>
+      <pv_name>SignalX</pv_name>
       <text>Go</text>
       <x>0</x>
       <y>75</y>
@@ -221,14 +221,14 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PREFIX:MOTOR_$(M):COMMANDS:TWEAK-FORWARD</pv_name>
       <actions>
         <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>PREFIX:MOTOR_$(M):COMMANDS:TWEAK-FORWARD</pv_name>
           <value>1</value>
           <description>$(name)</description>
         </action>
       </actions>
+      <pv_name>SignalX</pv_name>
       <text>Go</text>
       <x>0</x>
       <y>100</y>
@@ -238,14 +238,14 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PREFIX:MOTOR_$(M):COMMANDS:TWEAK-REVERSE</pv_name>
       <actions>
         <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>PREFIX:MOTOR_$(M):COMMANDS:TWEAK-REVERSE</pv_name>
           <value>1</value>
           <description>$(name)</description>
         </action>
       </actions>
+      <pv_name>SignalX</pv_name>
       <text>Go</text>
       <x>0</x>
       <y>125</y>

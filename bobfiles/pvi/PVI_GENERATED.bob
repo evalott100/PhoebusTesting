@@ -1,8 +1,8 @@
 <display version="2.0.0">
   <name>Display</name>
   <x>0</x>
-  <y>0</y>
-  <width>506</width>
+  <y use_class="true">0</y>
+  <width>1007</width>
   <height>896</height>
   <grid_step_x>4</grid_step_x>
   <grid_step_y>4</grid_step_y>
@@ -12,7 +12,7 @@
     <text>PVI_GENERATED - PREFIX:</text>
     <x use_class="true">0</x>
     <y use_class="true">0</y>
-    <width>506</width>
+    <width>1007</width>
     <height>25</height>
     <font use_class="true">
       <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
@@ -82,14 +82,14 @@
     <transparent>true</transparent>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-1</pv_name>
       <actions>
         <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-1</pv_name>
           <value>1</value>
           <description>$(name)</description>
         </action>
       </actions>
+      <pv_name>SignalX</pv_name>
       <text>On</text>
       <x>0</x>
       <y>0</y>
@@ -99,14 +99,14 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-1</pv_name>
       <actions>
         <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-1</pv_name>
           <value>0</value>
           <description>$(name)</description>
         </action>
       </actions>
+      <pv_name>SignalX</pv_name>
       <text>Off</text>
       <x>155</x>
       <y>0</y>
@@ -116,14 +116,14 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-2</pv_name>
       <actions>
         <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-2</pv_name>
           <value>1</value>
           <description>$(name)</description>
         </action>
       </actions>
+      <pv_name>SignalX</pv_name>
       <text>On</text>
       <x>0</x>
       <y>25</y>
@@ -133,14 +133,14 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-2</pv_name>
       <actions>
         <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-2</pv_name>
           <value>0</value>
           <description>$(name)</description>
         </action>
       </actions>
+      <pv_name>SignalX</pv_name>
       <text>Off</text>
       <x>155</x>
       <y>25</y>
@@ -150,14 +150,14 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-3</pv_name>
       <actions>
         <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-3</pv_name>
           <value>1</value>
           <description>$(name)</description>
         </action>
       </actions>
+      <pv_name>SignalX</pv_name>
       <text>On</text>
       <x>0</x>
       <y>50</y>
@@ -167,14 +167,14 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-3</pv_name>
       <actions>
         <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-3</pv_name>
           <value>0</value>
           <description>$(name)</description>
         </action>
       </actions>
+      <pv_name>SignalX</pv_name>
       <text>Off</text>
       <x>155</x>
       <y>50</y>
@@ -184,14 +184,14 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-4</pv_name>
       <actions>
         <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-4</pv_name>
           <value>1</value>
           <description>$(name)</description>
         </action>
       </actions>
+      <pv_name>SignalX</pv_name>
       <text>On</text>
       <x>0</x>
       <y>75</y>
@@ -201,14 +201,14 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-4</pv_name>
       <actions>
         <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-4</pv_name>
           <value>0</value>
           <description>$(name)</description>
         </action>
       </actions>
+      <pv_name>SignalX</pv_name>
       <text>Off</text>
       <x>155</x>
       <y>75</y>
@@ -218,14 +218,14 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-5</pv_name>
       <actions>
         <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-5</pv_name>
           <value>1</value>
           <description>$(name)</description>
         </action>
       </actions>
+      <pv_name>SignalX</pv_name>
       <text>On</text>
       <x>0</x>
       <y>100</y>
@@ -235,14 +235,14 @@
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
-      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-5</pv_name>
       <actions>
         <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
+          <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-5</pv_name>
           <value>0</value>
           <description>$(name)</description>
         </action>
       </actions>
+      <pv_name>SignalX</pv_name>
       <text>Off</text>
       <x>155</x>
       <y>100</y>
@@ -472,6 +472,150 @@
       <width>460</width>
       <height>20</height>
       <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Bit Field</name>
+    <x>506</x>
+    <y>30</y>
+    <width>496</width>
+    <height>156</height>
+    <transparent>true</transparent>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>BitField</name>
+      <pv_name>PREFIX:PVI_GENERATED:BIT-FIELD-1</pv_name>
+      <x>0</x>
+      <y>0</y>
+      <width>160</width>
+      <numBits>8</numBits>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>BitField</name>
+      <pv_name>PREFIX:PVI_GENERATED:BIT-FIELD-2</pv_name>
+      <x>0</x>
+      <y>25</y>
+      <width>160</width>
+      <numBits>8</numBits>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>BitField</name>
+      <pv_name>PREFIX:PVI_GENERATED:BIT-FIELD-3</pv_name>
+      <x>0</x>
+      <y>50</y>
+      <width>160</width>
+      <numBits>8</numBits>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>BitField</name>
+      <pv_name>PREFIX:PVI_GENERATED:BIT-FIELD-4</pv_name>
+      <x>0</x>
+      <y>75</y>
+      <width>160</width>
+      <numBits>8</numBits>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>BitField</name>
+      <pv_name>PREFIX:PVI_GENERATED:BIT-FIELD-5</pv_name>
+      <x>0</x>
+      <y>100</y>
+      <width>160</width>
+      <numBits>8</numBits>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Image Read</name>
+    <x>506</x>
+    <y>191</y>
+    <width>382</width>
+    <height>297</height>
+    <transparent>true</transparent>
+    <widget type="image" version="2.0.0">
+      <name>ImageRead</name>
+      <pv_name>PREFIX:PVI_GENERATED:IMAGE-READ-1</pv_name>
+      <x>0</x>
+      <y>0</y>
+      <width>341</width>
+      <height>256</height>
+      <data_height>768</data_height>
+      <data_width>1024</data_width>
+      <color_mode>3</color_mode>
+      <unsigned>true</unsigned>
+      <color_bar>
+        <visible>false</visible>
+      </color_bar>
+      <x_axis>
+        <visible>true</visible>
+        <minimum>0.0</minimum>
+        <maximum>1024.0</maximum>
+      </x_axis>
+      <y_axis>
+        <visible>true</visible>
+        <minimum>0.0</minimum>
+        <maximum>768.0</maximum>
+      </y_axis>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Progress Bar</name>
+    <x>506</x>
+    <y>493</y>
+    <width>496</width>
+    <height>156</height>
+    <transparent>true</transparent>
+    <widget type="progressbar" version="2.0.0">
+      <name>ProgressBar</name>
+      <pv_name>PREFIX:PVI_GENERATED:PROGRESS-BAR-1</pv_name>
+      <x>0</x>
+      <y>0</y>
+      <width>460</width>
+      <height>20</height>
+      <limits_from_pv>false</limits_from_pv>
+      <minimum>0.0</minimum>
+      <maximum>1.0</maximum>
+    </widget>
+    <widget type="progressbar" version="2.0.0">
+      <name>ProgressBar</name>
+      <pv_name>PREFIX:PVI_GENERATED:PROGRESS-BAR-2</pv_name>
+      <x>0</x>
+      <y>25</y>
+      <width>460</width>
+      <height>20</height>
+      <limits_from_pv>false</limits_from_pv>
+      <minimum>0.0</minimum>
+      <maximum>1.0</maximum>
+    </widget>
+    <widget type="progressbar" version="2.0.0">
+      <name>ProgressBar</name>
+      <pv_name>PREFIX:PVI_GENERATED:PROGRESS-BAR-3</pv_name>
+      <x>0</x>
+      <y>50</y>
+      <width>460</width>
+      <height>20</height>
+      <limits_from_pv>false</limits_from_pv>
+      <minimum>0.0</minimum>
+      <maximum>1.0</maximum>
+    </widget>
+    <widget type="progressbar" version="2.0.0">
+      <name>ProgressBar</name>
+      <pv_name>PREFIX:PVI_GENERATED:PROGRESS-BAR-4</pv_name>
+      <x>0</x>
+      <y>75</y>
+      <width>460</width>
+      <height>20</height>
+      <limits_from_pv>false</limits_from_pv>
+      <minimum>0.0</minimum>
+      <maximum>1.0</maximum>
+    </widget>
+    <widget type="progressbar" version="2.0.0">
+      <name>ProgressBar</name>
+      <pv_name>PREFIX:PVI_GENERATED:PROGRESS-BAR-5</pv_name>
+      <x>0</x>
+      <y>100</y>
+      <width>460</width>
+      <height>20</height>
+      <limits_from_pv>false</limits_from_pv>
+      <minimum>0.0</minimum>
+      <maximum>1.0</maximum>
     </widget>
   </widget>
 </display>

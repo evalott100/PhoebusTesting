@@ -8,9 +8,12 @@ from enum import Enum
 
 from pvi.device import (
     LED,
+    BitField,
     ButtonPanel,
     ComboBox,
     DeviceRef,
+    ImageRead,
+    ProgressBar,
     SignalR,
     SignalRW,
     TextRead,
@@ -19,6 +22,7 @@ from pvi.device import (
 from softioc import builder
 
 from phoebus_testing import (
+    EXAMPLE_IMAGE,
     ROW_LENGTH,
     AlarmSeverities,
     SignalRWidgets,
@@ -33,10 +37,7 @@ from phoebus_testing.pvi_wrapper import Pvi
 class PviGroupNotImplemented(Enum):
     ARRAY_TRACE = "ARRAY-TRACE"
     ARRAY_WRITE = "ARRAY-WRITE"
-    BIT_FIELD = "BIT-FIELD"
     CHECK_BOX = "CHECK-BOX"
-    IMAGE_READ = "IMAGE-READ"
-    PROGRESS_BAR = "PROGRESS-BAR"
 
 
 class PviGroup(Enum):
@@ -46,6 +47,9 @@ class PviGroup(Enum):
     DEVICE_REF = "DEVICE-REF"
     TEXT_READ = "TEXT-READ"
     TEXT_WRITE = "TEXT-WRITE"
+    BIT_FIELD = "BIT-FIELD"
+    IMAGE_READ = "IMAGE-READ"
+    PROGRESS_BAR = "PROGRESS-BAR"
 
 
 PVI_WIDGET_RECORDS = [
@@ -74,8 +78,8 @@ PVI_WIDGET_RECORDS = [
         widget=ComboBox,
         widget_kwargs={"choices": ["CLOSED", "OPEN"]},
         record_creation_function=builder.mbbIn,
-        record_creation_function_args=(0, 1),
-        record_creation_function_kwargs={"initial_value": 0},
+        record_creation_function_args=(0, "CLOSED", "OPEN"),
+        record_creation_function_kwargs={"initial_value": 1},
     ),
     WidgetRecord(
         "DeviceRef",
@@ -104,6 +108,40 @@ PVI_WIDGET_RECORDS = [
         record_creation_function=builder.aIn,
         record_creation_function_args=(),
         record_creation_function_kwargs={"initial_value": 1234.567, "EGU": "mm"},
+    ),
+    WidgetRecord(
+        "BitField",
+        widget=BitField,
+        widget_kwargs={
+            "labels": ["a", "b", "c", "d", "e", "f", "g", "h"],
+        },
+        record_creation_function=builder.longIn,
+        record_creation_function_args=(),
+        record_creation_function_kwargs={"initial_value": 0b00110011},
+    ),
+    WidgetRecord(
+        "ImageRead",
+        widget=ImageRead,
+        widget_kwargs={
+            "data_height": 768,
+            "data_width": 1024,
+            "width": int(1024 / 3),
+            "height": int(768 / 3),
+        },
+        record_creation_function=builder.WaveformIn,
+        record_creation_function_args=(),
+        record_creation_function_kwargs={
+            "initial_value": EXAMPLE_IMAGE,
+            "NELM": int(1e9),
+        },
+    ),
+    WidgetRecord(
+        "ProgressBar",
+        widget=ProgressBar,
+        widget_kwargs={},
+        record_creation_function=builder.aIn,
+        record_creation_function_args=(),
+        record_creation_function_kwargs={"initial_value": 0.66},
     ),
 ]
 
@@ -136,3 +174,5 @@ def generate_records_for_pvi_generated_screen():
             else:
                 component = SignalRW(name=severity.name, pv=pv_name, widget=widget)
             Pvi.add_pvi_info(pv_name, pvi_group, component)
+            if widget_record.widget == ImageRead:
+                break

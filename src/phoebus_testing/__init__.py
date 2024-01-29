@@ -1,16 +1,17 @@
 import re
 from dataclasses import dataclass
 from enum import Enum
+from pathlib import Path
 from typing import Any, Callable, Dict, Tuple
 
 import numpy as np
-from pvi.device import LED, TextRead, WidgetType
+from pvi.device import LED, BitField, ImageRead, ProgressBar, TextRead, WidgetType
 from softioc import alarm
 
 PREFIX = "PREFIX"
 
 # Have to use a signalR for a TextRead
-SignalRWidgets = [TextRead, LED]
+SignalRWidgets = [TextRead, LED, BitField, ImageRead, ProgressBar]
 
 
 # EPICS expects int for alarm severity (.SEVR)
@@ -24,7 +25,10 @@ class AlarmSeverities(Enum):
 
 ROW_LENGTH = len(AlarmSeverities)
 
-EXAMPLE_IMAGE = np.arange(0, 737280, 1, np.uint8)  # 1080 * 720 flattened
+
+EXAMPLE_IMAGE = np.fromfile(
+    Path(__file__).parent / "test_image.raw", dtype=np.uint8
+).flatten()
 EXAMPLE_WAVEFORM = np.sin(np.linspace(0, 2 * np.pi, 100))
 
 
