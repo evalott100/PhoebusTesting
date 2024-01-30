@@ -526,39 +526,22 @@
     <name>Image Read</name>
     <x>506</x>
     <y>191</y>
-    <width>382</width>
-    <height>297</height>
+    <width>496</width>
+    <height>56</height>
     <transparent>true</transparent>
     <widget type="image" version="2.0.0">
       <name>ImageRead</name>
       <pv_name>PREFIX:PVI_GENERATED:IMAGE-READ-1</pv_name>
       <x>0</x>
       <y>0</y>
-      <width>341</width>
-      <height>256</height>
-      <data_height>768</data_height>
-      <data_width>1024</data_width>
-      <color_mode>3</color_mode>
-      <unsigned>true</unsigned>
-      <color_bar>
-        <visible>false</visible>
-      </color_bar>
-      <x_axis>
-        <visible>true</visible>
-        <minimum>0.0</minimum>
-        <maximum>1024.0</maximum>
-      </x_axis>
-      <y_axis>
-        <visible>true</visible>
-        <minimum>0.0</minimum>
-        <maximum>768.0</maximum>
-      </y_axis>
+      <width>460</width>
+      <height>20</height>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Progress Bar</name>
     <x>506</x>
-    <y>493</y>
+    <y>252</y>
     <width>496</width>
     <height>156</height>
     <transparent>true</transparent>
@@ -616,6 +599,59 @@
       <limits_from_pv>false</limits_from_pv>
       <minimum>0.0</minimum>
       <maximum>1.0</maximum>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Check Box</name>
+    <x>506</x>
+    <y>413</y>
+    <width>496</width>
+    <height>156</height>
+    <transparent>true</transparent>
+    <widget type="checkbox" version="2.0.0">
+      <name>CheckBox</name>
+      <pv_name>PREFIX:PVI_GENERATED:CHECK-BOX-1</pv_name>
+      <label>CheckBox</label>
+      <x>0</x>
+      <y>0</y>
+      <width>460</width>
+      <height>20</height>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>CheckBox</name>
+      <pv_name>PREFIX:PVI_GENERATED:CHECK-BOX-2</pv_name>
+      <label>CheckBox</label>
+      <x>0</x>
+      <y>25</y>
+      <width>460</width>
+      <height>20</height>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>CheckBox</name>
+      <pv_name>PREFIX:PVI_GENERATED:CHECK-BOX-3</pv_name>
+      <label>CheckBox</label>
+      <x>0</x>
+      <y>50</y>
+      <width>460</width>
+      <height>20</height>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>CheckBox</name>
+      <pv_name>PREFIX:PVI_GENERATED:CHECK-BOX-4</pv_name>
+      <label>CheckBox</label>
+      <x>0</x>
+      <y>75</y>
+      <width>460</width>
+      <height>20</height>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>CheckBox</name>
+      <pv_name>PREFIX:PVI_GENERATED:CHECK-BOX-5</pv_name>
+      <label>CheckBox</label>
+      <x>0</x>
+      <y>100</y>
+      <width>460</width>
+      <height>20</height>
     </widget>
   </widget>
 </display>

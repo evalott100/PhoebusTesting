@@ -4,15 +4,19 @@ Generate records and add PVI info, should output to `testing_pvi.bob`.
 Unfortunately, Out records can't have their alarm set in softioc so
 we use In records for Write widgets bere.
 """
+
 from enum import Enum
 
 from pvi.device import (
     LED,
+    ArrayTrace,
     BitField,
     ButtonPanel,
+    CheckBox,
     ComboBox,
     DeviceRef,
     ImageRead,
+    Plot,
     ProgressBar,
     SignalR,
     SignalRW,
@@ -23,6 +27,7 @@ from softioc import builder
 
 from phoebus_testing import (
     EXAMPLE_IMAGE,
+    EXAMPLE_WAVEFORM,
     ROW_LENGTH,
     AlarmSeverities,
     SignalRWidgets,
@@ -35,9 +40,7 @@ from phoebus_testing.pvi_wrapper import Pvi
 
 # It would be nice to add these in the future
 class PviGroupNotImplemented(Enum):
-    ARRAY_TRACE = "ARRAY-TRACE"
-    ARRAY_WRITE = "ARRAY-WRITE"
-    CHECK_BOX = "CHECK-BOX"
+    ARRAY_WRITE = "ARRAY-WRITE"  # Not really sure what this is actually...?
 
 
 class PviGroup(Enum):
@@ -50,6 +53,9 @@ class PviGroup(Enum):
     BIT_FIELD = "BIT-FIELD"
     IMAGE_READ = "IMAGE-READ"
     PROGRESS_BAR = "PROGRESS-BAR"
+    CHECK_BOX = "CHECK-BOX"
+    PLOT = "PLOT"
+    # ARRAY_TRACE = "ARRAY-TRACE"
 
 
 PVI_WIDGET_RECORDS = [
@@ -122,17 +128,12 @@ PVI_WIDGET_RECORDS = [
     WidgetRecord(
         "ImageRead",
         widget=ImageRead,
-        widget_kwargs={
-            "data_height": 768,
-            "data_width": 1024,
-            "width": int(1024 / 3),
-            "height": int(768 / 3),
-        },
+        widget_kwargs={},
         record_creation_function=builder.WaveformIn,
         record_creation_function_args=(),
         record_creation_function_kwargs={
             "initial_value": EXAMPLE_IMAGE,
-            "NELM": int(1e9),
+            "NELM": int(len(EXAMPLE_IMAGE)),
         },
     ),
     WidgetRecord(
@@ -143,8 +144,15 @@ PVI_WIDGET_RECORDS = [
         record_creation_function_args=(),
         record_creation_function_kwargs={"initial_value": 0.66},
     ),
+    WidgetRecord(
+        "CheckBox",
+        widget=CheckBox,
+        widget_kwargs={},
+        record_creation_function=builder.boolIn,
+        record_creation_function_args=(),
+        record_creation_function_kwargs={"initial_value": True},
+    ),
 ]
-
 
 GroupToWidgetRecord = zip(PviGroup, PVI_WIDGET_RECORDS)
 
@@ -174,5 +182,6 @@ def generate_records_for_pvi_generated_screen():
             else:
                 component = SignalRW(name=severity.name, pv=pv_name, widget=widget)
             Pvi.add_pvi_info(pv_name, pvi_group, component)
-            if widget_record.widget == ImageRead:
+
+            if widget_record.widget in (ImageRead, Plot):  # Only want one of these.
                 break

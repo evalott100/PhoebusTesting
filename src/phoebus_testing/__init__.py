@@ -5,13 +5,30 @@ from pathlib import Path
 from typing import Any, Callable, Dict, Tuple
 
 import numpy as np
-from pvi.device import LED, BitField, ImageRead, ProgressBar, TextRead, WidgetType
+from pvi.device import (
+    LED,
+    ArrayTrace,
+    BitField,
+    ImageRead,
+    Plot,
+    ProgressBar,
+    TextRead,
+    WidgetType,
+)
 from softioc import alarm
 
 PREFIX = "PREFIX"
 
 # Have to use a signalR for a TextRead
-SignalRWidgets = [TextRead, LED, BitField, ImageRead, ProgressBar]
+SignalRWidgets = [
+    TextRead,
+    LED,
+    BitField,
+    ImageRead,
+    Plot,
+    ProgressBar,
+    ArrayTrace,
+]
 
 
 # EPICS expects int for alarm severity (.SEVR)
