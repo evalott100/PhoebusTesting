@@ -16,7 +16,6 @@ from pvi.device import (
     ComboBox,
     DeviceRef,
     ImageRead,
-    Plot,
     ProgressBar,
     SignalR,
     SignalRW,
@@ -55,7 +54,6 @@ class PviGroup(Enum):
     PROGRESS_BAR = "PROGRESS-BAR"
     CHECK_BOX = "CHECK-BOX"
     PLOT = "PLOT"
-    # ARRAY_TRACE = "ARRAY-TRACE"
 
 
 PVI_WIDGET_RECORDS = [
@@ -150,7 +148,15 @@ PVI_WIDGET_RECORDS = [
         widget_kwargs={},
         record_creation_function=builder.boolIn,
         record_creation_function_args=(),
-        record_creation_function_kwargs={"initial_value": True},
+        record_creation_function_kwargs={"initial_value": True, "ONAM": "ON", "ZNAM": "OFF"},
+    ),
+WidgetRecord(
+        "ArrayTrace",
+        widget=ArrayTrace,
+        widget_kwargs={"axis": "y"},
+        record_creation_function=builder.WaveformIn,
+        record_creation_function_args=(),
+        record_creation_function_kwargs={"initial_value": EXAMPLE_WAVEFORM},
     ),
 ]
 
@@ -183,5 +189,5 @@ def generate_records_for_pvi_generated_screen():
                 component = SignalRW(name=severity.name, pv=pv_name, widget=widget)
             Pvi.add_pvi_info(pv_name, pvi_group, component)
 
-            if widget_record.widget in (ImageRead, Plot):  # Only want one of these.
+            if widget_record.widget in (ImageRead, ArrayTrace):  # Only want one of these.
                 break

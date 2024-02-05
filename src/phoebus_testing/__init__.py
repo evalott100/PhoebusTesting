@@ -10,7 +10,6 @@ from pvi.device import (
     ArrayTrace,
     BitField,
     ImageRead,
-    Plot,
     ProgressBar,
     TextRead,
     WidgetType,
@@ -25,7 +24,6 @@ SignalRWidgets = [
     LED,
     BitField,
     ImageRead,
-    Plot,
     ProgressBar,
     ArrayTrace,
 ]
@@ -46,7 +44,7 @@ ROW_LENGTH = len(AlarmSeverities)
 EXAMPLE_IMAGE = np.fromfile(
     Path(__file__).parent / "test_image.raw", dtype=np.uint8
 ).flatten()
-EXAMPLE_WAVEFORM = np.sin(np.linspace(0, 2 * np.pi, 100))
+EXAMPLE_WAVEFORM = 100 * np.sin(np.linspace(0, 2 * np.pi, 100))
 
 
 def name_to_pv(name: str):

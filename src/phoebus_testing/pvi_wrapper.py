@@ -49,7 +49,7 @@ class Pvi:
                 children.append(
                     Group(
                         name="".join(x.capitalize() for x in group.name.split("_")),
-                        layout=Grid(labelled=False),
+                        layout=Grid(labelled=True),
                         children=components,
                     )
                 )

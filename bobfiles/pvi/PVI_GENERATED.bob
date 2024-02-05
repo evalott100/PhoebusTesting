@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-02-05 15:22:11 by twj43146-->
 <display version="2.0.0">
   <name>Display</name>
-  <x>0</x>
   <y use_class="true">0</y>
   <width>1007</width>
   <height>896</height>
@@ -25,61 +26,84 @@
     <transparent use_class="true">true</transparent>
     <horizontal_alignment>1</horizontal_alignment>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Led</name>
     <x>5</x>
     <y>30</y>
     <width>496</width>
     <height>156</height>
     <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>NORMAL</text>
+      <width>250</width>
+    </widget>
     <widget type="led" version="2.0.0">
       <name>LED</name>
       <pv_name>PREFIX:PVI_GENERATED:LED-1</pv_name>
-      <x>220</x>
-      <y>0</y>
-      <width>20</width>
-      <height>20</height>
+      <x>347</x>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>MINOR</text>
+      <y>25</y>
+      <width>250</width>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED</name>
       <pv_name>PREFIX:PVI_GENERATED:LED-2</pv_name>
-      <x>220</x>
+      <x>347</x>
       <y>25</y>
-      <width>20</width>
-      <height>20</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>MAJOR</text>
+      <y>50</y>
+      <width>250</width>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED</name>
       <pv_name>PREFIX:PVI_GENERATED:LED-3</pv_name>
-      <x>220</x>
+      <x>347</x>
       <y>50</y>
-      <width>20</width>
-      <height>20</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>CRITICAL</text>
+      <y>75</y>
+      <width>250</width>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED</name>
       <pv_name>PREFIX:PVI_GENERATED:LED-4</pv_name>
-      <x>220</x>
+      <x>347</x>
       <y>75</y>
-      <width>20</width>
-      <height>20</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>DISCONNECTED</text>
+      <y>100</y>
+      <width>250</width>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED</name>
       <pv_name>PREFIX:PVI_GENERATED:LED-5</pv_name>
-      <x>220</x>
+      <x>347</x>
       <y>100</y>
-      <width>20</width>
-      <height>20</height>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Button Panel</name>
     <x>5</x>
     <y>191</y>
-    <width>341</width>
+    <width>426</width>
     <height>156</height>
     <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>NORMAL</text>
+      <width>250</width>
+    </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
       <actions>
@@ -91,9 +115,8 @@
       </actions>
       <pv_name>SignalX</pv_name>
       <text>On</text>
-      <x>0</x>
-      <y>0</y>
-      <width>150</width>
+      <x>255</x>
+      <width>65</width>
       <height>20</height>
       <tooltip>$(actions)</tooltip>
     </widget>
@@ -108,11 +131,16 @@
       </actions>
       <pv_name>SignalX</pv_name>
       <text>Off</text>
-      <x>155</x>
-      <y>0</y>
-      <width>150</width>
+      <x>325</x>
+      <width>65</width>
       <height>20</height>
       <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>MINOR</text>
+      <y>25</y>
+      <width>250</width>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
@@ -125,9 +153,9 @@
       </actions>
       <pv_name>SignalX</pv_name>
       <text>On</text>
-      <x>0</x>
+      <x>255</x>
       <y>25</y>
-      <width>150</width>
+      <width>65</width>
       <height>20</height>
       <tooltip>$(actions)</tooltip>
     </widget>
@@ -142,11 +170,17 @@
       </actions>
       <pv_name>SignalX</pv_name>
       <text>Off</text>
-      <x>155</x>
+      <x>325</x>
       <y>25</y>
-      <width>150</width>
+      <width>65</width>
       <height>20</height>
       <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>MAJOR</text>
+      <y>50</y>
+      <width>250</width>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
@@ -159,9 +193,9 @@
       </actions>
       <pv_name>SignalX</pv_name>
       <text>On</text>
-      <x>0</x>
+      <x>255</x>
       <y>50</y>
-      <width>150</width>
+      <width>65</width>
       <height>20</height>
       <tooltip>$(actions)</tooltip>
     </widget>
@@ -176,11 +210,17 @@
       </actions>
       <pv_name>SignalX</pv_name>
       <text>Off</text>
-      <x>155</x>
+      <x>325</x>
       <y>50</y>
-      <width>150</width>
+      <width>65</width>
       <height>20</height>
       <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>CRITICAL</text>
+      <y>75</y>
+      <width>250</width>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
@@ -193,9 +233,9 @@
       </actions>
       <pv_name>SignalX</pv_name>
       <text>On</text>
-      <x>0</x>
+      <x>255</x>
       <y>75</y>
-      <width>150</width>
+      <width>65</width>
       <height>20</height>
       <tooltip>$(actions)</tooltip>
     </widget>
@@ -210,11 +250,17 @@
       </actions>
       <pv_name>SignalX</pv_name>
       <text>Off</text>
-      <x>155</x>
+      <x>325</x>
       <y>75</y>
-      <width>150</width>
+      <width>65</width>
       <height>20</height>
       <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>DISCONNECTED</text>
+      <y>100</y>
+      <width>250</width>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>WritePV</name>
@@ -227,9 +273,9 @@
       </actions>
       <pv_name>SignalX</pv_name>
       <text>On</text>
-      <x>0</x>
+      <x>255</x>
       <y>100</y>
-      <width>150</width>
+      <width>65</width>
       <height>20</height>
       <tooltip>$(actions)</tooltip>
     </widget>
@@ -244,65 +290,87 @@
       </actions>
       <pv_name>SignalX</pv_name>
       <text>Off</text>
-      <x>155</x>
+      <x>325</x>
       <y>100</y>
-      <width>150</width>
+      <width>65</width>
       <height>20</height>
       <tooltip>$(actions)</tooltip>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Combo Box</name>
     <x>5</x>
     <y>352</y>
     <width>496</width>
     <height>156</height>
     <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>NORMAL</text>
+      <width>250</width>
+    </widget>
     <widget type="combo" version="2.0.0">
       <name>ComboBox</name>
       <pv_name>PREFIX:PVI_GENERATED:COMBO-BOX-1</pv_name>
-      <x>0</x>
-      <y>0</y>
-      <width>460</width>
+      <x>255</x>
+      <width>205</width>
       <height>20</height>
       <items>
         <item>CLOSED</item>
         <item>OPEN</item>
       </items>
       <items_from_pv>false</items_from_pv>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>MINOR</text>
+      <y>25</y>
+      <width>250</width>
     </widget>
     <widget type="combo" version="2.0.0">
       <name>ComboBox</name>
       <pv_name>PREFIX:PVI_GENERATED:COMBO-BOX-2</pv_name>
-      <x>0</x>
+      <x>255</x>
       <y>25</y>
-      <width>460</width>
+      <width>205</width>
       <height>20</height>
       <items>
         <item>CLOSED</item>
         <item>OPEN</item>
       </items>
       <items_from_pv>false</items_from_pv>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>MAJOR</text>
+      <y>50</y>
+      <width>250</width>
     </widget>
     <widget type="combo" version="2.0.0">
       <name>ComboBox</name>
       <pv_name>PREFIX:PVI_GENERATED:COMBO-BOX-3</pv_name>
-      <x>0</x>
+      <x>255</x>
       <y>50</y>
-      <width>460</width>
+      <width>205</width>
       <height>20</height>
       <items>
         <item>CLOSED</item>
         <item>OPEN</item>
       </items>
       <items_from_pv>false</items_from_pv>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>CRITICAL</text>
+      <y>75</y>
+      <width>250</width>
     </widget>
     <widget type="combo" version="2.0.0">
       <name>ComboBox</name>
       <pv_name>PREFIX:PVI_GENERATED:COMBO-BOX-4</pv_name>
-      <x>0</x>
+      <x>255</x>
       <y>75</y>
-      <width>460</width>
+      <width>205</width>
       <height>20</height>
       <items>
         <item>CLOSED</item>
@@ -310,12 +378,18 @@
       </items>
       <items_from_pv>false</items_from_pv>
     </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>DISCONNECTED</text>
+      <y>100</y>
+      <width>250</width>
+    </widget>
     <widget type="combo" version="2.0.0">
       <name>ComboBox</name>
       <pv_name>PREFIX:PVI_GENERATED:COMBO-BOX-5</pv_name>
-      <x>0</x>
+      <x>255</x>
       <y>100</y>
-      <width>460</width>
+      <width>205</width>
       <height>20</height>
       <items>
         <item>CLOSED</item>
@@ -324,13 +398,18 @@
       <items_from_pv>false</items_from_pv>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Device Ref</name>
     <x>5</x>
     <y>513</y>
     <width>496</width>
     <height>56</height>
     <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>No Alarms On Device Refs</text>
+      <width>250</width>
+    </widget>
     <widget type="action_button" version="3.0.0">
       <name>OpenDisplay</name>
       <actions>
@@ -341,317 +420,486 @@
         </action>
       </actions>
       <text>No Alarms On Device Refs</text>
-      <x>0</x>
-      <y>0</y>
-      <width>460</width>
+      <x>255</x>
+      <width>205</width>
       <height>20</height>
       <tooltip>$(actions)</tooltip>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Text Read</name>
     <x>5</x>
     <y>574</y>
     <width>496</width>
     <height>156</height>
     <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>NORMAL</text>
+      <width>250</width>
+    </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TextUpdate</name>
       <pv_name>PREFIX:PVI_GENERATED:TEXT-READ-1</pv_name>
-      <x>0</x>
-      <y>0</y>
-      <width>460</width>
-      <height>20</height>
+      <x>255</x>
+      <width>205</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
+        </font>
       </font>
       <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>MINOR</text>
+      <y>25</y>
+      <width>250</width>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TextUpdate</name>
       <pv_name>PREFIX:PVI_GENERATED:TEXT-READ-2</pv_name>
-      <x>0</x>
+      <x>255</x>
       <y>25</y>
-      <width>460</width>
-      <height>20</height>
+      <width>205</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
+        </font>
       </font>
       <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>MAJOR</text>
+      <y>50</y>
+      <width>250</width>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TextUpdate</name>
       <pv_name>PREFIX:PVI_GENERATED:TEXT-READ-3</pv_name>
-      <x>0</x>
+      <x>255</x>
       <y>50</y>
-      <width>460</width>
-      <height>20</height>
+      <width>205</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
+        </font>
       </font>
       <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>CRITICAL</text>
+      <y>75</y>
+      <width>250</width>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TextUpdate</name>
       <pv_name>PREFIX:PVI_GENERATED:TEXT-READ-4</pv_name>
-      <x>0</x>
+      <x>255</x>
       <y>75</y>
-      <width>460</width>
-      <height>20</height>
+      <width>205</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
+        </font>
       </font>
       <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>DISCONNECTED</text>
+      <y>100</y>
+      <width>250</width>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TextUpdate</name>
       <pv_name>PREFIX:PVI_GENERATED:TEXT-READ-5</pv_name>
-      <x>0</x>
+      <x>255</x>
       <y>100</y>
-      <width>460</width>
-      <height>20</height>
+      <width>205</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
+        </font>
       </font>
       <horizontal_alignment>1</horizontal_alignment>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Text Write</name>
     <x>5</x>
     <y>735</y>
     <width>496</width>
     <height>156</height>
     <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>NORMAL</text>
+      <width>250</width>
+    </widget>
     <widget type="textentry" version="3.0.0">
       <name>TextEntry</name>
       <pv_name>PREFIX:PVI_GENERATED:TEXT-WRITE-1</pv_name>
-      <x>0</x>
-      <y>0</y>
-      <width>460</width>
-      <height>20</height>
+      <x>255</x>
+      <width>205</width>
       <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>MINOR</text>
+      <y>25</y>
+      <width>250</width>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>TextEntry</name>
       <pv_name>PREFIX:PVI_GENERATED:TEXT-WRITE-2</pv_name>
-      <x>0</x>
+      <x>255</x>
       <y>25</y>
-      <width>460</width>
-      <height>20</height>
+      <width>205</width>
       <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>MAJOR</text>
+      <y>50</y>
+      <width>250</width>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>TextEntry</name>
       <pv_name>PREFIX:PVI_GENERATED:TEXT-WRITE-3</pv_name>
-      <x>0</x>
+      <x>255</x>
       <y>50</y>
-      <width>460</width>
-      <height>20</height>
+      <width>205</width>
       <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>CRITICAL</text>
+      <y>75</y>
+      <width>250</width>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>TextEntry</name>
       <pv_name>PREFIX:PVI_GENERATED:TEXT-WRITE-4</pv_name>
-      <x>0</x>
+      <x>255</x>
       <y>75</y>
-      <width>460</width>
-      <height>20</height>
+      <width>205</width>
       <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>DISCONNECTED</text>
+      <y>100</y>
+      <width>250</width>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>TextEntry</name>
       <pv_name>PREFIX:PVI_GENERATED:TEXT-WRITE-5</pv_name>
-      <x>0</x>
+      <x>255</x>
       <y>100</y>
-      <width>460</width>
-      <height>20</height>
+      <width>205</width>
       <horizontal_alignment>1</horizontal_alignment>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Bit Field</name>
     <x>506</x>
     <y>30</y>
     <width>496</width>
     <height>156</height>
     <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>NORMAL</text>
+      <width>250</width>
+    </widget>
     <widget type="byte_monitor" version="2.0.0">
       <name>BitField</name>
       <pv_name>PREFIX:PVI_GENERATED:BIT-FIELD-1</pv_name>
-      <x>0</x>
-      <y>0</y>
-      <width>160</width>
-      <numBits>8</numBits>
+      <x>255</x>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>MINOR</text>
+      <y>25</y>
+      <width>250</width>
     </widget>
     <widget type="byte_monitor" version="2.0.0">
       <name>BitField</name>
       <pv_name>PREFIX:PVI_GENERATED:BIT-FIELD-2</pv_name>
-      <x>0</x>
+      <x>255</x>
       <y>25</y>
-      <width>160</width>
-      <numBits>8</numBits>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>MAJOR</text>
+      <y>50</y>
+      <width>250</width>
     </widget>
     <widget type="byte_monitor" version="2.0.0">
       <name>BitField</name>
       <pv_name>PREFIX:PVI_GENERATED:BIT-FIELD-3</pv_name>
-      <x>0</x>
+      <x>255</x>
       <y>50</y>
-      <width>160</width>
-      <numBits>8</numBits>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>CRITICAL</text>
+      <y>75</y>
+      <width>250</width>
     </widget>
     <widget type="byte_monitor" version="2.0.0">
       <name>BitField</name>
       <pv_name>PREFIX:PVI_GENERATED:BIT-FIELD-4</pv_name>
-      <x>0</x>
+      <x>255</x>
       <y>75</y>
-      <width>160</width>
-      <numBits>8</numBits>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>DISCONNECTED</text>
+      <y>100</y>
+      <width>250</width>
     </widget>
     <widget type="byte_monitor" version="2.0.0">
       <name>BitField</name>
       <pv_name>PREFIX:PVI_GENERATED:BIT-FIELD-5</pv_name>
-      <x>0</x>
+      <x>255</x>
       <y>100</y>
-      <width>160</width>
-      <numBits>8</numBits>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Image Read</name>
     <x>506</x>
     <y>191</y>
     <width>496</width>
     <height>56</height>
     <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>NORMAL</text>
+      <width>250</width>
+    </widget>
     <widget type="image" version="2.0.0">
       <name>ImageRead</name>
       <pv_name>PREFIX:PVI_GENERATED:IMAGE-READ-1</pv_name>
-      <x>0</x>
-      <y>0</y>
-      <width>460</width>
+      <x>255</x>
+      <width>205</width>
       <height>20</height>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Progress Bar</name>
     <x>506</x>
     <y>252</y>
     <width>496</width>
     <height>156</height>
     <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>NORMAL</text>
+      <width>250</width>
+    </widget>
     <widget type="progressbar" version="2.0.0">
       <name>ProgressBar</name>
       <pv_name>PREFIX:PVI_GENERATED:PROGRESS-BAR-1</pv_name>
-      <x>0</x>
-      <y>0</y>
-      <width>460</width>
-      <height>20</height>
+      <x>255</x>
+      <width>205</width>
       <limits_from_pv>false</limits_from_pv>
-      <minimum>0.0</minimum>
       <maximum>1.0</maximum>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>MINOR</text>
+      <y>25</y>
+      <width>250</width>
     </widget>
     <widget type="progressbar" version="2.0.0">
       <name>ProgressBar</name>
       <pv_name>PREFIX:PVI_GENERATED:PROGRESS-BAR-2</pv_name>
-      <x>0</x>
+      <x>255</x>
       <y>25</y>
-      <width>460</width>
-      <height>20</height>
+      <width>205</width>
       <limits_from_pv>false</limits_from_pv>
-      <minimum>0.0</minimum>
       <maximum>1.0</maximum>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>MAJOR</text>
+      <y>50</y>
+      <width>250</width>
     </widget>
     <widget type="progressbar" version="2.0.0">
       <name>ProgressBar</name>
       <pv_name>PREFIX:PVI_GENERATED:PROGRESS-BAR-3</pv_name>
-      <x>0</x>
+      <x>255</x>
       <y>50</y>
-      <width>460</width>
-      <height>20</height>
+      <width>205</width>
       <limits_from_pv>false</limits_from_pv>
-      <minimum>0.0</minimum>
       <maximum>1.0</maximum>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>CRITICAL</text>
+      <y>75</y>
+      <width>250</width>
     </widget>
     <widget type="progressbar" version="2.0.0">
       <name>ProgressBar</name>
       <pv_name>PREFIX:PVI_GENERATED:PROGRESS-BAR-4</pv_name>
-      <x>0</x>
+      <x>255</x>
       <y>75</y>
-      <width>460</width>
-      <height>20</height>
+      <width>205</width>
       <limits_from_pv>false</limits_from_pv>
-      <minimum>0.0</minimum>
       <maximum>1.0</maximum>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>DISCONNECTED</text>
+      <y>100</y>
+      <width>250</width>
     </widget>
     <widget type="progressbar" version="2.0.0">
       <name>ProgressBar</name>
       <pv_name>PREFIX:PVI_GENERATED:PROGRESS-BAR-5</pv_name>
-      <x>0</x>
+      <x>255</x>
       <y>100</y>
-      <width>460</width>
-      <height>20</height>
+      <width>205</width>
       <limits_from_pv>false</limits_from_pv>
-      <minimum>0.0</minimum>
       <maximum>1.0</maximum>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Check Box</name>
     <x>506</x>
     <y>413</y>
     <width>496</width>
     <height>156</height>
     <transparent>true</transparent>
-    <widget type="checkbox" version="2.0.0">
-      <name>CheckBox</name>
-      <pv_name>PREFIX:PVI_GENERATED:CHECK-BOX-1</pv_name>
-      <label>CheckBox</label>
-      <x>0</x>
-      <y>0</y>
-      <width>460</width>
-      <height>20</height>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>NORMAL</text>
+      <width>250</width>
     </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>CheckBox</name>
-      <pv_name>PREFIX:PVI_GENERATED:CHECK-BOX-2</pv_name>
-      <label>CheckBox</label>
-      <x>0</x>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>MINOR</text>
       <y>25</y>
-      <width>460</width>
-      <height>20</height>
+      <width>250</width>
     </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>CheckBox</name>
-      <pv_name>PREFIX:PVI_GENERATED:CHECK-BOX-3</pv_name>
-      <label>CheckBox</label>
-      <x>0</x>
+    <widget type="choice" version="2.0.0">
+      <name>ChoiceButton</name>
+      <pv_name>PREFIX:PVI_GENERATED:CHECK-BOX-2</pv_name>
+      <x>255</x>
+      <y>25</y>
+      <width>205</width>
+      <height>20</height>
+      <items>
+        <item>0</item>
+        <item>1</item>
+      </items>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>MAJOR</text>
       <y>50</y>
-      <width>460</width>
-      <height>20</height>
+      <width>250</width>
     </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>CheckBox</name>
-      <pv_name>PREFIX:PVI_GENERATED:CHECK-BOX-4</pv_name>
-      <label>CheckBox</label>
-      <x>0</x>
+    <widget type="choice" version="2.0.0">
+      <name>ChoiceButton</name>
+      <pv_name>PREFIX:PVI_GENERATED:CHECK-BOX-3</pv_name>
+      <x>255</x>
+      <y>50</y>
+      <width>205</width>
+      <height>20</height>
+      <items>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+      </items>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>CRITICAL</text>
       <y>75</y>
-      <width>460</width>
-      <height>20</height>
+      <width>250</width>
     </widget>
-    <widget type="checkbox" version="2.0.0">
-      <name>CheckBox</name>
-      <pv_name>PREFIX:PVI_GENERATED:CHECK-BOX-5</pv_name>
-      <label>CheckBox</label>
-      <x>0</x>
+    <widget type="choice" version="2.0.0">
+      <name>ChoiceButton</name>
+      <pv_name>PREFIX:PVI_GENERATED:CHECK-BOX-4</pv_name>
+      <x>255</x>
+      <y>75</y>
+      <width>205</width>
+      <height>20</height>
+      <items>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+      </items>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>DISCONNECTED</text>
       <y>100</y>
-      <width>460</width>
-      <height>20</height>
+      <width>250</width>
     </widget>
+    <widget type="choice" version="2.0.0">
+      <name>ChoiceButton</name>
+      <pv_name>PREFIX:PVI_GENERATED:CHECK-BOX-5</pv_name>
+      <x>255</x>
+      <y>100</y>
+      <width>205</width>
+      <height>20</height>
+      <items>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+      </items>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Plot</name>
+    <x>506</x>
+    <y>574</y>
+    <width>496</width>
+    <height>56</height>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>NORMAL</text>
+      <width>250</width>
+    </widget>
+    <widget type="xyplot" version="3.0.0">
+      <name>ArrayTrace</name>
+      <x>255</x>
+      <width>205</width>
+      <height>20</height>
+      <traces>
+        <trace>
+          <name>$(traces[0].y_pv)</name>
+          <x_pv></x_pv>
+          <y_pv>PREFIX:PVI_GENERATED:PLOT-1</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="0" green="0" blue="255">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <line_style>0</line_style>
+          <point_type>0</point_type>
+          <point_size>10</point_size>
+          <visible>true</visible>
+        </trace>
+      </traces>
+    </widget>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>ChoiceButton</name>
+    <pv_name>PREFIX:PVI_GENERATED:CHECK-BOX-1</pv_name>
+    <x>622</x>
+    <y>803</y>
+    <width>205</width>
+    <height>25</height>
+    <items>
+      <item>0</item>
+    </items>
   </widget>
 </display>
