@@ -16,7 +16,7 @@ from phoebus_testing.pvi_wrapper import Pvi
 
 def run_softioc():
     Pvi.configure_pvi("bobfiles/pvi", True)
-    builder.SetDeviceName(PREFIX)
+    builder.SetDeviceName(PREFIX.removesuffix(":"))
     dispatcher = asyncio_dispatcher.AsyncioDispatcher()
     generate_records_for_pvi_generated_screen()
     generate_records_for_manually_created_screen()

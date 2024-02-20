@@ -6,17 +6,17 @@ from typing import Any, Callable, Dict, Tuple
 
 import numpy as np
 from pvi.device import (
+    WidgetUnion,
     LED,
     ArrayTrace,
     BitField,
     ImageRead,
     ProgressBar,
     TextRead,
-    WidgetType,
 )
 from softioc import alarm
 
-PREFIX = "PREFIX"
+PREFIX = "PREFIX:"
 
 # Have to use a signalR for a TextRead
 SignalRWidgets = [
@@ -59,7 +59,7 @@ class WidgetRecord:
     """
 
     name: str
-    widget: WidgetType
+    widget: WidgetUnion
     widget_kwargs: Dict
     record_creation_function: Callable
     record_creation_function_args: Tuple

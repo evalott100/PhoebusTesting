@@ -62,4 +62,4 @@ class Pvi:
         if Pvi._screens_dir:
             for device in devices:
                 bobfile_path = Pvi._screens_dir / Path(f"{device.label}.bob")
-                formatter.format(device, record_prefix + ":", bobfile_path)
+                formatter.format(device, bobfile_path)

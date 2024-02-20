@@ -27,6 +27,7 @@ from softioc import builder
 from phoebus_testing import (
     EXAMPLE_IMAGE,
     EXAMPLE_WAVEFORM,
+    PREFIX,
     ROW_LENGTH,
     AlarmSeverities,
     SignalRWidgets,
@@ -148,9 +149,13 @@ PVI_WIDGET_RECORDS = [
         widget_kwargs={},
         record_creation_function=builder.boolIn,
         record_creation_function_args=(),
-        record_creation_function_kwargs={"initial_value": True, "ONAM": "ON", "ZNAM": "OFF"},
+        record_creation_function_kwargs={
+            "initial_value": True,
+            "ONAM": "ON",
+            "ZNAM": "OFF",
+        },
     ),
-WidgetRecord(
+    WidgetRecord(
         "ArrayTrace",
         widget=ArrayTrace,
         widget_kwargs={"axis": "y"},
@@ -184,10 +189,17 @@ def generate_records_for_pvi_generated_screen():
                 set_alarm(record, severity)
 
             if widget_record.widget in SignalRWidgets:
-                component = SignalR(name=severity.name, pv=pv_name, widget=widget)
+                component = SignalR(
+                    name=severity.name, read_pv=(PREFIX + pv_name), read_widget=widget
+                )
             else:
-                component = SignalRW(name=severity.name, pv=pv_name, widget=widget)
+                component = SignalRW(
+                    name=severity.name, write_pv=(PREFIX + pv_name), write_widget=widget
+                )
             Pvi.add_pvi_info(pv_name, pvi_group, component)
 
-            if widget_record.widget in (ImageRead, ArrayTrace):  # Only want one of these.
+            if widget_record.widget in (
+                ImageRead,
+                ArrayTrace,
+            ):  # Only want one of these.
                 break
