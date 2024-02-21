@@ -15,7 +15,7 @@ from pvi.device import (
 )
 from softioc import builder
 
-from phoebus_testing import SignalRWidgets, WidgetRecord, name_to_pv
+from phoebus_testing import SignalRWidgets, WidgetRecord, name_to_pv, PREFIX
 from phoebus_testing.pvi_wrapper import Pvi
 
 NUMBER_OF_MOTORS = 8
@@ -229,14 +229,14 @@ def generate_motor_settings_screen():
             if widget_record.widget in SignalRWidgets:
                 component = SignalR(
                     name=widget_record.name,
-                    pv=generic_pv_name,
-                    widget=widget_record.widget(**widget_record.widget_kwargs),
+                    read_pv=PREFIX + generic_pv_name,
+                    read_widget=widget_record.widget(**widget_record.widget_kwargs),
                 )
             else:
                 component = SignalRW(
                     name=widget_record.name,
-                    pv=generic_pv_name,
-                    widget=widget_record.widget(**widget_record.widget_kwargs),
+                    write_pv=PREFIX + generic_pv_name,
+                    write_widget=widget_record.widget(**widget_record.widget_kwargs),
                 )
                 Pvi.add_pvi_info(pv_name_no_number, group, component)
 
@@ -302,14 +302,14 @@ def generate_temperature_settings_screen():
             if widget_record.widget in SignalRWidgets:
                 component = SignalR(
                     name=widget_record.name,
-                    pv=generic_pv_name,
-                    widget=widget_record.widget(**widget_record.widget_kwargs),
+                    read_pv=PREFIX + generic_pv_name,
+                    read_widget=widget_record.widget(**widget_record.widget_kwargs),
                 )
             else:
                 component = SignalRW(
                     name=widget_record.name,
-                    pv=generic_pv_name,
-                    widget=widget_record.widget(**widget_record.widget_kwargs),
+                    write_pv= PREFIX + generic_pv_name,
+                    write_widget=widget_record.widget(**widget_record.widget_kwargs),
                 )
             Pvi.add_pvi_info(pv_name_no_number, group, component)
 

@@ -4,13 +4,19 @@ Generate records and add PVI info, should output to `testing_pvi.bob`.
 Unfortunately, Out records can't have their alarm set in softioc so
 we use In records for Write widgets bere.
 """
+
 from enum import Enum
 
 from pvi.device import (
     LED,
+    ArrayTrace,
+    BitField,
     ButtonPanel,
+    CheckBox,
     ComboBox,
     DeviceRef,
+    ImageRead,
+    ProgressBar,
     SignalR,
     SignalRW,
     TextRead,
@@ -19,6 +25,9 @@ from pvi.device import (
 from softioc import builder
 
 from phoebus_testing import (
+    EXAMPLE_IMAGE,
+    EXAMPLE_WAVEFORM,
+    PREFIX,
     ROW_LENGTH,
     AlarmSeverities,
     SignalRWidgets,
@@ -31,12 +40,7 @@ from phoebus_testing.pvi_wrapper import Pvi
 
 # It would be nice to add these in the future
 class PviGroupNotImplemented(Enum):
-    ARRAY_TRACE = "ARRAY-TRACE"
-    ARRAY_WRITE = "ARRAY-WRITE"
-    BIT_FIELD = "BIT-FIELD"
-    CHECK_BOX = "CHECK-BOX"
-    IMAGE_READ = "IMAGE-READ"
-    PROGRESS_BAR = "PROGRESS-BAR"
+    ARRAY_WRITE = "ARRAY-WRITE"  # Not really sure what this is actually...?
 
 
 class PviGroup(Enum):
@@ -46,6 +50,11 @@ class PviGroup(Enum):
     DEVICE_REF = "DEVICE-REF"
     TEXT_READ = "TEXT-READ"
     TEXT_WRITE = "TEXT-WRITE"
+    BIT_FIELD = "BIT-FIELD"
+    IMAGE_READ = "IMAGE-READ"
+    PROGRESS_BAR = "PROGRESS-BAR"
+    CHECK_BOX = "CHECK-BOX"
+    PLOT = "PLOT"
 
 
 PVI_WIDGET_RECORDS = [
@@ -74,8 +83,8 @@ PVI_WIDGET_RECORDS = [
         widget=ComboBox,
         widget_kwargs={"choices": ["CLOSED", "OPEN"]},
         record_creation_function=builder.mbbIn,
-        record_creation_function_args=(0, 1),
-        record_creation_function_kwargs={"initial_value": 0},
+        record_creation_function_args=(0, "CLOSED", "OPEN"),
+        record_creation_function_kwargs={"initial_value": 1},
     ),
     WidgetRecord(
         "DeviceRef",
@@ -105,8 +114,56 @@ PVI_WIDGET_RECORDS = [
         record_creation_function_args=(),
         record_creation_function_kwargs={"initial_value": 1234.567, "EGU": "mm"},
     ),
+    WidgetRecord(
+        "BitField",
+        widget=BitField,
+        widget_kwargs={
+            "labels": ["a", "b", "c", "d", "e", "f", "g", "h"],
+        },
+        record_creation_function=builder.longIn,
+        record_creation_function_args=(),
+        record_creation_function_kwargs={"initial_value": 0b00110011},
+    ),
+    WidgetRecord(
+        "ImageRead",
+        widget=ImageRead,
+        widget_kwargs={},
+        record_creation_function=builder.WaveformIn,
+        record_creation_function_args=(),
+        record_creation_function_kwargs={
+            "initial_value": EXAMPLE_IMAGE,
+            "NELM": int(len(EXAMPLE_IMAGE)),
+        },
+    ),
+    WidgetRecord(
+        "ProgressBar",
+        widget=ProgressBar,
+        widget_kwargs={},
+        record_creation_function=builder.aIn,
+        record_creation_function_args=(),
+        record_creation_function_kwargs={"initial_value": 0.66},
+    ),
+    WidgetRecord(
+        "CheckBox",
+        widget=CheckBox,
+        widget_kwargs={},
+        record_creation_function=builder.boolIn,
+        record_creation_function_args=(),
+        record_creation_function_kwargs={
+            "initial_value": True,
+            "ONAM": "ON",
+            "ZNAM": "OFF",
+        },
+    ),
+    WidgetRecord(
+        "ArrayTrace",
+        widget=ArrayTrace,
+        widget_kwargs={"axis": "y"},
+        record_creation_function=builder.WaveformIn,
+        record_creation_function_args=(),
+        record_creation_function_kwargs={"initial_value": EXAMPLE_WAVEFORM},
+    ),
 ]
-
 
 GroupToWidgetRecord = zip(PviGroup, PVI_WIDGET_RECORDS)
 
@@ -132,7 +189,17 @@ def generate_records_for_pvi_generated_screen():
                 set_alarm(record, severity)
 
             if widget_record.widget in SignalRWidgets:
-                component = SignalR(name=severity.name, pv=pv_name, widget=widget)
+                component = SignalR(
+                    name=severity.name, read_pv=(PREFIX + pv_name), read_widget=widget
+                )
             else:
-                component = SignalRW(name=severity.name, pv=pv_name, widget=widget)
+                component = SignalRW(
+                    name=severity.name, write_pv=(PREFIX + pv_name), write_widget=widget
+                )
             Pvi.add_pvi_info(pv_name, pvi_group, component)
+
+            if widget_record.widget in (
+                ImageRead,
+                ArrayTrace,
+            ):  # Only want one of these.
+                break

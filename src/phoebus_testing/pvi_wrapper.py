@@ -49,7 +49,7 @@ class Pvi:
                 children.append(
                     Group(
                         name="".join(x.capitalize() for x in group.name.split("_")),
-                        layout=Grid(labelled=False),
+                        layout=Grid(labelled=True),
                         children=components,
                     )
                 )
@@ -62,4 +62,4 @@ class Pvi:
         if Pvi._screens_dir:
             for device in devices:
                 bobfile_path = Pvi._screens_dir / Path(f"{device.label}.bob")
-                formatter.format(device, record_prefix + ":", bobfile_path)
+                formatter.format(device, bobfile_path)
