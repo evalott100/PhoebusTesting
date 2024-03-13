@@ -12,7 +12,7 @@ from pvi.device import (
     ArrayTrace,
     BitField,
     ButtonPanel,
-    CheckBox,
+    # CheckBox,
     ComboBox,
     DeviceRef,
     ImageRead,
@@ -53,7 +53,7 @@ class PviGroup(Enum):
     BIT_FIELD = "BIT-FIELD"
     IMAGE_READ = "IMAGE-READ"
     PROGRESS_BAR = "PROGRESS-BAR"
-    CHECK_BOX = "CHECK-BOX"
+    #CHECK_BOX = "CHECK-BOX"
     PLOT = "PLOT"
 
 
@@ -78,7 +78,7 @@ PVI_WIDGET_RECORDS = [
             "initial_value": 0,
         },
     ),
-    WidgetRecord(
+     WidgetRecord(
         "ComboBox",
         widget=ComboBox,
         widget_kwargs={"choices": ["CLOSED", "OPEN"]},
@@ -143,18 +143,19 @@ PVI_WIDGET_RECORDS = [
         record_creation_function_args=(),
         record_creation_function_kwargs={"initial_value": 0.66},
     ),
-    WidgetRecord(
-        "CheckBox",
-        widget=CheckBox,
-        widget_kwargs={},
-        record_creation_function=builder.boolIn,
-        record_creation_function_args=(),
-        record_creation_function_kwargs={
-            "initial_value": True,
-            "ONAM": "ON",
-            "ZNAM": "OFF",
-        },
-    ),
+    # Checkbox no longer supported
+    # WidgetRecord(
+    #    "CheckBox",
+    #    widget=CheckBox,
+    #    widget_kwargs={},
+    #    record_creation_function=builder.boolIn,
+    #    record_creation_function_args=(),
+    #    record_creation_function_kwargs={
+    #        "initial_value": True,
+    #        "ONAM": "ON",
+    #        "ZNAM": "OFF",
+    #    },
+    #),
     WidgetRecord(
         "ArrayTrace",
         widget=ArrayTrace,

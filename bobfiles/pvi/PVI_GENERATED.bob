@@ -468,7 +468,7 @@
           <description>Open Display</description>
         </action>
       </actions>
-      <text>No Alarms On Device Refs</text>
+      <text>SubScreen</text>
       <x>255</x>
       <y>0</y>
       <width>205</width>
@@ -883,122 +883,9 @@
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Check Box</name>
-    <x>506</x>
-    <y>413</y>
-    <width>496</width>
-    <height>156</height>
-    <transparent>true</transparent>
-    <widget type="label" version="2.0.0">
-      <name>Label</name>
-      <text>NORMAL</text>
-      <x>0</x>
-      <y>0</y>
-      <width>250</width>
-      <height>20</height>
-    </widget>
-    <widget type="choice" version="2.0.0">
-      <name>ChoiceButton</name>
-      <pv_name>PREFIX:PVI_GENERATED:CHECK-BOX-1</pv_name>
-      <x>255</x>
-      <y>0</y>
-      <width>205</width>
-      <height>20</height>
-      <items>
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-      </items>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label</name>
-      <text>MINOR</text>
-      <x>0</x>
-      <y>25</y>
-      <width>250</width>
-      <height>20</height>
-    </widget>
-    <widget type="choice" version="2.0.0">
-      <name>ChoiceButton</name>
-      <pv_name>PREFIX:PVI_GENERATED:CHECK-BOX-2</pv_name>
-      <x>255</x>
-      <y>25</y>
-      <width>205</width>
-      <height>20</height>
-      <items>
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-      </items>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label</name>
-      <text>MAJOR</text>
-      <x>0</x>
-      <y>50</y>
-      <width>250</width>
-      <height>20</height>
-    </widget>
-    <widget type="choice" version="2.0.0">
-      <name>ChoiceButton</name>
-      <pv_name>PREFIX:PVI_GENERATED:CHECK-BOX-3</pv_name>
-      <x>255</x>
-      <y>50</y>
-      <width>205</width>
-      <height>20</height>
-      <items>
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-      </items>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label</name>
-      <text>CRITICAL</text>
-      <x>0</x>
-      <y>75</y>
-      <width>250</width>
-      <height>20</height>
-    </widget>
-    <widget type="choice" version="2.0.0">
-      <name>ChoiceButton</name>
-      <pv_name>PREFIX:PVI_GENERATED:CHECK-BOX-4</pv_name>
-      <x>255</x>
-      <y>75</y>
-      <width>205</width>
-      <height>20</height>
-      <items>
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-      </items>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label</name>
-      <text>DISCONNECTED</text>
-      <x>0</x>
-      <y>100</y>
-      <width>250</width>
-      <height>20</height>
-    </widget>
-    <widget type="choice" version="2.0.0">
-      <name>ChoiceButton</name>
-      <pv_name>PREFIX:PVI_GENERATED:CHECK-BOX-5</pv_name>
-      <x>255</x>
-      <y>100</y>
-      <width>205</width>
-      <height>20</height>
-      <items>
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-      </items>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
     <name>Plot</name>
     <x>506</x>
-    <y>574</y>
+    <y>413</y>
     <width>496</width>
     <height>56</height>
     <transparent>true</transparent>
