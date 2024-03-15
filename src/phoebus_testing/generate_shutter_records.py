@@ -24,14 +24,14 @@ NUMBER_OF_THERMOMETERS = 4
 
 def generate_manual_motor_records():
     for motor_number in range(1, NUMBER_OF_MOTORS + 1):
-        builder.longOut(f"MOTOR_{motor_number}:TWR")
-        builder.longOut(f"MOTOR_{motor_number}:TWF")
-        builder.longOut(f"MOTOR_{motor_number}:VAL")
-        builder.longOut(f"MOTOR_{motor_number}:RBV")
-        builder.boolOut(f"MOTOR_{motor_number}:STOP")
-        builder.longOut(f"MOTOR_{motor_number}:LOLO")
-        builder.longOut(f"MOTOR_{motor_number}:HIHI")
-        builder.longOut(f"MOTOR_{motor_number}:TWV")
+        builder.longOut(f"MOTOR_{motor_number}:TWR", initial_value=0)
+        builder.longOut(f"MOTOR_{motor_number}:TWF", initial_value=0)
+        builder.longOut(f"MOTOR_{motor_number}:VAL", initial_value=0)
+        builder.longOut(f"MOTOR_{motor_number}:RBV", initial_value=0)
+        builder.boolOut(f"MOTOR_{motor_number}:STOP", initial_value=0)
+        builder.longOut(f"MOTOR_{motor_number}:LOLO", initial_value=0)
+        builder.longOut(f"MOTOR_{motor_number}:HIHI", initial_value=0)
+        builder.longOut(f"MOTOR_{motor_number}:TWV", initial_value=0)
 
 
 class MotorScreenGroup(Enum):
@@ -49,49 +49,49 @@ class MotorScreenGroup(Enum):
 
 MOTOR_WIDGET_RECORDS = [
     [
-        WidgetRecord("Homed", LED, {}, builder.boolIn, (), {}),
-        WidgetRecord("LowLimit", LED, {}, builder.boolIn, (), {}),
-        WidgetRecord("CommsError", LED, {}, builder.boolIn, (), {}),
-        WidgetRecord("GainSupport", LED, {}, builder.boolIn, (), {}),
-        WidgetRecord("Moving", LED, {}, builder.boolIn, (), {}),
-        WidgetRecord("Problem", LED, {}, builder.boolIn, (), {}),
-        WidgetRecord("EncoderPresent", LED, {}, builder.boolIn, (), {}),
-        WidgetRecord("AtHome", LED, {}, builder.boolIn, (), {}),
-        WidgetRecord("FollowingError", LED, {}, builder.boolIn, (), {}),
-        WidgetRecord("ClosedLoop", LED, {}, builder.boolIn, (), {}),
-        WidgetRecord("Unused", LED, {}, builder.boolIn, (), {}),
-        WidgetRecord("HomeLimit", LED, {}, builder.boolIn, (), {}),
-        WidgetRecord("HighLimit", LED, {}, builder.boolIn, (), {}),
-        WidgetRecord("Done", LED, {}, builder.boolIn, (), {}),
-        WidgetRecord("DirectionPositive", LED, {}, builder.boolIn, (), {}),
+        WidgetRecord("Homed", LED, {}, builder.boolIn, (), {"initial_value": 0}),
+        WidgetRecord("LowLimit", LED, {}, builder.boolIn, (), {"initial_value": 0}),
+        WidgetRecord("CommsError", LED, {}, builder.boolIn, (), {"initial_value": 0}),
+        WidgetRecord("GainSupport", LED, {}, builder.boolIn, (), {"initial_value": 0}),
+        WidgetRecord("Moving", LED, {}, builder.boolIn, (), {"initial_value": 0}),
+        WidgetRecord("Problem", LED, {}, builder.boolIn, (), {"initial_value": 0}),
+        WidgetRecord("EncoderPresent", LED, {}, builder.boolIn, (), {"initial_value": 0}),
+        WidgetRecord("AtHome", LED, {}, builder.boolIn, (), {"initial_value": 0}),
+        WidgetRecord("FollowingError", LED, {}, builder.boolIn, (), {"initial_value": 0}),
+        WidgetRecord("ClosedLoop", LED, {}, builder.boolIn, (), {"initial_value": 0}),
+        WidgetRecord("Unused", LED, {}, builder.boolIn, (), {"initial_value": 0}),
+        WidgetRecord("HomeLimit", LED, {}, builder.boolIn, (), {"initial_value": 0}),
+        WidgetRecord("HighLimit", LED, {}, builder.boolIn, (), {"initial_value": 0}),
+        WidgetRecord("Done", LED, {}, builder.boolIn, (), {"initial_value": 0}),
+        WidgetRecord("DirectionPositive", LED, {}, builder.boolIn, (), {"initial_value": 0}),
     ],
     [
-        WidgetRecord("SysFail", LED, {}, builder.boolIn, (), {}),
-        WidgetRecord("AmplifierLoss", LED, {}, builder.boolIn, (), {}),
-        WidgetRecord("EncoderLoss", LED, {}, builder.boolIn, (), {}),
-        WidgetRecord("ElossClear", ButtonPanel, {}, builder.boolOut, (), {}),
+        WidgetRecord("SysFail", LED, {}, builder.boolIn, (), {"initial_value": 0}),
+        WidgetRecord("AmplifierLoss", LED, {}, builder.boolIn, (), {"initial_value": 0}),
+        WidgetRecord("EncoderLoss", LED, {}, builder.boolIn, (), {"initial_value": 0}),
+        WidgetRecord("ElossClear", ButtonPanel, {}, builder.boolOut, (), {"initial_value": 0}),
     ],
     [
-        WidgetRecord("UserHighLimit", TextWrite, {}, builder.aOut, (), {}),
-        WidgetRecord("UserLowLimit", TextWrite, {}, builder.aOut, (), {}),
-        WidgetRecord("DialHighLimit", TextWrite, {}, builder.aOut, (), {}),
-        WidgetRecord("DialLowLimit", TextWrite, {}, builder.aOut, (), {}),
+        WidgetRecord("UserHighLimit", TextWrite, {}, builder.aOut, (), {"initial_value": 0}),
+        WidgetRecord("UserLowLimit", TextWrite, {}, builder.aOut, (), {"initial_value": 0}),
+        WidgetRecord("DialHighLimit", TextWrite, {}, builder.aOut, (), {"initial_value": 0}),
+        WidgetRecord("DialLowLimit", TextWrite, {}, builder.aOut, (), {"initial_value": 0}),
     ],
     [
-        WidgetRecord("Kill", ButtonPanel, {}, builder.boolOut, (), {}),
+        WidgetRecord("Kill", ButtonPanel, {}, builder.boolOut, (), {"initial_value": 0}),
     ],
-    [WidgetRecord("SyncValRBV", ButtonPanel, {}, builder.boolOut, (), {})],
+    [WidgetRecord("SyncValRBV", ButtonPanel, {}, builder.boolOut, (), {"initial_value": 0})],
     [
-        WidgetRecord("HomeForward", ButtonPanel, {}, builder.boolOut, (), {}),
-        WidgetRecord("HomeReverse", ButtonPanel, {}, builder.boolOut, (), {}),
-        WidgetRecord("JogForward", ButtonPanel, {}, builder.boolOut, (), {}),
-        WidgetRecord("JogReverse", ButtonPanel, {}, builder.boolOut, (), {}),
-        WidgetRecord("TweakForward", ButtonPanel, {}, builder.boolOut, (), {}),
-        WidgetRecord("TweakReverse", ButtonPanel, {}, builder.boolOut, (), {}),
-        WidgetRecord("TweakStep", TextWrite, {}, builder.aOut, (), {}),
+        WidgetRecord("HomeForward", ButtonPanel, {}, builder.boolOut, (), {"initial_value": 0}),
+        WidgetRecord("HomeReverse", ButtonPanel, {}, builder.boolOut, (), {"initial_value": 0}),
+        WidgetRecord("JogForward", ButtonPanel, {}, builder.boolOut, (), {"initial_value": 0}),
+        WidgetRecord("JogReverse", ButtonPanel, {}, builder.boolOut, (), {"initial_value": 0}),
+        WidgetRecord("TweakForward", ButtonPanel, {}, builder.boolOut, (), {"initial_value": 0}),
+        WidgetRecord("TweakReverse", ButtonPanel, {}, builder.boolOut, (), {"initial_value": 0}),
+        WidgetRecord("TweakStep", TextWrite, {}, builder.aOut, (), {"initial_value": 0}),
     ],
     [
-        WidgetRecord("Calibration", TextRead, {}, builder.aIn, (), {}),
+        WidgetRecord("Calibration", TextRead, {}, builder.aIn, (), {"initial_value": 0}),
         WidgetRecord(
             "Direction",
             ComboBox,
@@ -100,9 +100,9 @@ MOTOR_WIDGET_RECORDS = [
             },
             builder.mbbOut,
             ("Neg", "Pos"),
-            {},
+            {"initial_value": 0},
         ),
-        WidgetRecord("UserOffset", TextWrite, {}, builder.aOut, (), {}),
+        WidgetRecord("UserOffset", TextWrite, {}, builder.aOut, (), {"initial_value": 0}),
         WidgetRecord(
             "SetUse",
             ComboBox,
@@ -111,7 +111,7 @@ MOTOR_WIDGET_RECORDS = [
             },
             builder.mbbOut,
             ("Set", "Use"),
-            {},
+            {"initial_value": 0},
         ),
         WidgetRecord(
             "Offset",
@@ -121,7 +121,7 @@ MOTOR_WIDGET_RECORDS = [
             },
             builder.mbbOut,
             ("Variable", "Fixed"),
-            {},
+            {"initial_value": 0},
         ),
         WidgetRecord(
             "UseEncoder",
@@ -131,7 +131,7 @@ MOTOR_WIDGET_RECORDS = [
             },
             builder.mbbOut,
             ("No", "Yes"),
-            {},
+            {"initial_value": 0},
         ),
     ],
     [
@@ -143,7 +143,7 @@ MOTOR_WIDGET_RECORDS = [
             },
             builder.mbbOut,
             ("1", "10", "100"),
-            {},
+            {"initial_value": 0},
         ),
         WidgetRecord(
             "MotorStepSize",
@@ -151,7 +151,7 @@ MOTOR_WIDGET_RECORDS = [
             {},
             builder.aOut,
             (),
-            {},
+            {"initial_value": 0},
         ),
         WidgetRecord(
             "StepsPerRev",
@@ -159,7 +159,7 @@ MOTOR_WIDGET_RECORDS = [
             {},
             builder.aIn,
             (),
-            {"EGU": "steps/r"},
+            {"EGU": "steps/r", "initial_value": 0},
         ),
         WidgetRecord(
             "EGUsPerRev",
@@ -167,7 +167,7 @@ MOTOR_WIDGET_RECORDS = [
             {},
             builder.aIn,
             (),
-            {"EGU": "mm/rev"},
+            {"EGU": "mm/rev", "initial_value": 0},
         ),
         WidgetRecord(
             "EncodeStepSize",
@@ -175,7 +175,7 @@ MOTOR_WIDGET_RECORDS = [
             {},
             builder.aOut,
             (),
-            {},
+            {"initial_value": 0, "initial_value": 0},
         ),
         WidgetRecord(
             "ReadBackStepSize",
@@ -183,27 +183,27 @@ MOTOR_WIDGET_RECORDS = [
             {},
             builder.aIn,
             (),
-            {"EGU": "mm"},
+            {"EGU": "mm", "initial_value": 0},
         ),
-        WidgetRecord("UseEncoderIfPresent", TextRead, {}, builder.mbbIn, (), {}),
+        WidgetRecord("UseEncoderIfPresent", TextRead, {}, builder.mbbIn, (), {"initial_value": 0}),
     ],
     [
-        WidgetRecord("MaxVelocity", TextWrite, {}, builder.aOut, (), {}),
-        WidgetRecord("BaseVelocity", TextWrite, {}, builder.aOut, (), {}),
-        WidgetRecord("Velocity", TextWrite, {}, builder.aOut, (), {}),
-        WidgetRecord("SecsToVelocity", TextWrite, {}, builder.aOut, (), {}),
-        WidgetRecord("JVEL", TextWrite, {}, builder.aOut, (), {}),
-        WidgetRecord("JogAcceleration", TextWrite, {}, builder.aOut, (), {}),
-        WidgetRecord("BacklashDistance", TextWrite, {}, builder.aOut, (), {}),
-        WidgetRecord("BacklashVelocity", TextWrite, {}, builder.aOut, (), {}),
-        WidgetRecord("BacklashSecsToVelocity", TextWrite, {}, builder.aOut, (), {}),
-        WidgetRecord("MoveFraction", TextWrite, {}, builder.aOut, (), {}),
-        WidgetRecord("RetryDeadband", TextWrite, {}, builder.aOut, (), {}),
-        WidgetRecord("MaxRetries", TextWrite, {}, builder.aOut, (), {}),
+        WidgetRecord("MaxVelocity", TextWrite, {}, builder.aOut, (), {"initial_value": 0}),
+        WidgetRecord("BaseVelocity", TextWrite, {}, builder.aOut, (), {"initial_value": 0}),
+        WidgetRecord("Velocity", TextWrite, {}, builder.aOut, (), {"initial_value": 0}),
+        WidgetRecord("SecsToVelocity", TextWrite, {}, builder.aOut, (), {"initial_value": 0}),
+        WidgetRecord("JVEL", TextWrite, {}, builder.aOut, (), {"initial_value": 0}),
+        WidgetRecord("JogAcceleration", TextWrite, {}, builder.aOut, (), {"initial_value": 0}),
+        WidgetRecord("BacklashDistance", TextWrite, {}, builder.aOut, (), {"initial_value": 0}),
+        WidgetRecord("BacklashVelocity", TextWrite, {}, builder.aOut, (), {"initial_value": 0}),
+        WidgetRecord("BacklashSecsToVelocity", TextWrite, {}, builder.aOut, (), {"initial_value": 0}),
+        WidgetRecord("MoveFraction", TextWrite, {}, builder.aOut, (), {"initial_value": 0}),
+        WidgetRecord("RetryDeadband", TextWrite, {}, builder.aOut, (), {"initial_value": 0}),
+        WidgetRecord("MaxRetries", TextWrite, {}, builder.aOut, (), {"initial_value": 0}),
     ],
     [
-        WidgetRecord("PREC", TextWrite, {}, builder.aOut, (), {}),
-        WidgetRecord("EGU", TextWrite, {}, builder.aOut, (), {}),
+        WidgetRecord("PREC", TextWrite, {}, builder.aOut, (), {"initial_value": 0}),
+        WidgetRecord("EGU", TextWrite, {}, builder.aOut, (), {"initial_value": 0}),
     ],
 ]
 
@@ -258,7 +258,7 @@ THERMOMETER_WIDGET_RECORDS = [
             {},
             builder.aIn,
             (),
-            {},
+            {"initial_value": 0},
         ),
         WidgetRecord(
             "ErrorLevel",
@@ -266,7 +266,7 @@ THERMOMETER_WIDGET_RECORDS = [
             {},
             builder.aOut,
             (),
-            {},
+            {"initial_value": 0},
         ),
         WidgetRecord(
             "ErrorLevelRBV",
@@ -274,9 +274,9 @@ THERMOMETER_WIDGET_RECORDS = [
             {},
             builder.aIn,
             (),
-            {},
+            {"initial_value": 0},
         ),
-        WidgetRecord("WarningLevel", TextWrite, {}, builder.aOut, (), {}),
+        WidgetRecord("WarningLevel", TextWrite, {}, builder.aOut, (), {"initial_value": 0}),
     ]
 ]
 
