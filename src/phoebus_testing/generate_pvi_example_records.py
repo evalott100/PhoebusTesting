@@ -53,7 +53,7 @@ class PviGroup(Enum):
     BIT_FIELD = "BIT-FIELD"
     IMAGE_READ = "IMAGE-READ"
     PROGRESS_BAR = "PROGRESS-BAR"
-    #CHECK_BOX = "CHECK-BOX"
+    # CHECK_BOX = "CHECK-BOX"
     PLOT = "PLOT"
 
 
@@ -78,7 +78,7 @@ PVI_WIDGET_RECORDS = [
             "initial_value": 0,
         },
     ),
-     WidgetRecord(
+    WidgetRecord(
         "ComboBox",
         widget=ComboBox,
         widget_kwargs={"choices": ["CLOSED", "OPEN"]},
@@ -155,7 +155,7 @@ PVI_WIDGET_RECORDS = [
     #        "ONAM": "ON",
     #        "ZNAM": "OFF",
     #    },
-    #),
+    # ),
     WidgetRecord(
         "ArrayTrace",
         widget=ArrayTrace,

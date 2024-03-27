@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-01-22 11:50:23 by twj43146-->
 <display version="2.0.0">
   <name>Display</name>
   <x>12</x>
-  <y use_class="true">0</y>
   <width>1000</width>
   <height>800</height>
   <grid_step_x>4</grid_step_x>
@@ -12,22 +10,15 @@
     <name>Title</name>
     <class>TITLE</class>
     <text>Style Guide - Phoebus Example of Exisiting Style Guide</text>
-    <x use_class="true">0</x>
-    <y use_class="true">0</y>
     <width>550</width>
     <height>31</height>
-    <font use_class="true">
+    <font>
       <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
       </font>
     </font>
-    <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <transparent use_class="true">true</transparent>
     <horizontal_alignment>1</horizontal_alignment>
   </widget>
-  <widget type="group" version="3.0.0">
+  <widget type="group" version="2.0.0">
     <x>112</x>
     <y>48</y>
     <width>636</width>
@@ -712,6 +703,46 @@
       <height>32</height>
       <tooltip>$(actions)</tooltip>
     </widget>
+    <widget type="progressbar" version="2.0.0">
+      <name>Progress Bar</name>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:PROGRESS-BAR-1</pv_name>
+      <x>2</x>
+      <y>584</y>
+      <width>104</width>
+      <height>25</height>
+    </widget>
+    <widget type="progressbar" version="2.0.0">
+      <name>Progress Bar_1</name>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:PROGRESS-BAR-2</pv_name>
+      <x>122</x>
+      <y>584</y>
+      <width>104</width>
+      <height>25</height>
+    </widget>
+    <widget type="progressbar" version="2.0.0">
+      <name>Progress Bar_2</name>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:PROGRESS-BAR-3</pv_name>
+      <x>246</x>
+      <y>584</y>
+      <width>104</width>
+      <height>25</height>
+    </widget>
+    <widget type="progressbar" version="2.0.0">
+      <name>Progress Bar_3</name>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:PROGRESS-BAR-4</pv_name>
+      <x>370</x>
+      <y>584</y>
+      <width>104</width>
+      <height>25</height>
+    </widget>
+    <widget type="progressbar" version="2.0.0">
+      <name>Progress Bar_4</name>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:PROGRESS-BAR-5</pv_name>
+      <x>490</x>
+      <y>584</y>
+      <width>104</width>
+      <height>25</height>
+    </widget>
   </widget>
   <widget type="arc" version="2.0.0">
     <name>Arc</name>
@@ -786,5 +817,43 @@
       <font family="Liberation Sans" style="REGULAR" size="18.0">
       </font>
     </font>
+  </widget>
+  <widget type="image" version="2.0.0">
+    <name>Image</name>
+    <pv_name>pva://PREFIX:PVI_GENERATED:IMAGE-READ-1</pv_name>
+    <x>762</x>
+    <y>59</y>
+    <width>500</width>
+    <data_width>1024</data_width>
+    <data_height>768</data_height>
+    <interpolation>0</interpolation>
+    <color_mode>3</color_mode>
+    <unsigned>true</unsigned>
+  </widget>
+  <widget type="xyplot" version="3.0.0">
+    <name>ArrayTrace</name>
+    <x>762</x>
+    <y>404</y>
+    <width>377</width>
+    <height>244</height>
+    <traces>
+      <trace>
+        <name>$(traces[0].y_pv)</name>
+        <x_pv></x_pv>
+        <y_pv>PREFIX:PVI_GENERATED:PLOT-1</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="0" green="0" blue="255">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>10</point_size>
+        <visible>true</visible>
+      </trace>
+    </traces>
   </widget>
 </display>

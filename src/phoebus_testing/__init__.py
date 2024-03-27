@@ -6,13 +6,13 @@ from typing import Any, Callable, Dict, Tuple
 
 import numpy as np
 from pvi.device import (
-    WidgetUnion,
     LED,
     ArrayTrace,
     BitField,
     ImageRead,
     ProgressBar,
     TextRead,
+    WidgetUnion,
 )
 from softioc import alarm
 
@@ -44,6 +44,7 @@ ROW_LENGTH = len(AlarmSeverities)
 EXAMPLE_IMAGE = np.fromfile(
     Path(__file__).parent / "test_image.raw", dtype=np.uint8
 ).flatten()
+
 EXAMPLE_WAVEFORM = 100 * np.sin(np.linspace(0, 2 * np.pi, 100))
 
 

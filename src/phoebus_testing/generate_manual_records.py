@@ -89,4 +89,15 @@ def generate_records_for_manually_created_screen():
             ZNAM="OFF",
             initial_value=1,
         )
+
+    for pv_name, severity in cycle_severities(
+        ROW_LENGTH, prefix="MANUALLY-GENERATED:PROGRESS-BAR"
+    ):
+        create_record(
+            pv_name,
+            builder.aIn,
+            severity,
+            initial_value=66,
+        )
+
     return records
