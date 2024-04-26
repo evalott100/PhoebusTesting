@@ -55,6 +55,9 @@ class PviGroup(Enum):
     PROGRESS_BAR = "PROGRESS-BAR"
     # CHECK_BOX = "CHECK-BOX"
     PLOT = "PLOT"
+    BUTTON_PANEL_LED_RW = "BUTTON-PANEL-LED-RW"
+    COMBO_BOX_TEXT_READ_RW = "COMBO-BOX-TEXT-READ-RW"
+    TEXT_WRITE_TEXT_READ_RW = "TEXT-WRITE-TEXT-READ-RW"
 
 
 PVI_WIDGET_RECORDS = [
@@ -164,6 +167,39 @@ PVI_WIDGET_RECORDS = [
         record_creation_function_args=(),
         record_creation_function_kwargs={"initial_value": EXAMPLE_WAVEFORM},
     ),
+    WidgetRecord(
+        "ButtonPanelNextToLED",
+        widget=None,
+        widgets=(ButtonPanel, LED),
+        widget_kwargs=None,
+        read_widget_kwargs={"actions": dict(On="1", Off="0")},
+        write_widget_kwargs={},
+        record_creation_function=builder.aIn,
+        record_creation_function_args=(),
+        record_creation_function_kwargs={"initial_value": 1},
+    ),
+    WidgetRecord(
+        "ComboBoxNextToTextRead",
+        widget=None,
+        widgets=(ComboBox, TextRead),
+        widget_kwargs=None,
+        read_widget_kwargs={},
+        write_widget_kwargs={},
+        record_creation_function=builder.mbbIn,
+        record_creation_function_args=("CLOSED", "OPEN"),
+        record_creation_function_kwargs={"initial_value": 1},
+    ),
+    WidgetRecord(
+        "TextWriteNextToTextRead",
+        widget=None,
+        widgets=(TextWrite, TextRead),
+        widget_kwargs=None,
+        read_widget_kwargs={},
+        write_widget_kwargs={},
+        record_creation_function=builder.aIn,
+        record_creation_function_args=(),
+        record_creation_function_kwargs={"initial_value": 1234.567, "EGU": "mm"},
+    ),
 ]
 
 GroupToWidgetRecord = zip(PviGroup, PVI_WIDGET_RECORDS)
@@ -172,7 +208,13 @@ GroupToWidgetRecord = zip(PviGroup, PVI_WIDGET_RECORDS)
 def generate_records_for_pvi_generated_screen():
     for pvi_group, widget_record in GroupToWidgetRecord:
         builder_method = widget_record.record_creation_function
-        widget = widget_record.widget(**widget_record.widget_kwargs)
+        if widget_record.widgets:
+            widget = (  # ReadWrite with two widgets
+                widget_record.widgets[0](**widget_record.read_widget_kwargs),
+                widget_record.widgets[1](**widget_record.write_widget_kwargs),
+            )
+        else:
+            widget = widget_record.widget(**widget_record.widget_kwargs)
         if not builder_method:
             assert widget_record.widget == DeviceRef
             Pvi.add_pvi_info("PVI_GENERATED:DEVICE-REF", pvi_group, widget)
@@ -189,7 +231,15 @@ def generate_records_for_pvi_generated_screen():
                 )
                 set_alarm(record, severity)
 
-            if widget_record.widget in SignalRWidgets:
+            if widget_record.widgets:
+                component = SignalRW(
+                    name=severity.name,
+                    read_pv=(PREFIX + pv_name),
+                    write_pv=(PREFIX + pv_name),
+                    write_widget=widget[0],
+                    read_widget=widget[1],
+                )
+            elif widget_record.widget in SignalRWidgets:
                 component = SignalR(
                     name=severity.name, read_pv=(PREFIX + pv_name), read_widget=widget
                 )
