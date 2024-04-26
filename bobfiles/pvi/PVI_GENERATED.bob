@@ -2,7 +2,7 @@
   <name>Display</name>
   <x>0</x>
   <y use_class="true">0</y>
-  <width>1007</width>
+  <width>1508</width>
   <height>896</height>
   <grid_step_x>4</grid_step_x>
   <grid_step_y>4</grid_step_y>
@@ -12,7 +12,7 @@
     <text>PVI_GENERATED</text>
     <x use_class="true">0</x>
     <y use_class="true">0</y>
-    <width>1007</width>
+    <width>1508</width>
     <height>25</height>
     <font use_class="true">
       <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
@@ -922,6 +922,575 @@
           <visible>true</visible>
         </trace>
       </traces>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Button Panel Led Rw</name>
+    <x>506</x>
+    <y>474</y>
+    <width>496</width>
+    <height>156</height>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>NORMAL</text>
+      <x>0</x>
+      <y>0</y>
+      <width>250</width>
+      <height>20</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV</name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-LED-RW-1</pv_name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>$(name)</description>
+        </action>
+      </actions>
+      <text>On</text>
+      <x>255</x>
+      <y>0</y>
+      <width>65</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV</name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-LED-RW-1</pv_name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>0</value>
+          <description>$(name)</description>
+        </action>
+      </actions>
+      <text>Off</text>
+      <x>325</x>
+      <y>0</y>
+      <width>65</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-LED-RW-1</pv_name>
+      <x>417</x>
+      <y>0</y>
+      <width>20</width>
+      <height>20</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>MINOR</text>
+      <x>0</x>
+      <y>25</y>
+      <width>250</width>
+      <height>20</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV</name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-LED-RW-2</pv_name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>$(name)</description>
+        </action>
+      </actions>
+      <text>On</text>
+      <x>255</x>
+      <y>25</y>
+      <width>65</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV</name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-LED-RW-2</pv_name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>0</value>
+          <description>$(name)</description>
+        </action>
+      </actions>
+      <text>Off</text>
+      <x>325</x>
+      <y>25</y>
+      <width>65</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-LED-RW-2</pv_name>
+      <x>417</x>
+      <y>25</y>
+      <width>20</width>
+      <height>20</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>MAJOR</text>
+      <x>0</x>
+      <y>50</y>
+      <width>250</width>
+      <height>20</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV</name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-LED-RW-3</pv_name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>$(name)</description>
+        </action>
+      </actions>
+      <text>On</text>
+      <x>255</x>
+      <y>50</y>
+      <width>65</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV</name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-LED-RW-3</pv_name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>0</value>
+          <description>$(name)</description>
+        </action>
+      </actions>
+      <text>Off</text>
+      <x>325</x>
+      <y>50</y>
+      <width>65</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-LED-RW-3</pv_name>
+      <x>417</x>
+      <y>50</y>
+      <width>20</width>
+      <height>20</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>CRITICAL</text>
+      <x>0</x>
+      <y>75</y>
+      <width>250</width>
+      <height>20</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV</name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-LED-RW-4</pv_name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>$(name)</description>
+        </action>
+      </actions>
+      <text>On</text>
+      <x>255</x>
+      <y>75</y>
+      <width>65</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV</name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-LED-RW-4</pv_name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>0</value>
+          <description>$(name)</description>
+        </action>
+      </actions>
+      <text>Off</text>
+      <x>325</x>
+      <y>75</y>
+      <width>65</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-LED-RW-4</pv_name>
+      <x>417</x>
+      <y>75</y>
+      <width>20</width>
+      <height>20</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>DISCONNECTED</text>
+      <x>0</x>
+      <y>100</y>
+      <width>250</width>
+      <height>20</height>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV</name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-LED-RW-5</pv_name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>$(name)</description>
+        </action>
+      </actions>
+      <text>On</text>
+      <x>255</x>
+      <y>100</y>
+      <width>65</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV</name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-LED-RW-5</pv_name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>0</value>
+          <description>$(name)</description>
+        </action>
+      </actions>
+      <text>Off</text>
+      <x>325</x>
+      <y>100</y>
+      <width>65</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>PREFIX:PVI_GENERATED:BUTTON-PANEL-LED-RW-5</pv_name>
+      <x>417</x>
+      <y>100</y>
+      <width>20</width>
+      <height>20</height>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Combo Box Text Read Rw</name>
+    <x>506</x>
+    <y>635</y>
+    <width>496</width>
+    <height>156</height>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>NORMAL</text>
+      <x>0</x>
+      <y>0</y>
+      <width>250</width>
+      <height>20</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>ComboBox</name>
+      <pv_name>PREFIX:PVI_GENERATED:COMBO-BOX-TEXT-READ-RW-1</pv_name>
+      <x>255</x>
+      <y>0</y>
+      <width>100</width>
+      <height>20</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate</name>
+      <pv_name>PREFIX:PVI_GENERATED:COMBO-BOX-TEXT-READ-RW-1</pv_name>
+      <x>360</x>
+      <y>0</y>
+      <width>100</width>
+      <height>20</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>MINOR</text>
+      <x>0</x>
+      <y>25</y>
+      <width>250</width>
+      <height>20</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>ComboBox</name>
+      <pv_name>PREFIX:PVI_GENERATED:COMBO-BOX-TEXT-READ-RW-2</pv_name>
+      <x>255</x>
+      <y>25</y>
+      <width>100</width>
+      <height>20</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate</name>
+      <pv_name>PREFIX:PVI_GENERATED:COMBO-BOX-TEXT-READ-RW-2</pv_name>
+      <x>360</x>
+      <y>25</y>
+      <width>100</width>
+      <height>20</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>MAJOR</text>
+      <x>0</x>
+      <y>50</y>
+      <width>250</width>
+      <height>20</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>ComboBox</name>
+      <pv_name>PREFIX:PVI_GENERATED:COMBO-BOX-TEXT-READ-RW-3</pv_name>
+      <x>255</x>
+      <y>50</y>
+      <width>100</width>
+      <height>20</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate</name>
+      <pv_name>PREFIX:PVI_GENERATED:COMBO-BOX-TEXT-READ-RW-3</pv_name>
+      <x>360</x>
+      <y>50</y>
+      <width>100</width>
+      <height>20</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>CRITICAL</text>
+      <x>0</x>
+      <y>75</y>
+      <width>250</width>
+      <height>20</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>ComboBox</name>
+      <pv_name>PREFIX:PVI_GENERATED:COMBO-BOX-TEXT-READ-RW-4</pv_name>
+      <x>255</x>
+      <y>75</y>
+      <width>100</width>
+      <height>20</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate</name>
+      <pv_name>PREFIX:PVI_GENERATED:COMBO-BOX-TEXT-READ-RW-4</pv_name>
+      <x>360</x>
+      <y>75</y>
+      <width>100</width>
+      <height>20</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>DISCONNECTED</text>
+      <x>0</x>
+      <y>100</y>
+      <width>250</width>
+      <height>20</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>ComboBox</name>
+      <pv_name>PREFIX:PVI_GENERATED:COMBO-BOX-TEXT-READ-RW-5</pv_name>
+      <x>255</x>
+      <y>100</y>
+      <width>100</width>
+      <height>20</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate</name>
+      <pv_name>PREFIX:PVI_GENERATED:COMBO-BOX-TEXT-READ-RW-5</pv_name>
+      <x>360</x>
+      <y>100</y>
+      <width>100</width>
+      <height>20</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Text Write Text Read Rw</name>
+    <x>1007</x>
+    <y>30</y>
+    <width>496</width>
+    <height>156</height>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>NORMAL</text>
+      <x>0</x>
+      <y>0</y>
+      <width>250</width>
+      <height>20</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry</name>
+      <pv_name>PREFIX:PVI_GENERATED:TEXT-WRITE-TEXT-READ-RW-1</pv_name>
+      <x>255</x>
+      <y>0</y>
+      <width>100</width>
+      <height>20</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate</name>
+      <pv_name>PREFIX:PVI_GENERATED:TEXT-WRITE-TEXT-READ-RW-1</pv_name>
+      <x>360</x>
+      <y>0</y>
+      <width>100</width>
+      <height>20</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>MINOR</text>
+      <x>0</x>
+      <y>25</y>
+      <width>250</width>
+      <height>20</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry</name>
+      <pv_name>PREFIX:PVI_GENERATED:TEXT-WRITE-TEXT-READ-RW-2</pv_name>
+      <x>255</x>
+      <y>25</y>
+      <width>100</width>
+      <height>20</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate</name>
+      <pv_name>PREFIX:PVI_GENERATED:TEXT-WRITE-TEXT-READ-RW-2</pv_name>
+      <x>360</x>
+      <y>25</y>
+      <width>100</width>
+      <height>20</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>MAJOR</text>
+      <x>0</x>
+      <y>50</y>
+      <width>250</width>
+      <height>20</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry</name>
+      <pv_name>PREFIX:PVI_GENERATED:TEXT-WRITE-TEXT-READ-RW-3</pv_name>
+      <x>255</x>
+      <y>50</y>
+      <width>100</width>
+      <height>20</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate</name>
+      <pv_name>PREFIX:PVI_GENERATED:TEXT-WRITE-TEXT-READ-RW-3</pv_name>
+      <x>360</x>
+      <y>50</y>
+      <width>100</width>
+      <height>20</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>CRITICAL</text>
+      <x>0</x>
+      <y>75</y>
+      <width>250</width>
+      <height>20</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry</name>
+      <pv_name>PREFIX:PVI_GENERATED:TEXT-WRITE-TEXT-READ-RW-4</pv_name>
+      <x>255</x>
+      <y>75</y>
+      <width>100</width>
+      <height>20</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate</name>
+      <pv_name>PREFIX:PVI_GENERATED:TEXT-WRITE-TEXT-READ-RW-4</pv_name>
+      <x>360</x>
+      <y>75</y>
+      <width>100</width>
+      <height>20</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>DISCONNECTED</text>
+      <x>0</x>
+      <y>100</y>
+      <width>250</width>
+      <height>20</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry</name>
+      <pv_name>PREFIX:PVI_GENERATED:TEXT-WRITE-TEXT-READ-RW-5</pv_name>
+      <x>255</x>
+      <y>100</y>
+      <width>100</width>
+      <height>20</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate</name>
+      <pv_name>PREFIX:PVI_GENERATED:TEXT-WRITE-TEXT-READ-RW-5</pv_name>
+      <x>360</x>
+      <y>100</y>
+      <width>100</width>
+      <height>20</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
     </widget>
   </widget>
 </display>

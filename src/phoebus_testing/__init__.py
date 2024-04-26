@@ -2,7 +2,7 @@ import re
 from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
-from typing import Any, Callable, Dict, Tuple
+from typing import Any, Callable, Dict, Optional, Tuple
 
 import numpy as np
 from pvi.device import (
@@ -60,11 +60,14 @@ class WidgetRecord:
     """
 
     name: str
-    widget: WidgetUnion
-    widget_kwargs: Dict
+    widget: Optional[WidgetUnion]  # For Reads xor Writes
+    widget_kwargs: Optional[Dict]
     record_creation_function: Callable
     record_creation_function_args: Tuple
     record_creation_function_kwargs: Dict
+    widgets: Optional[Tuple[WidgetUnion, WidgetUnion]] = None  # For ReadWrites
+    read_widget_kwargs: Optional[Dict] = None
+    write_widget_kwargs: Optional[Dict] = None
 
 
 @dataclass
