@@ -1,0 +1,1984 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Display</name>
+  <x>12</x>
+  <y use_class="true">0</y>
+  <width>1000</width>
+  <height>800</height>
+  <grid_step_x>4</grid_step_x>
+  <grid_step_y>4</grid_step_y>
+  <widget type="label" version="2.0.0">
+    <name>Title</name>
+    <class>DLS_HEADER_1</class>
+    <text>Style Guide</text>
+    <x>27</x>
+    <y>24</y>
+    <width>550</width>
+    <height>31</height>
+    <font use_class="true">
+      <font family="Arial" style="BOLD" size="32.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <class>DLS</class>
+    <x>126</x>
+    <y>89</y>
+    <width>602</width>
+    <height>710</height>
+    <style use_class="true">2</style>
+    <font use_class="true">
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:TEXT-UPDATE-1</pv_name>
+      <x>2</x>
+      <width>108</width>
+      <height>32</height>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:TEXT-UPDATE-2</pv_name>
+      <x>122</x>
+      <width>108</width>
+      <height>32</height>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:TEXT-UPDATE-3</pv_name>
+      <x>246</x>
+      <width>108</width>
+      <height>32</height>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:TEXT-UPDATE-4</pv_name>
+      <x>370</x>
+      <width>108</width>
+      <height>32</height>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TEXT-ENTRY</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:TEXT-UPDATE-5</pv_name>
+      <x>490</x>
+      <width>108</width>
+      <height>32</height>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry</name>
+      <class>DLS_TEXT_READ</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:TEXT-ENTRY-1</pv_name>
+      <x>2</x>
+      <y>86</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="230" green="229" blue="218">
+        </color>
+      </background_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">false</enabled>
+      <border_width use_class="true">2</border_width>
+      <border_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_1</name>
+      <class>DLS_TEXT_READ</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:TEXT-ENTRY-2</pv_name>
+      <x>122</x>
+      <y>86</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="230" green="229" blue="218">
+        </color>
+      </background_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">false</enabled>
+      <border_width use_class="true">2</border_width>
+      <border_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_2</name>
+      <class>DLS_TEXT_READ</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:TEXT-ENTRY-3</pv_name>
+      <x>246</x>
+      <y>86</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="230" green="229" blue="218">
+        </color>
+      </background_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">false</enabled>
+      <border_width use_class="true">2</border_width>
+      <border_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_3</name>
+      <class>DLS_TEXT_READ</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:TEXT-ENTRY-4</pv_name>
+      <x>370</x>
+      <y>86</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="230" green="229" blue="218">
+        </color>
+      </background_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">false</enabled>
+      <border_width use_class="true">2</border_width>
+      <border_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_4</name>
+      <class>DLS_TEXT_READ</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:TEXT-ENTRY-5</pv_name>
+      <x>490</x>
+      <y>86</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="230" green="229" blue="218">
+        </color>
+      </background_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">false</enabled>
+      <border_width use_class="true">2</border_width>
+      <border_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_5</name>
+      <class>DLS_TEXT_WRITE</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:TEXT-ENTRY-6</pv_name>
+      <x>2</x>
+      <y>130</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_6</name>
+      <class>DLS_TEXT_WRITE</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:TEXT-ENTRY-7</pv_name>
+      <x>122</x>
+      <y>130</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_7</name>
+      <class>DLS_TEXT_WRITE</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:TEXT-ENTRY-8</pv_name>
+      <x>246</x>
+      <y>130</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_8</name>
+      <class>DLS_TEXT_WRITE</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:TEXT-ENTRY-9</pv_name>
+      <x>370</x>
+      <y>130</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_9</name>
+      <class>DLS_TEXT_WRITE</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:TEXT-ENTRY-10</pv_name>
+      <x>490</x>
+      <y>130</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision use_class="true">-1</precision>
+      <show_units use_class="true">true</show_units>
+      <horizontal_alignment use_class="true">0</horizontal_alignment>
+      <vertical_alignment use_class="true">1</vertical_alignment>
+      <enabled use_class="true">true</enabled>
+      <border_width use_class="true">1</border_width>
+      <border_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_5</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:TEXT-UPDATE-6</pv_name>
+      <x>2</x>
+      <y>43</y>
+      <width>108</width>
+      <height>32</height>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:TEXT-UPDATE-7</pv_name>
+      <x>122</x>
+      <y>43</y>
+      <width>108</width>
+      <height>32</height>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_7</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:TEXT-UPDATE-8</pv_name>
+      <x>246</x>
+      <y>43</y>
+      <width>108</width>
+      <height>32</height>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_8</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:TEXT-UPDATE-9</pv_name>
+      <x>370</x>
+      <y>43</y>
+      <width>108</width>
+      <height>32</height>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_9</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:TEXT-UPDATE-10</pv_name>
+      <x>490</x>
+      <y>43</y>
+      <width>108</width>
+      <height>32</height>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box</name>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:COMBO-BOX-1</pv_name>
+      <x>2</x>
+      <y>174</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_1</name>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:COMBO-BOX-2</pv_name>
+      <x>122</x>
+      <y>174</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_2</name>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:COMBO-BOX-3</pv_name>
+      <x>246</x>
+      <y>174</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_3</name>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:COMBO-BOX-4</pv_name>
+      <x>370</x>
+      <y>174</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_4</name>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:COMBO-BOX-5</pv_name>
+      <x>490</x>
+      <y>174</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_5</name>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:COMBO-BOX-6</pv_name>
+      <x>2</x>
+      <y>218</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_6</name>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:COMBO-BOX-7</pv_name>
+      <x>122</x>
+      <y>218</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_7</name>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:COMBO-BOX-8</pv_name>
+      <x>246</x>
+      <y>218</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_8</name>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:COMBO-BOX-9</pv_name>
+      <x>370</x>
+      <y>218</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_9</name>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:COMBO-BOX-10</pv_name>
+      <x>490</x>
+      <y>218</y>
+      <width>108</width>
+      <height>32</height>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:BYTE-MONITOR-1</pv_name>
+      <x>2</x>
+      <y>306</y>
+      <width>108</width>
+      <height>32</height>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color red="60" green="255" blue="60">
+        </color>
+      </on_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <font use_class="true">
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_1</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:BYTE-MONITOR-2</pv_name>
+      <x>122</x>
+      <y>306</y>
+      <width>108</width>
+      <height>32</height>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color red="60" green="255" blue="60">
+        </color>
+      </on_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <font use_class="true">
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_2</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:BYTE-MONITOR-3</pv_name>
+      <x>246</x>
+      <y>306</y>
+      <width>108</width>
+      <height>32</height>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color red="60" green="255" blue="60">
+        </color>
+      </on_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <font use_class="true">
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_3</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:BYTE-MONITOR-4</pv_name>
+      <x>370</x>
+      <y>306</y>
+      <width>108</width>
+      <height>32</height>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color red="60" green="255" blue="60">
+        </color>
+      </on_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <font use_class="true">
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_4</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:BYTE-MONITOR-5</pv_name>
+      <x>490</x>
+      <y>306</y>
+      <width>108</width>
+      <height>32</height>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color red="60" green="255" blue="60">
+        </color>
+      </on_color>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <font use_class="true">
+        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:CHOICE-BUTTON-1</pv_name>
+      <x>2</x>
+      <y>338</y>
+      <width>108</width>
+      <height>32</height>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <selected_color use_class="true">
+        <color red="56" green="206" blue="56">
+        </color>
+      </selected_color>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button_1</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:CHOICE-BUTTON-2</pv_name>
+      <x>122</x>
+      <y>338</y>
+      <width>108</width>
+      <height>32</height>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <selected_color use_class="true">
+        <color red="56" green="206" blue="56">
+        </color>
+      </selected_color>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button_2</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:CHOICE-BUTTON-3</pv_name>
+      <x>246</x>
+      <y>338</y>
+      <width>108</width>
+      <height>32</height>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <selected_color use_class="true">
+        <color red="56" green="206" blue="56">
+        </color>
+      </selected_color>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button_3</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:CHOICE-BUTTON-4</pv_name>
+      <x>370</x>
+      <y>338</y>
+      <width>108</width>
+      <height>32</height>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <selected_color use_class="true">
+        <color red="56" green="206" blue="56">
+        </color>
+      </selected_color>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button_4</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:CHOICE-BUTTON-5</pv_name>
+      <x>490</x>
+      <y>338</y>
+      <width>108</width>
+      <height>32</height>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <selected_color use_class="true">
+        <color red="56" green="206" blue="56">
+        </color>
+      </selected_color>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button_5</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:CHOICE-BUTTON-7</pv_name>
+      <x>122</x>
+      <y>414</y>
+      <width>108</width>
+      <height>32</height>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <selected_color use_class="true">
+        <color red="56" green="206" blue="56">
+        </color>
+      </selected_color>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button_6</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:CHOICE-BUTTON-6</pv_name>
+      <x>2</x>
+      <y>414</y>
+      <width>108</width>
+      <height>32</height>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <selected_color use_class="true">
+        <color red="56" green="206" blue="56">
+        </color>
+      </selected_color>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button_7</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:CHOICE-BUTTON-8</pv_name>
+      <x>246</x>
+      <y>414</y>
+      <width>108</width>
+      <height>32</height>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <selected_color use_class="true">
+        <color red="56" green="206" blue="56">
+        </color>
+      </selected_color>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button_8</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:CHOICE-BUTTON-9</pv_name>
+      <x>370</x>
+      <y>414</y>
+      <width>108</width>
+      <height>32</height>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <selected_color use_class="true">
+        <color red="56" green="206" blue="56">
+        </color>
+      </selected_color>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button_9</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:CHOICE-BUTTON-10</pv_name>
+      <x>490</x>
+      <y>414</y>
+      <width>108</width>
+      <height>32</height>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <selected_color use_class="true">
+        <color red="56" green="206" blue="56">
+        </color>
+      </selected_color>
+      <items>
+        <item>Item 1</item>
+        <item>Item 2</item>
+      </items>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <class>DLS_PRIMARY</class>
+      <actions>
+        <action type="open_display">
+          <file>empty.bob</file>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <x>2</x>
+      <y>490</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_1</name>
+      <class>DLS_SECONDARY</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:BOOL-BUTTON-1</pv_name>
+      <x>2</x>
+      <y>669</y>
+      <width>108</width>
+      <height>32</height>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color red="56" green="206" blue="56">
+        </color>
+      </on_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_2</name>
+      <class>DLS_SECONDARY</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:BOOL-BUTTON-2</pv_name>
+      <x>122</x>
+      <y>669</y>
+      <width>108</width>
+      <height>32</height>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color red="56" green="206" blue="56">
+        </color>
+      </on_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_3</name>
+      <class>DLS_SECONDARY</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:BOOL-BUTTON-3</pv_name>
+      <x>246</x>
+      <y>669</y>
+      <width>108</width>
+      <height>32</height>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color red="56" green="206" blue="56">
+        </color>
+      </on_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_4</name>
+      <class>DLS_SECONDARY</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:BOOL-BUTTON-4</pv_name>
+      <x>370</x>
+      <y>669</y>
+      <width>108</width>
+      <height>32</height>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color red="56" green="206" blue="56">
+        </color>
+      </on_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_5</name>
+      <class>DLS_SECONDARY</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:BOOL-BUTTON-5</pv_name>
+      <x>490</x>
+      <y>669</y>
+      <width>108</width>
+      <height>32</height>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color red="56" green="206" blue="56">
+        </color>
+      </on_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_5</name>
+      <class>DLS_PRIMARY</class>
+      <actions>
+        <action type="open_display">
+          <file>empty.bob</file>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <x>122</x>
+      <y>490</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_6</name>
+      <class>DLS_PRIMARY</class>
+      <actions>
+        <action type="open_display">
+          <file>empty.bob</file>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <x>246</x>
+      <y>490</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_7</name>
+      <class>DLS_PRIMARY</class>
+      <actions>
+        <action type="open_display">
+          <file>empty.bob</file>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <x>370</x>
+      <y>490</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_8</name>
+      <class>DLS_PRIMARY</class>
+      <actions>
+        <action type="open_display">
+          <file>empty.bob</file>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <x>490</x>
+      <y>490</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:LED-MULTI-1</pv_name>
+      <x>32</x>
+      <y>260</y>
+      <width use_class="true">40</width>
+      <height use_class="true">40</height>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color red="0" green="222" blue="0">
+        </color>
+      </on_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_1</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:LED-MULTI-2</pv_name>
+      <x>150</x>
+      <y>260</y>
+      <width use_class="true">40</width>
+      <height use_class="true">40</height>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color red="0" green="222" blue="0">
+        </color>
+      </on_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_2</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:LED-MULTI-3</pv_name>
+      <x>272</x>
+      <y>260</y>
+      <width use_class="true">40</width>
+      <height use_class="true">40</height>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color red="0" green="222" blue="0">
+        </color>
+      </on_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_3</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:LED-MULTI-4</pv_name>
+      <x>401</x>
+      <y>260</y>
+      <width use_class="true">40</width>
+      <height use_class="true">40</height>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color red="0" green="222" blue="0">
+        </color>
+      </on_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_4</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:LED-MULTI-5</pv_name>
+      <x>512</x>
+      <y>260</y>
+      <width use_class="true">40</width>
+      <height use_class="true">40</height>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color red="0" green="222" blue="0">
+        </color>
+      </on_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_6</name>
+      <class>DLS_PRIMARY</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:BOOL-BUTTON-1</pv_name>
+      <x>2</x>
+      <y>618</y>
+      <width>108</width>
+      <height>32</height>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color red="56" green="206" blue="56">
+        </color>
+      </on_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_7</name>
+      <class>DLS_PRIMARY</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:BOOL-BUTTON-2</pv_name>
+      <x>122</x>
+      <y>618</y>
+      <width>108</width>
+      <height>32</height>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color red="56" green="206" blue="56">
+        </color>
+      </on_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_8</name>
+      <class>DLS_PRIMARY</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:BOOL-BUTTON-3</pv_name>
+      <x>246</x>
+      <y>618</y>
+      <width>108</width>
+      <height>32</height>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color red="56" green="206" blue="56">
+        </color>
+      </on_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_9</name>
+      <class>DLS_PRIMARY</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:BOOL-BUTTON-4</pv_name>
+      <x>370</x>
+      <y>618</y>
+      <width>108</width>
+      <height>32</height>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color red="56" green="206" blue="56">
+        </color>
+      </on_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_10</name>
+      <class>DLS_PRIMARY</class>
+      <pv_name>pva://PREFIX:MANUALLY-GENERATED:BOOL-BUTTON-5</pv_name>
+      <x>490</x>
+      <y>618</y>
+      <width>108</width>
+      <height>32</height>
+      <off_color use_class="true">
+        <color red="237" green="237" blue="237">
+        </color>
+      </off_color>
+      <on_color use_class="true">
+        <color red="56" green="206" blue="56">
+        </color>
+      </on_color>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_9</name>
+      <class>DLS_SECONDARY</class>
+      <actions>
+        <action type="open_display">
+          <file>empty.bob</file>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <x>490</x>
+      <y>535</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_10</name>
+      <class>DLS_SECONDARY</class>
+      <actions>
+        <action type="open_display">
+          <file>empty.bob</file>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <x>370</x>
+      <y>535</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_11</name>
+      <class>DLS_SECONDARY</class>
+      <actions>
+        <action type="open_display">
+          <file>empty.bob</file>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <x>246</x>
+      <y>535</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_12</name>
+      <class>DLS_SECONDARY</class>
+      <actions>
+        <action type="open_display">
+          <file>empty.bob</file>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <x>122</x>
+      <y>535</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_13</name>
+      <class>DLS_SECONDARY</class>
+      <actions>
+        <action type="open_display">
+          <file>empty.bob</file>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <x>2</x>
+      <y>535</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_14</name>
+      <class>DLS_STOP</class>
+      <actions>
+        <action type="open_display">
+          <file>empty.bob</file>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <x>490</x>
+      <y>577</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="234" green="11" blue="22">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_15</name>
+      <class>DLS_STOP</class>
+      <actions>
+        <action type="open_display">
+          <file>empty.bob</file>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <x>370</x>
+      <y>577</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="234" green="11" blue="22">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_16</name>
+      <class>DLS_STOP</class>
+      <actions>
+        <action type="open_display">
+          <file>empty.bob</file>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <x>246</x>
+      <y>577</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="234" green="11" blue="22">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_17</name>
+      <class>DLS_STOP</class>
+      <actions>
+        <action type="open_display">
+          <file>empty.bob</file>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <x>122</x>
+      <y>577</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="234" green="11" blue="22">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_18</name>
+      <class>DLS_STOP</class>
+      <actions>
+        <action type="open_display">
+          <file>empty.bob</file>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <x>2</x>
+      <y>577</y>
+      <width>108</width>
+      <height>32</height>
+      <font use_class="true">
+        <font family="Arial" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color use_class="true">
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color use_class="true">
+        <color red="234" green="11" blue="22">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+  <widget type="arc" version="2.0.0">
+    <name>Arc</name>
+    <x>544</x>
+    <y>116</y>
+    <width>1</width>
+    <height>1</height>
+  </widget>
+  <widget type="array" version="2.0.0">
+    <name>Array</name>
+    <x>616</x>
+    <y>912</y>
+    <width>1</width>
+    <height>1</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>DLS_HEADER_3</class>
+    <text>No Alarm</text>
+    <x>129</x>
+    <y>58</y>
+    <width>84</width>
+    <height>28</height>
+    <font use_class="true">
+      <font family="Arial" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <class>DLS_HEADER_3</class>
+    <text>Minor Alarm</text>
+    <x>237</x>
+    <y>58</y>
+    <width>112</width>
+    <height>28</height>
+    <font use_class="true">
+      <font family="Arial" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <class>DLS_HEADER_3</class>
+    <text>Major Alarm</text>
+    <x>361</x>
+    <y>58</y>
+    <width>112</width>
+    <height>28</height>
+    <font use_class="true">
+      <font family="Arial" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <class>DLS_HEADER_3</class>
+    <text>Invalid Alarm</text>
+    <x>485</x>
+    <y>58</y>
+    <width>112</width>
+    <height>28</height>
+    <font use_class="true">
+      <font family="Arial" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <class>DLS_HEADER_3</class>
+    <text>Disconnected</text>
+    <x>605</x>
+    <y>58</y>
+    <width>112</width>
+    <height>28</height>
+    <font use_class="true">
+      <font family="Arial" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Title_1</name>
+    <class>DLS_HEADER_2</class>
+    <text>- a second and equally important header</text>
+    <x>213</x>
+    <y>24</y>
+    <width>550</width>
+    <height>31</height>
+    <font use_class="true">
+      <font family="Arial" style="BOLD" size="24.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color use_class="true">
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">0</vertical_alignment>
+    <rotation_step use_class="true">0</rotation_step>
+    <wrap_words use_class="true">true</wrap_words>
+  </widget>
+</display>
