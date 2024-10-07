@@ -34,8 +34,8 @@
   </widget>
   <widget type="group" version="2.0.0">
     <class>DLS</class>
-    <x>126</x>
-    <y>89</y>
+    <x>129</x>
+    <y>86</y>
     <width>602</width>
     <height>710</height>
     <style use_class="true">2</style>
@@ -753,22 +753,21 @@
     </widget>
     <widget type="choice" version="2.0.0">
       <name>Choice Button</name>
-      <class>DLS</class>
       <pv_name>pva://PREFIX:MANUALLY-GENERATED:CHOICE-BUTTON-1</pv_name>
       <x>2</x>
       <y>338</y>
       <width>108</width>
       <height>32</height>
-      <foreground_color use_class="true">
+      <foreground_color>
         <color red="29" green="41" blue="69">
         </color>
       </foreground_color>
-      <background_color use_class="true">
+      <background_color>
         <color name="Background" red="255" green="255" blue="255">
         </color>
       </background_color>
-      <selected_color use_class="true">
-        <color red="56" green="206" blue="56">
+      <selected_color>
+        <color red="29" green="41" blue="69">
         </color>
       </selected_color>
       <items>
@@ -904,7 +903,7 @@
     <widget type="choice" version="2.0.0">
       <name>Choice Button_6</name>
       <class>DLS</class>
-      <pv_name>pva://PREFIX:MANUALLY-GENERATED:CHOICE-BUTTON-6</pv_name>
+      <pv_name>sim://flipflop(1)</pv_name>
       <x>2</x>
       <y>414</y>
       <width>108</width>
