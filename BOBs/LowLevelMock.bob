@@ -1,0 +1,3257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Low Level Screen</name>
+  <width>1200</width>
+  <height>700</height>
+  <background_color>
+    <color name="Read_Background" red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_step_x>5</grid_step_x>
+  <grid_step_y>5</grid_step_y>
+  <widget type="group" version="2.0.0">
+    <name>HEATER 1</name>
+    <x>660</x>
+    <y>25</y>
+    <width>500</width>
+    <height>300</height>
+    <background_color>
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <class>Label</class>
+      <text>Heater 1 setpoint demand (D14):</text>
+      <width>225</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <class>Label</class>
+      <text>Heater 1 setpoint redback (D153):</text>
+      <y>25</y>
+      <width>225</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <class>Label</class>
+      <text>Heater 1 loop control (D10):</text>
+      <y>50</y>
+      <width>225</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <class>Label</class>
+      <text>Heater 1 loop control readback (D11):</text>
+      <y>75</y>
+      <width>225</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_6</name>
+      <class>Label</class>
+      <text>Heater 1 loop status (D12):</text>
+      <y>100</y>
+      <width>225</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <class>Label</class>
+      <text>Heater 1 proportional gain (D150):</text>
+      <y>125</y>
+      <width>225</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_8</name>
+      <class>Label</class>
+      <text>Heater 1 integral gain (D151):</text>
+      <y>150</y>
+      <width>225</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_9</name>
+      <class>Label</class>
+      <text>Heater 1 derivative gain (D152):</text>
+      <y>175</y>
+      <width>225</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_10</name>
+      <class>Label</class>
+      <text>Heater 1 PID loop output 0-100% (D500):</text>
+      <y>200</y>
+      <width>225</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_11</name>
+      <class>Label</class>
+      <text>Heater 1 under temp setpoint (D122):</text>
+      <y>225</y>
+      <width>225</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_12</name>
+      <class>Label</class>
+      <text>Heater 1 fail alarm (D19):</text>
+      <y>250</y>
+      <width>225</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate</name>
+      <pv_name>sim://const("Reset Interlocks Request")</pv_name>
+      <x>230</x>
+      <y>75</y>
+      <width>230</width>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="ActiveText" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="76" green="100" blue="171">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate_2</name>
+      <pv_name>sim://const("22.0C")</pv_name>
+      <x>230</x>
+      <y>25</y>
+      <width>230</width>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="ActiveText" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="76" green="100" blue="171">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry</name>
+      <pv_name>sim://const("0.0C")</pv_name>
+      <x>230</x>
+      <width>230</width>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV</name>
+      <class>DEFAULT_PV</class>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>value</value>
+          <description>$(name)</description>
+        </action>
+      </actions>
+      <pv_name>sim://const(1)</pv_name>
+      <text>Start Heating Loop</text>
+      <x>230</x>
+      <y>50</y>
+      <width>230</width>
+      <height>20</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <tooltip>$(tooltip)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate_3</name>
+      <pv_name>sim://const("Loop Disabled")</pv_name>
+      <x>230</x>
+      <y>100</y>
+      <width>230</width>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="ActiveText" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="76" green="100" blue="171">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_1</name>
+      <pv_name>sim://const(0)</pv_name>
+      <x>230</x>
+      <y>125</y>
+      <width>230</width>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_2</name>
+      <pv_name>sim://const(0)</pv_name>
+      <x>230</x>
+      <y>150</y>
+      <width>230</width>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_3</name>
+      <pv_name>sim://const(0)</pv_name>
+      <x>230</x>
+      <y>175</y>
+      <width>230</width>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate_4</name>
+      <pv_name>sim://const("Loop Disabled")</pv_name>
+      <x>230</x>
+      <y>200</y>
+      <width>230</width>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="ActiveText" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="76" green="100" blue="171">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_4</name>
+      <pv_name>sim://const(0)</pv_name>
+      <x>230</x>
+      <y>225</y>
+      <width>230</width>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate_5</name>
+      <pv_name>sim://const("Status OK")</pv_name>
+      <x>230</x>
+      <y>250</y>
+      <width>230</width>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="ActiveText" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="76" green="100" blue="171">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_16</name>
+      <y>23</y>
+      <width>460</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_17</name>
+      <y>48</y>
+      <width>460</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_18</name>
+      <y>73</y>
+      <width>460</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_19</name>
+      <y>98</y>
+      <width>460</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_20</name>
+      <y>122</y>
+      <width>460</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_21</name>
+      <y>147</y>
+      <width>460</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_22</name>
+      <y>172</y>
+      <width>460</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_23</name>
+      <y>197</y>
+      <width>460</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_24</name>
+      <y>222</y>
+      <width>460</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_25</name>
+      <y>247</y>
+      <width>460</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>OpenDisplay</name>
+    <actions>
+      <action type="open_display">
+        <file>SubScreenFile</file>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>EXIT</text>
+    <x>1030</x>
+    <y>625</y>
+    <width>120</width>
+    <height>20</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>HEATER 2</name>
+    <x>660</x>
+    <y>325</y>
+    <width>500</width>
+    <height>300</height>
+    <background_color>
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate_6</name>
+      <pv_name>sim://const("Reset Interlocks Request")</pv_name>
+      <x>230</x>
+      <y>75</y>
+      <width>230</width>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="ActiveText" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="76" green="100" blue="171">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate_7</name>
+      <pv_name>sim://const("22.0C")</pv_name>
+      <x>230</x>
+      <y>25</y>
+      <width>230</width>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="ActiveText" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="76" green="100" blue="171">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_5</name>
+      <pv_name>sim://const(0)</pv_name>
+      <x>230</x>
+      <width>230</width>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>WritePV_1</name>
+      <class>DEFAULT_PV</class>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>value</value>
+          <description>$(name)</description>
+        </action>
+      </actions>
+      <pv_name>sim://const(1)</pv_name>
+      <text>Start Heating Loop</text>
+      <x>230</x>
+      <y>50</y>
+      <width>230</width>
+      <height>20</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <tooltip>$(tooltip)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate_8</name>
+      <pv_name>sim://const("Loop Disabled")</pv_name>
+      <x>230</x>
+      <y>100</y>
+      <width>230</width>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="ActiveText" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="76" green="100" blue="171">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_6</name>
+      <pv_name>sim://const(0)</pv_name>
+      <x>230</x>
+      <y>125</y>
+      <width>230</width>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_7</name>
+      <pv_name>sim://const(0)</pv_name>
+      <x>230</x>
+      <y>150</y>
+      <width>230</width>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_8</name>
+      <pv_name>sim://const(0)</pv_name>
+      <x>230</x>
+      <y>175</y>
+      <width>230</width>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate_9</name>
+      <pv_name>sim://const("Loop Disabled")</pv_name>
+      <x>230</x>
+      <y>200</y>
+      <width>230</width>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="ActiveText" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="76" green="100" blue="171">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_9</name>
+      <pv_name>sim://const("0.0C")</pv_name>
+      <x>230</x>
+      <y>225</y>
+      <width>230</width>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate_10</name>
+      <pv_name>sim://const("Status OK")</pv_name>
+      <x>230</x>
+      <y>250</y>
+      <width>230</width>
+      <font>
+        <font family="Monospaced" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="ActiveText" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="76" green="100" blue="171">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_26</name>
+      <y>23</y>
+      <width>460</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_27</name>
+      <y>48</y>
+      <width>460</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_28</name>
+      <y>73</y>
+      <width>460</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_29</name>
+      <y>98</y>
+      <width>460</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_30</name>
+      <y>122</y>
+      <width>460</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_31</name>
+      <y>147</y>
+      <width>460</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_32</name>
+      <y>172</y>
+      <width>460</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_33</name>
+      <y>197</y>
+      <width>460</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_34</name>
+      <y>222</y>
+      <width>460</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_35</name>
+      <y>247</y>
+      <width>460</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_24</name>
+      <class>Label</class>
+      <text>Heater 2 fail alarm (D29):</text>
+      <y>250</y>
+      <width>225</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_25</name>
+      <class>Label</class>
+      <text>Heater 2 under temp setpoint (D123):</text>
+      <y>225</y>
+      <width>225</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_26</name>
+      <class>Label</class>
+      <text>Heater 2 PID loop output 0-100% (D501):</text>
+      <y>200</y>
+      <width>225</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_27</name>
+      <class>Label</class>
+      <text>Heater 2 derivative gain (D156):</text>
+      <y>175</y>
+      <width>225</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_28</name>
+      <class>Label</class>
+      <text>Heater 2 integral gain (D155):</text>
+      <y>150</y>
+      <width>225</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_29</name>
+      <class>Label</class>
+      <text>Heater 2 proportional gain (D154):</text>
+      <y>125</y>
+      <width>225</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_30</name>
+      <class>Label</class>
+      <text>Heater 2 loop status (D22):</text>
+      <y>100</y>
+      <width>225</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_31</name>
+      <class>Label</class>
+      <text>Heater 2 loop control readback (D21):</text>
+      <y>75</y>
+      <width>225</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_32</name>
+      <class>Label</class>
+      <text>Heater 2 loop control (D20):</text>
+      <y>50</y>
+      <width>225</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_33</name>
+      <class>Label</class>
+      <text>Heater 2 setpoint redback (D157):</text>
+      <y>25</y>
+      <width>225</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_34</name>
+      <class>Label</class>
+      <text>Heater 2 setpoint demand (D24):</text>
+      <width>225</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>OpenDisplay_1</name>
+    <actions>
+      <action type="open_display">
+        <file>SubScreenFile</file>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Reset Amp Fault</text>
+    <x>795</x>
+    <y>625</y>
+    <width>120</width>
+    <height>20</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>OpenDisplay_2</name>
+    <actions>
+      <action type="open_display">
+        <file>SubScreenFile</file>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Home Axes</text>
+    <x>670</x>
+    <y>650</y>
+    <width>120</width>
+    <height>20</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>OpenDisplay_4</name>
+    <actions>
+      <action type="open_display">
+        <file>SubScreenFile</file>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Gap Motor</text>
+    <x>670</x>
+    <y>625</y>
+    <width>120</width>
+    <height>20</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>Label</class>
+    <text>Health</text>
+    <x>356</x>
+    <y>419</y>
+    <width>65</width>
+    <font>
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <tooltip>$(text)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>TextUpdate_1</name>
+    <pv_name>PREFIX:SEQ1:HEALTH</pv_name>
+    <x>425</x>
+    <y>419</y>
+    <width>206</width>
+    <font>
+      <font family="Arial" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="184" green="195" blue="223">
+      </color>
+    </background_color>
+    <format>6</format>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_color>
+      <color red="196" green="196" blue="196">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>INPUTS</name>
+    <y>25</y>
+    <width>325</width>
+    <height>331</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <class>Label</class>
+      <text>Label</text>
+      <width>65</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_10</name>
+      <pv_name>PREFIX:SEQ1:LABEL</pv_name>
+      <x>70</x>
+      <width>205</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>6</format>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_13</name>
+      <class>Label</class>
+      <text>Enable</text>
+      <y>25</y>
+      <width>65</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_11</name>
+      <pv_name>PREFIX:SEQ1:ENABLE</pv_name>
+      <x>70</x>
+      <y>25</y>
+      <width>205</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>6</format>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_14</name>
+      <class>Label</class>
+      <text>Delay</text>
+      <y>50</y>
+      <width>65</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_12</name>
+      <pv_name>PREFIX:SEQ1:ENABLE:DELAY</pv_name>
+      <x>70</x>
+      <y>50</y>
+      <width>205</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_15</name>
+      <class>Label</class>
+      <text>Bita</text>
+      <y>75</y>
+      <width>65</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_13</name>
+      <pv_name>PREFIX:SEQ1:BITA</pv_name>
+      <x>70</x>
+      <y>75</y>
+      <width>205</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>6</format>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_16</name>
+      <class>Label</class>
+      <text>Delay</text>
+      <y>100</y>
+      <width>65</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_14</name>
+      <pv_name>PREFIX:SEQ1:BITA:DELAY</pv_name>
+      <x>70</x>
+      <y>100</y>
+      <width>205</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_17</name>
+      <class>Label</class>
+      <text>Bitb</text>
+      <y>125</y>
+      <width>65</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_15</name>
+      <pv_name>PREFIX:SEQ1:BITB</pv_name>
+      <x>70</x>
+      <y>125</y>
+      <width>205</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>6</format>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_18</name>
+      <class>Label</class>
+      <text>Delay</text>
+      <y>150</y>
+      <width>65</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_16</name>
+      <pv_name>PREFIX:SEQ1:BITB:DELAY</pv_name>
+      <x>70</x>
+      <y>150</y>
+      <width>205</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_19</name>
+      <class>Label</class>
+      <text>Bitc</text>
+      <y>175</y>
+      <width>65</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_17</name>
+      <pv_name>PREFIX:SEQ1:BITC</pv_name>
+      <x>70</x>
+      <y>175</y>
+      <width>205</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>6</format>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_20</name>
+      <class>Label</class>
+      <text>Delay</text>
+      <y>200</y>
+      <width>65</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_18</name>
+      <pv_name>PREFIX:SEQ1:BITC:DELAY</pv_name>
+      <x>70</x>
+      <y>200</y>
+      <width>205</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_21</name>
+      <class>Label</class>
+      <text>Posa</text>
+      <y>225</y>
+      <width>65</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_19</name>
+      <pv_name>PREFIX:SEQ1:POSA</pv_name>
+      <x>70</x>
+      <y>225</y>
+      <width>205</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>6</format>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_22</name>
+      <class>Label</class>
+      <text>Posb</text>
+      <y>250</y>
+      <width>65</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_20</name>
+      <pv_name>PREFIX:SEQ1:POSB</pv_name>
+      <x>70</x>
+      <y>250</y>
+      <width>205</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>6</format>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_23</name>
+      <class>Label</class>
+      <text>Posc</text>
+      <y>275</y>
+      <width>65</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_21</name>
+      <pv_name>PREFIX:SEQ1:POSC</pv_name>
+      <x>70</x>
+      <y>275</y>
+      <width>205</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>6</format>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_36</name>
+      <x>10</x>
+      <y>22</y>
+      <width>265</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_37</name>
+      <x>10</x>
+      <y>47</y>
+      <width>265</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_38</name>
+      <x>10</x>
+      <y>72</y>
+      <width>265</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_39</name>
+      <x>10</x>
+      <y>97</y>
+      <width>265</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_40</name>
+      <x>10</x>
+      <y>122</y>
+      <width>265</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_41</name>
+      <x>10</x>
+      <y>147</y>
+      <width>265</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_42</name>
+      <x>10</x>
+      <y>172</y>
+      <width>265</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_43</name>
+      <x>10</x>
+      <y>197</y>
+      <width>265</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_44</name>
+      <x>10</x>
+      <y>222</y>
+      <width>265</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_45</name>
+      <x>10</x>
+      <y>247</y>
+      <width>265</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_46</name>
+      <x>10</x>
+      <y>272</y>
+      <width>265</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>PARAMETERS</name>
+    <y>361</y>
+    <width>325</width>
+    <height>336</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="table" version="2.0.0">
+      <name>Table</name>
+      <class>DLS</class>
+      <pv_name>pva://PREFIX:SEQ1:TABLE</pv_name>
+      <x>10</x>
+      <width>265</width>
+      <height>200</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <columns>
+        <column>
+          <name>Column 1</name>
+          <width>100</width>
+          <editable>true</editable>
+        </column>
+      </columns>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_35</name>
+      <class>Label</class>
+      <text>Mode</text>
+      <y>205</y>
+      <width>65</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>ComboBox</name>
+      <pv_name>PREFIX:SEQ1:TABLE:MODE</pv_name>
+      <x>70</x>
+      <y>205</y>
+      <width>205</width>
+      <height>20</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_36</name>
+      <class>Label</class>
+      <text>Prescale</text>
+      <y>230</y>
+      <width>65</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_22</name>
+      <pv_name>PREFIX:SEQ1:PRESCALE</pv_name>
+      <x>70</x>
+      <y>230</y>
+      <width>205</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_37</name>
+      <class>Label</class>
+      <text>Units</text>
+      <y>255</y>
+      <width>65</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>ComboBox_1</name>
+      <pv_name>PREFIX:SEQ1:PRESCALE:UNITS</pv_name>
+      <x>70</x>
+      <y>255</y>
+      <width>205</width>
+      <height>20</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_38</name>
+      <class>Label</class>
+      <text>Repeats</text>
+      <y>280</y>
+      <width>65</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>TextEntry_23</name>
+      <pv_name>PREFIX:SEQ1:REPEATS</pv_name>
+      <x>70</x>
+      <y>280</y>
+      <width>205</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <border_width>1</border_width>
+      <border_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_47</name>
+      <x>10</x>
+      <y>202</y>
+      <width>265</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_48</name>
+      <x>10</x>
+      <y>227</y>
+      <width>265</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_49</name>
+      <x>10</x>
+      <y>252</y>
+      <width>265</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_50</name>
+      <x>10</x>
+      <y>277</y>
+      <width>265</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>OUTPUTS</name>
+    <x>325</x>
+    <y>25</y>
+    <width>335</width>
+    <height>206</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_39</name>
+      <class>Label</class>
+      <text>Active</text>
+      <width>75</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_40</name>
+      <class>Label</class>
+      <text>Outa</text>
+      <y>25</y>
+      <width>75</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_41</name>
+      <class>Label</class>
+      <text>Outb</text>
+      <y>50</y>
+      <width>75</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_42</name>
+      <class>Label</class>
+      <text>Outc</text>
+      <y>75</y>
+      <width>75</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_43</name>
+      <class>Label</class>
+      <text>Outd</text>
+      <y>100</y>
+      <width>75</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_44</name>
+      <class>Label</class>
+      <text>Oute</text>
+      <y>125</y>
+      <width>75</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_45</name>
+      <class>Label</class>
+      <text>Outf</text>
+      <y>150</y>
+      <width>75</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_9</name>
+      <pv_name>PREFIX:SEQ1:OUTE</pv_name>
+      <x>173</x>
+      <y>150</y>
+      <off_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="Write_Background" red="128" green="255" blue="255">
+        </color>
+      </on_color>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <line_color>
+        <color red="76" green="100" blue="171">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_10</name>
+      <pv_name>PREFIX:SEQ1:OUTE</pv_name>
+      <x>173</x>
+      <y>125</y>
+      <off_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="Write_Background" red="128" green="255" blue="255">
+        </color>
+      </on_color>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <line_color>
+        <color red="76" green="100" blue="171">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_11</name>
+      <pv_name>sim://const(1)</pv_name>
+      <x>173</x>
+      <y>100</y>
+      <off_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="Write_Background" red="128" green="255" blue="255">
+        </color>
+      </on_color>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <line_color>
+        <color red="76" green="100" blue="171">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_12</name>
+      <pv_name>PREFIX:SEQ1:OUTE</pv_name>
+      <x>173</x>
+      <y>75</y>
+      <off_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="Write_Background" red="128" green="255" blue="255">
+        </color>
+      </on_color>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <line_color>
+        <color red="76" green="100" blue="171">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_13</name>
+      <pv_name>PREFIX:SEQ1:OUTE</pv_name>
+      <x>173</x>
+      <y>50</y>
+      <off_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="Write_Background" red="128" green="255" blue="255">
+        </color>
+      </on_color>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <line_color>
+        <color red="76" green="100" blue="171">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_14</name>
+      <pv_name>sim://flipflop(2)</pv_name>
+      <x>173</x>
+      <y>25</y>
+      <off_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="Write_Background" red="128" green="255" blue="255">
+        </color>
+      </on_color>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <line_color>
+        <color red="76" green="100" blue="171">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_16</name>
+      <pv_name>sim://const(1)</pv_name>
+      <x>173</x>
+      <off_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="Write_Background" red="128" green="255" blue="255">
+        </color>
+      </on_color>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <line_color>
+        <color red="76" green="100" blue="171">
+        </color>
+      </line_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_51</name>
+      <x>11</x>
+      <y>147</y>
+      <width>275</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_52</name>
+      <x>11</x>
+      <y>122</y>
+      <width>275</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_53</name>
+      <x>11</x>
+      <y>97</y>
+      <width>275</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_54</name>
+      <x>11</x>
+      <y>72</y>
+      <width>275</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_55</name>
+      <x>11</x>
+      <y>47</y>
+      <width>275</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_56</name>
+      <x>11</x>
+      <y>22</y>
+      <width>275</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>READBACKS</name>
+    <x>325</x>
+    <y>236</y>
+    <width>335</width>
+    <height>183</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="15.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="29" green="41" blue="69">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_46</name>
+      <class>Label</class>
+      <text>Table</text>
+      <width>75</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate_11</name>
+      <pv_name>PREFIX:SEQ1:TABLE_REPEAT</pv_name>
+      <x>80</x>
+      <width>205</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="76" green="100" blue="171">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_47</name>
+      <class>Label</class>
+      <text>Table Line</text>
+      <y>25</y>
+      <width>75</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate_12</name>
+      <pv_name>PREFIX:SEQ1:TABLE_LINE</pv_name>
+      <x>80</x>
+      <y>25</y>
+      <width>205</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="76" green="100" blue="171">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_48</name>
+      <class>Label</class>
+      <text>Line</text>
+      <y>50</y>
+      <width>75</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate_13</name>
+      <pv_name>PREFIX:SEQ1:LINE_REPEAT</pv_name>
+      <x>80</x>
+      <y>50</y>
+      <width>205</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="76" green="100" blue="171">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_49</name>
+      <class>Label</class>
+      <text>State</text>
+      <y>75</y>
+      <width>75</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate_14</name>
+      <pv_name>PREFIX:SEQ1:STATE</pv_name>
+      <x>80</x>
+      <y>75</y>
+      <width>205</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="76" green="100" blue="171">
+        </color>
+      </background_color>
+      <format>6</format>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_50</name>
+      <class>Label</class>
+      <text>Can Write</text>
+      <y>100</y>
+      <width>75</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(text)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TextUpdate_15</name>
+      <pv_name>PREFIX:SEQ1:CAN_WRITE_NEXT</pv_name>
+      <x>80</x>
+      <y>100</y>
+      <width>205</width>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="76" green="100" blue="171">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_color>
+        <color red="196" green="196" blue="196">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>OpenDisplay_3</name>
+      <actions>
+        <action type="open_display">
+          <file>PandA_PositionsTable.bob</file>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <text>All Postion Capture Parameters ⧉</text>
+      <x>11</x>
+      <y>125</y>
+      <width>275</width>
+      <height>20</height>
+      <font>
+        <font family="Arial" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="29" green="41" blue="69">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_57</name>
+      <x>11</x>
+      <y>122</y>
+      <width>275</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_58</name>
+      <x>11</x>
+      <y>97</y>
+      <width>275</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_59</name>
+      <x>11</x>
+      <y>72</y>
+      <width>275</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_60</name>
+      <x>11</x>
+      <y>47</y>
+      <width>275</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_61</name>
+      <x>11</x>
+      <y>22</y>
+      <width>275</width>
+      <height>1</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="184" green="195" blue="223">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+</display>
